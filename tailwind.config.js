@@ -4,14 +4,12 @@ module.exports = {
       spacing: {
         "80": "20rem",
         "108": "27rem"
-      },
-      borderWidth: {
-        "14": "14px"
       }
     },
     container: {
       padding: "1rem"
     },
+    //e49c56
     colors: {
       background: {
         primary: "var(--bg-background-primary)",
@@ -47,6 +45,18 @@ module.exports = {
         900: "#22543d"
       },
 
+      orange: {
+        100: "#FF8F07",
+        300: "#FF8011",
+        400: "#FF6B0F",
+        200: "#FF8A23",
+        500: "#FF5E07",
+        600: "#ED5D10",
+        700: "#DD5106",
+        800: "#D35510",
+        900: "#D04900"
+      },
+
       gray: {
         100: "#f7fafc",
         200: "#edf2f7",
@@ -61,7 +71,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        "Nunito Sans",
+        "Lato",
         "Roboto",
         "-apple-system",
         "BlinkMacSystemFont",

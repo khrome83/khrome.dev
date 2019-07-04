@@ -42,8 +42,9 @@ typings/
 # Optional npm cache directory
 .npm
 
-# Optional eslint cache
+# Optional cache
 .eslintcache
+.cache
 
 # Optional REPL history
 .node_repl_history
@@ -56,6 +57,17 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.*
 
 # next.js build output
 .next
+
+# OS Files
+.DS_Store
+
+# Generated Files
+src/.temp
+static/rss.xml
+dist
+
+

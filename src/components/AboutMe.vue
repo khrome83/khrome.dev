@@ -49,6 +49,9 @@
             >#nuxt</span>
             <span
               class="inline-block bold pl-2 pr-2 pt-1 pb-1 leading-none m-1 text-sm bg-orange-600 text-white"
+            >#gridsome</span>
+            <span
+              class="inline-block bold pl-2 pr-2 pt-1 pb-1 leading-none m-1 text-sm bg-orange-600 text-white"
             >#express</span>
             <span
               class="inline-block bold pl-2 pr-2 pt-1 pb-1 leading-none m-1 text-sm bg-orange-600 text-white"

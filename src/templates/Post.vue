@@ -25,7 +25,6 @@ query Post ($path: String!) {
     title
     date (format: "MMMM D, Y")
     content
-    cover_image (width: 770, height: 380, blur: 10)
     tags {
       id
       title
@@ -36,6 +35,8 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
+// cover_image (width: 770, height: 380, blur: 10)
+
 export default {
   metaInfo() {
     return {

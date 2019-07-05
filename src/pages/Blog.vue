@@ -53,7 +53,6 @@ query Posts ($page: Int) {
         }
         date (format: "MMMM D, Y")
         timeToRead
-        cover_image (width: 770, height: 380, blur: 10)
         description
       }
     }
@@ -62,6 +61,7 @@ query Posts ($page: Int) {
 </page-query>
 
 <script>
+// cover_image (width: 770, height: 380, blur: 10)
 import PaginationPosts from "../components/PaginationPosts";
 export default {
   metaInfo: {

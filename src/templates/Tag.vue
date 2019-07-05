@@ -52,7 +52,6 @@ query Tag ($id: String!, $page: Int) {
     	      date (format: "MMMM D, YYYY")
             path
             description
-            cover_image (width: 770, height: 380, blur: 10)
             tags {
               id
               title
@@ -67,6 +66,8 @@ query Tag ($id: String!, $page: Int) {
 </page-query>
 
 <script>
+// cover_image (width: 770, height: 380, blur: 10)
+
 import PaginationPosts from "../components/PaginationPosts";
 
 // <g-image

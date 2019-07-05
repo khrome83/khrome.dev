@@ -60,7 +60,7 @@
             {{ post.item.title }}
             <span
               class="block font-normal text-black text-sm my-1"
-            >{{ post.item.summary }}</span>
+            >{{ post.item.description }}</span>
           </a>
 
           <div
@@ -109,7 +109,7 @@ export default {
         distance: 500,
         maxPatternLength: 32,
         minMatchCharLength: 1,
-        keys: ["title", "summary"]
+        keys: ["title", "description"]
       }
     };
   },

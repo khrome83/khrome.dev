@@ -18,8 +18,8 @@ module.exports = function(api, options) {
     const { collection } = store.getContentType("Post");
 
     const posts = collection.data.map(post => {
-      const { title, path, summary } = post;
-      return { title, path, summary };
+      const { title, path, description } = post;
+      return { title, path, description };
     });
 
     const output = {

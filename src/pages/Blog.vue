@@ -15,7 +15,7 @@
           <span>{{ post.node.timeToRead }} min read</span>
         </div>
 
-        <div class="text-lg mb-4">{{ post.node.summary }}</div>
+        <div class="text-lg mb-4">{{ post.node.description }}</div>
 
         <div class="mb-8">
           <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
@@ -45,10 +45,16 @@ query Posts ($page: Int) {
       node {
         id
         title
-        date (format: "MMMM D, Y")
-        summary
-        timeToRead
         path
+        tags {
+          id
+          title
+          path
+        }
+        date (format: "MMMM D, Y")
+        timeToRead
+        cover_image (width: 770, height: 380, blur: 10)
+        description
       }
     }
   }

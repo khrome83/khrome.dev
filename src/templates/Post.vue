@@ -25,7 +25,9 @@ query Post ($path: String!) {
     title
     date (format: "MMMM D, Y")
     content
+    cover_image (width: 770, height: 380, blur: 10)
     tags {
+      id
       title
       path
     }
@@ -196,7 +198,7 @@ export default {
 .markdown-body details {
   display: block;
 }
-.markdown-body summary {
+.markdown-body description {
   display: list-item;
 }
 .markdown-body a {
@@ -275,7 +277,7 @@ export default {
 .markdown-body th {
   padding: 0;
 }
-.markdown-body details summary {
+.markdown-body details description {
   cursor: pointer;
 }
 .markdown-body h1,

@@ -17,7 +17,7 @@
           <span>{{ post.node.timeToRead }} min read</span>
         </div>
 
-        <div class="text-lg mb-4">{{ post.node.summary }}</div>
+        <div class="text-lg mb-4">{{ post.node.description }}</div>
 
         <div class="mb-8">
           <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
@@ -32,7 +32,7 @@
       />
     </div>
   </Layout>
-</template>
+</template>-
 
 <page-query>
 query Tag ($id: String!, $page: Int) {
@@ -51,9 +51,12 @@ query Tag ($id: String!, $page: Int) {
             timeToRead
     	      date (format: "MMMM D, YYYY")
             path
-            summary
+            description
+            cover_image (width: 770, height: 380, blur: 10)
             tags {
+              id
               title
+              path
             }
           }
         }
@@ -65,6 +68,13 @@ query Tag ($id: String!, $page: Int) {
 
 <script>
 import PaginationPosts from "../components/PaginationPosts";
+
+// <g-image
+//   alt="Cover image"
+//   v-if="post.node.cover_image"
+//   class="post-card__image"
+//   :src="post.node.cover_image"
+// />
 
 export default {
   metaInfo() {

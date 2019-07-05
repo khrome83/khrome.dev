@@ -25,8 +25,9 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "blog/**/*.md",
         typeName: "Post",
+        path: "blog/**/*.md",
+        route: "/:slug",
         refs: {
           tags: {
             typeName: "Tag",
@@ -44,6 +45,7 @@ module.exports = {
         }
       }
     },
+    // TODO - Fix (URL)
     {
       use: "gridsome-plugin-rss",
       options: {
@@ -55,7 +57,7 @@ module.exports = {
         },
         feedItemOptions: node => ({
           title: node.title,
-          description: node.summary,
+          description: node.description,
           url: "https://khrome.dev" + node.path,
           author: "Zane C. Milakovic",
           date: node.date

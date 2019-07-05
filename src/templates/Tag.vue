@@ -13,7 +13,7 @@
         </h2>
         <div class="text-copy-secondary mb-4">
           <span>{{ post.node.date }}</span>
-          <span>&middot;</span>
+          <span class="pl-4 pr-4 inline-block">&middot;</span>
           <span>{{ post.node.timeToRead }} min read</span>
         </div>
 

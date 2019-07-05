@@ -17,6 +17,9 @@ module.exports = {
   siteUrl: "https://khrome.dev",
   plugins: [
     {
+      use: "gridsome-plugin-simple-analytics"
+    },
+    {
       use: "@gridsome/source-filesystem",
       options: {
         path: "blog/**/*.md",

@@ -60,11 +60,4 @@ export default function(Vue, { router, head, isClient }) {
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
   });
-
-  if (process.env.NODE_ENV === "production") {
-    head.script.push({
-      src: "./fathom.js",
-      body: true
-    });
-  }
 }

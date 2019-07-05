@@ -1,9 +1,12 @@
 ---
 title: Fix Vuex Module Errors with Nuxt and Storybook
-path: fix-vuex-module-errors-with-nuxt-and-storybook
 date: 2019-03-07
-summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
+cover_image: ./images/blog_bg_4.jpg
+description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
 tags: ["design", "frontend"]
+series: false
+published: false
+canonical_url: false
 ---
 
 ![background](./images/blog_bg_4.jpg)

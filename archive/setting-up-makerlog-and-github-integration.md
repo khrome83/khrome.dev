@@ -1,9 +1,12 @@
 ---
 title: Setting up Maker Log and Github Integration
-path: setting-up-maker-log-and-github-integration
 date: 2019-03-07
-summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
+cover_image: ./images/blog_bg_4.jpg
+description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
 tags: ["design", "frontend"]
+series: false
+published: false
+canonical_url: false
 ---
 
 ![background](./images/blog_bg_4.jpg)

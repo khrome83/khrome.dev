@@ -9,7 +9,7 @@
           <strong class="text-orange-500">might</strong> want to read it...
         </p>
 
-        <form action="https://formsubmit.co/zane.milakovic@icloud.com" method="POST">
+        <form action="https://formsubmit.co/c8ed50837a01e600e685d4a7d2e7f80e" method="POST">
           <div class="flex flex-col sm:flex-row">
             <input type="text" name="_honey" style="display:none" />
             <input type="hidden" name="_replyto" />

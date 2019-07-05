@@ -2,7 +2,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "regal-blue": "#243c5a"
+        "regal-blue": "#243c5a",
+        "regal-blue-accent": "#284569",
+        "undraw-orange": "#e49c56"
       },
       spacing: {
         "80": "20rem",

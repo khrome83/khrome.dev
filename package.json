@@ -7,6 +7,7 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
+    "now-build": "gridsome build",
     "explore": "gridsome explore"
   },
   "repository": {

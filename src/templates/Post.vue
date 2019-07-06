@@ -1,14 +1,30 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto my-16">
+    <div
+      class="bg-regal-blue text-white overflow-hidden bg-repeat min-h-20"
+      style="background-image: linear-gradient(to bottom, rgba(40,69,105,0) 0%,rgba(36,60,90,1) 80%), url('./dots.svg');"
+    ></div>
+    <div
+      class="container-inner mx-auto -mt-48 mb-16 relative bg-white pt-4 sm:rounded-t-lg sm:px-8 sm:pt-8"
+    >
+      <g-image
+        alt="Cover image"
+        v-if="$page.post.cover_image"
+        class="w-full mx-auto mb-8 rounded-lg"
+        :src="$page.post.cover_image"
+      />
       <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
-      <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div>
+      <div class="text-xl text-gray-600 mb-4">
+        <span>{{ $page.post.date }}</span>
+        <span class="pl-4 pr-4 inline-block">&middot;</span>
+        <span>{{ $page.post.timeToRead }} min read</span>
+      </div>
       <div class="flex mb-8 text-sm">
         <g-link
           :to="tag.path"
           v-for="tag in $page.post.tags"
           :key="tag.id"
-          class="inline-block bold pl-2 pr-2 pt-1 pb-1 leading-none m-1 text-sm bg-orange-600 text-white"
+          class="inline-block bold pl-2 pr-2 pt-1 pb-1 leading-none m-1 text-sm bg-orange-600 hover:bg-orange-700 text-white hover:text-white"
         >#{{ tag.title }}</g-link>
       </div>
       <div class="markdown-body mb-8" v-html="$page.post.content" />
@@ -16,6 +32,7 @@
         <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
       </div>
     </div>
+    <the-newsletter />
   </Layout>
 </template>
 
@@ -23,6 +40,9 @@
 query Post ($path: String!) {
   post: post (path: $path) {
     title
+    description
+    cover_image
+    timeToRead
     date (format: "MMMM D, Y")
     content
     tags {
@@ -37,10 +57,22 @@ query Post ($path: String!) {
 <script>
 // cover_image (width: 770, height: 380, blur: 10)
 
+import TheNewsletter from "../components/TheNewsletter";
+
 export default {
+  components: {
+    TheNewsletter
+  },
   metaInfo() {
     return {
-      title: this.$page.post.title
+      title: this.$page.post.title,
+      meta: [
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:site", content: "@KhromeDotDev" },
+        { name: "twitter:title", content: this.$page.post.title },
+        { name: "twitter:description", content: this.$page.post.description },
+        { name: "twitter:image", content: this.$page.post.cover_image }
+      ]
     };
   }
 };

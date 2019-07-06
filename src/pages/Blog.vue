@@ -1,11 +1,25 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto py-16">
+    <div
+      class="bg-regal-blue text-white overflow-hidden bg-repeat min-h-20"
+      style="background-image: linear-gradient(to bottom, rgba(40,69,105,0) 0%,rgba(36,60,90,1) 80%), url('./dots.svg');"
+    ></div>
+    <div
+      class="container-inner mx-auto -mt-48 mb-16 relative bg-white pt-4 sm:rounded-t-lg sm:px-8 sm:pt-8"
+    >
       <div
         v-for="post in $page.posts.edges"
         :key="post.id"
         class="post border-gray-400 border-b mb-12"
       >
+        <g-link :to="post.node.path">
+          <g-image
+            alt="Cover image"
+            v-if="post.node.cover_image"
+            class="w-full mx-auto mb-8 rounded-lg"
+            :src="post.node.cover_image"
+          />
+        </g-link>
         <h2 class="text-3xl font-bold">
           <g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link>
         </h2>
@@ -30,6 +44,7 @@
         :currentPage="$page.posts.pageInfo.currentPage"
       />
     </div>
+    <the-newsletter />
   </Layout>
 </template>
 
@@ -46,6 +61,7 @@ query Posts ($page: Int) {
         id
         title
         path
+        cover_image
         tags {
           id
           title
@@ -62,13 +78,15 @@ query Posts ($page: Int) {
 
 <script>
 // cover_image (width: 770, height: 380, blur: 10)
+import TheNewsletter from "../components/TheNewsletter";
 import PaginationPosts from "../components/PaginationPosts";
 export default {
+  components: {
+    PaginationPosts,
+    TheNewsletter
+  },
   metaInfo: {
     title: "Blog"
-  },
-  components: {
-    PaginationPosts
   }
 };
 </script>

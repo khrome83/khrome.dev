@@ -1,7 +1,15 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto my-16">
-      <h2 class="text-4xl font-bold mb-8 border-b">Tag: {{ $page.tag.title }}</h2>
+    <div
+      class="bg-regal-blue text-white overflow-hidden bg-repeat min-h-20"
+      style="background-image: linear-gradient(to bottom, rgba(40,69,105,0) 0%,rgba(36,60,90,1) 80%), url('../../dots.svg');"
+    ></div>
+    <div
+      class="container-inner mx-auto -mt-48 mb-16 relative bg-white pt-4 sm:rounded-t-lg sm:px-8 sm:pt-8"
+    >
+      <h2
+        class="text-4xl font-bold inline-block bold pl-2 pr-2 pt-1 pb-1 leading-none m-1 mx-auto bg-orange-600 text-white mb-12"
+      >#{{ $page.tag.title }}</h2>
 
       <div
         v-for="post in $page.tag.belongsTo.edges"
@@ -31,6 +39,7 @@
         :currentPage="$page.tag.belongsTo.pageInfo.currentPage"
       />
     </div>
+    <the-newsletter />
   </Layout>
 </template>-
 
@@ -69,6 +78,7 @@ query Tag ($id: String!, $page: Int) {
 // cover_image (width: 770, height: 380, blur: 10)
 
 import PaginationPosts from "../components/PaginationPosts";
+import TheNewsletter from "../components/TheNewsletter";
 
 // <g-image
 //   alt="Cover image"
@@ -78,13 +88,14 @@ import PaginationPosts from "../components/PaginationPosts";
 // />
 
 export default {
+  components: {
+    PaginationPosts,
+    TheNewsletter
+  },
   metaInfo() {
     return {
       title: "Tag: " + this.$page.tag.title
     };
-  },
-  components: {
-    PaginationPosts
   }
 };
 </script>

@@ -5,12 +5,29 @@
   "regions": ["all"],
   "builds": [
     { "src": "data/**", "use": "@now/static" },
-    { "src": "./image-www/package.json", "use": "@now/static-build" },
+    {
+      "src": "./image-www/package.json",
+      "use": "@now/static-build",
+      "config": {
+        "includeFiles": [
+          "./data/options.json",
+          "./data/screens.json",
+          "./data/themes.json"
+        ]
+      }
+    },
     { "src": "./image/package.json", "use": "@now/static-build" },
     {
       "src": "./image/src/card.ts",
       "use": "@now/node",
-      "config": { "maxLambdaSize": "36mb" }
+      "config": {
+        "maxLambdaSize": "36mb",
+        "includeFiles": [
+          "./image/patterns/**",
+          "./image/illustrations/**",
+          "./data/**"
+        ]
+      }
     },
     { "src": "./www/package.json", "use": "@now/static-build" }
   ],

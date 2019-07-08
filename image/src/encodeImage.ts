@@ -22,7 +22,7 @@ export function getEncodedPattern(pattern: string, theme: string) {
   const themes = getThemes();
 
   try {
-    const file = readFileSync(`${__dirname}/../patterns/${pattern}.svg`).toString();
+    const file = readFileSync(`${__dirname}/patterns/${pattern}.svg`).toString();
     let color = '#284569';
     if (themes[theme]) {
       color = themes[theme].pattern;
@@ -39,7 +39,7 @@ export function getEncodedIllustration(name: string, theme: string) {
   const themes = getThemes();
 
   try {
-    const file = readFileSync(`${__dirname}/../illustrations/${name}.svg`).toString();
+    const file = readFileSync(`${__dirname}/Illustrations/${name}.svg`).toString();
     let color = '#e49c56';
     if (themes[theme]) {
       color = themes[theme].undraw;

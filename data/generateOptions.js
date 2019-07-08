@@ -1,8 +1,8 @@
 const path = require("path");
 const fs = require("fs");
 
-const patternsPath = path.join(__dirname, "../image/src/patterns");
-const illustrationsPath = path.join(__dirname, "../image/src/illustrations");
+const patternsPath = path.join(__dirname, "patterns");
+const illustrationsPath = path.join(__dirname, "illustrations");
 const optionsPath = path.join(__dirname, "options.json");
 const patterns = [];
 const illustrations = [];

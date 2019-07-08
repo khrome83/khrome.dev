@@ -1,0 +1,16 @@
+{
+  "royal-blue": {
+    "background": "#243c5a",
+    "pattern": "#284569",
+    "undraw": "#e49c56",
+    "foreground": "#ffffff",
+    "accent": "#c05621"
+  },
+  "dark-mode": {
+    "background": "#333333",
+    "pattern": "#1e1e1e",
+    "undraw": "#ff6347",
+    "foreground": "#ffffff",
+    "accent": "#f32144"
+  }
+}

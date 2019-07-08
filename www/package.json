@@ -1,6 +1,9 @@
 {
   "name": "khrome.dev",
   "private": true,
+  "engines": {
+    "node": "10.x"
+  },
   "version": "1.0.0",
   "description": "Personal Blog Site",
   "main": "index.js",
@@ -8,6 +11,7 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "now-build": "gridsome build",
+    "now-dev": "gridsome develop --port $PORT",
     "explore": "gridsome explore"
   },
   "repository": {

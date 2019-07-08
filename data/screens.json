@@ -1,0 +1,24 @@
+{
+  "social": {
+    "height": 1170,
+    "width": 2048,
+    "paddingTop": "64px",
+    "paddingBottom": "64px",
+    "imageHeight": "725",
+    "imageWidth": "auto",
+    "layout": "column",
+    "fontSize": "120px",
+    "solidPercent": "85%"
+  },
+  "cover-image": {
+    "height": 420,
+    "width": 100,
+    "paddingTop": "12px",
+    "paddingBottom": "12px",
+    "imageHeight": "420",
+    "imageWidth": "160%",
+    "layout": "row",
+    "fontSize": "62px",
+    "solidPercent": "60%"
+  }
+}

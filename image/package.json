@@ -2,7 +2,7 @@
   "name": "og-image",
   "private": true,
   "engines": {
-    "node": "10.x"
+    "node": "8.10"
   },
   "version": "1.0.0",
   "description": "Generate an open graph image for twitter/facebook/etc",

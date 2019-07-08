@@ -48,6 +48,6 @@ export function getEncodedIllustration(name: string, theme: string) {
     const output = file.replace(/fill="#6c63ff"/g, `fill="${color}"`);
     return `data:image/svg+xml;base64,${Buffer.from(output).toString('base64')}`;
   } catch (e) {
-    throw new Error(`Bad illustrations specified - ${name} ${__dirname}`);
+    throw new Error(`Bad illustrations specified - ${name} ${__dirname} ${JSON.stringify(getFiles(__dirname))}`);
   }
 }

@@ -22,8 +22,8 @@
       "config": {
         "maxLambdaSize": "36mb",
         "includeFiles": [
-          "image/patterns/**",
-          "image/illustrations/**",
+          "image/src/patterns/**",
+          "image/src/illustrations/**",
           "data/**"
         ]
       }

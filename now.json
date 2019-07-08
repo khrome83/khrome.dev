@@ -9,9 +9,9 @@
       "use": "@now/static-build",
       "config": {
         "includeFiles": [
-          "./data/options.json",
-          "./data/screens.json",
-          "./data/themes.json"
+          "../data/options.json",
+          "../data/screens.json",
+          "../data/themes.json"
         ]
       }
     },
@@ -22,9 +22,9 @@
       "config": {
         "maxLambdaSize": "36mb",
         "includeFiles": [
-          "./image/patterns/**",
-          "./image/illustrations/**",
-          "./data/**"
+          "../../image/patterns/**",
+          "../../image/illustrations/**",
+          "../../data/**"
         ]
       }
     },

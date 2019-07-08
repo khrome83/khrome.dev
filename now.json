@@ -4,6 +4,7 @@
   "alias": ["khrome.dev"],
   "regions": ["all"],
   "builds": [
+    { "src": "data/**", "use": "@now/static" },
     { "src": "./image-www/package.json", "use": "@now/static-build" },
     { "src": "./image/package.json", "use": "@now/static-build" },
     {

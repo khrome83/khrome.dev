@@ -8,8 +8,9 @@
   "description": "Generate an open graph image for twitter/facebook/etc",
   "main": "dist/card.js",
   "scripts": {
-    "build": "node ../data/generateOptions.js && tsc",
-    "now-build": "node ../data/generateOptions.js && tsc",
+    "generate": "node ../data/generateOptions.js",
+    "build": "tsc",
+    "now-build": "tsc",
     "watch": "tsc --watch"
   },
   "license": "MIT",

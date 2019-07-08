@@ -8,10 +8,11 @@
   "description": "Generate an open graph image for twitter/facebook/etc",
   "main": "dist/card.js",
   "scripts": {
-    "build": "node ../data/generateOptions.js && parcel build index.html",
-    "develop": "node ../data/generateOptions.js && parcel index.html",
-    "now-build": "node ../data/generateOptions.js && parcel build index.html",
-    "now-dev": "node ../data/generateOptions.js && parcel index.html --port $PORT"
+    "generate": "node ../data/generateOptions.js",
+    "build": " parcel build index.html",
+    "develop": "parcel index.html",
+    "now-build": "parcel build index.html",
+    "now-dev": "parcel index.html --port $PORT"
   },
   "license": "MIT",
   "devDependencies": {

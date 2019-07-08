@@ -66,8 +66,8 @@ typings/
 .DS_Store
 
 # Generated Files
-src/.temp
+.temp
 static/rss.xml
 static/search.json
-dist
+dist/
 

@@ -39,7 +39,7 @@ export function getEncodedIllustration(name: string, theme: string) {
   const themes = getThemes();
 
   try {
-    const file = readFileSync(`${__dirname}/Illustrations/${name}.svg`).toString();
+    const file = readFileSync(`${__dirname}/illustrations/${name}.svg`).toString();
     let color = '#e49c56';
     if (themes[theme]) {
       color = themes[theme].undraw;

@@ -3,7 +3,7 @@ title: Custom 404 Pages on Zeit Now v2 Platform
 date: 2019-05-07
 published: true
 description: Zeit has finally updated the Now v2 platform to allow custom 404 pages. Find out what makes a good 404 page and how to set it up.
-cover_image: https://thepracticaldev.s3.amazonaws.com/i/s5za68j8rh6rwy2iompd.png
+cover_image: https://khromedev.khrome83.now.sh/image/Custom%20**404**%20Pages%20on%20Zeit%20Now%20v2%20Platform.png?theme=dark-mode&md=1&pattern=hexagons&screen=cover-image&undraw=page-not-found
 tags: ["404", "zeit", "now", "serverless"]
 series: false
 canonical_url: false

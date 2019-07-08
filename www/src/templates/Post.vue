@@ -71,7 +71,7 @@ export default {
         { name: "twitter:site", content: "@KhromeDotDev" },
         { name: "twitter:title", content: this.$page.post.title },
         { name: "twitter:description", content: this.$page.post.description },
-        { name: "twitter:image", content: this.$page.post.cover_image }
+        { name: "twitter:image", content: this.$page.post.cover_image.replace("screen=cover-image", "screen=social") }
       ]
     };
   }

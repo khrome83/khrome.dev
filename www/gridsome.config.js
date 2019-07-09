@@ -37,6 +37,7 @@ module.exports = {
         },
         remark: {
           plugins: [
+            ["gridsome-plugin-remark-codesandbox"],
             [
               "gridsome-plugin-remark-shiki",
               { theme: "Material-Theme-Palenight", skipInline: true }
@@ -45,6 +46,7 @@ module.exports = {
         }
       }
     },
+
     // TODO - Fix (URL)
     {
       use: "gridsome-plugin-rss",

@@ -1,5 +1,5 @@
 ---
-title: HTML Elements with Flex-Box Quirks
+title: HTML Elements with Flex-box Quirks
 published: false
 date: 2019-07-08
 description: Flex-box is almost 10 years old, but some quirks still exist. Here are several elements to avoid using with flex-box.

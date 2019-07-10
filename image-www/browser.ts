@@ -1,7 +1,4 @@
-
-import themes from '../data/themes.json';
 import options from '../data/options.json';
-import screens from '../data/screens.json';
 
 const { H, R, copee } = (window as any);
 let timeout = -1;
@@ -78,6 +75,24 @@ const TextInput = ({ value, oninput }: TextInputProps) => {
     );
 }
 
+interface TextAreaProps {
+    value: string;
+    oninput: (val: string) => void;
+}
+
+const TextArea = ({ value, oninput }: TextAreaProps) => {
+    return H('div',
+        { className: 'input-outer-wrapper' },
+        H('div',
+            { className: 'input-inner-wrapper' },
+            H('textarea',
+                { type: 'text', oninput: (e: any) => oninput(e.target.value) },
+                value
+            )
+        )
+    );
+}
+
 interface ButtonProps {
     label: string;
     onclick: () => void;
@@ -129,11 +144,6 @@ const fileTypeOptions: DropdownOption[] = [
     { text: 'JPEG', value: 'jpeg' },
 ];
 
-const markdownOptions: DropdownOption[] = [
-    { text: 'Plain Text', value: '0' },
-    { text: 'Markdown', value: '1' },
-];
-
 const undrawOptions: DropdownOption[] = [];
 options.illustrations.forEach((value: string) => {
     undrawOptions.push({ text: value, value });
@@ -144,14 +154,16 @@ options.patterns.forEach((value: string) => {
     patternOptions.push({ text: value, value });
 });
 
+
+
 const themeOptions: DropdownOption[] = [];
-Object.keys(themes).forEach((value) => {
+options.themes.forEach((value: string) => {
     themeOptions.push({ text: value, value });
 });
 
-const screenOptions: DropdownOption[] = [];
-Object.keys(screens).forEach((value) => {
-    screenOptions.push({ text: value, value });
+const stylesOptions: DropdownOption[] = [];
+options.styles.forEach((value: string) => {
+    stylesOptions.push({ text: value, value });
 });
 
 interface AppState extends ParsedRequest {
@@ -184,18 +196,15 @@ const App = (_: any, state: AppState, setState: SetState) => {
         pattern = 'bubbles',
         screen = 'social',
         undraw = 'code-review',
-        md = true,
         text = '**Hello** World',
         showToast = false,
         messageToast = '',
         loading = true,
         overrideUrl = null,
     } = state;
-    const mdValue = md ? '1' : '0';
     const url = new URL(window.location.origin);
     url.pathname = `image/${encodeURIComponent(text)}.${fileType}`;
     url.searchParams.append('theme', theme);
-    url.searchParams.append('md', mdValue);
     url.searchParams.append('pattern', pattern);
     url.searchParams.append('screen', screen);
     url.searchParams.append('undraw', undraw);
@@ -234,7 +243,7 @@ const App = (_: any, state: AppState, setState: SetState) => {
                 H(Field, {
                     label: 'Screen',
                     input: H(Dropdown, {
-                        options: screenOptions,
+                        options: stylesOptions,
                         value: screen,
                         onchange: (val: string) => setState({ screen: val })
 
@@ -249,16 +258,17 @@ const App = (_: any, state: AppState, setState: SetState) => {
                     })
                 }),
                 H(Field, {
-                    label: 'Text Type',
-                    input: H(Dropdown, {
-                        options: markdownOptions,
-                        value: mdValue,
-                        onchange: (val: string) => setState({ md: val === '1' })
+                    label: 'Text Input',
+                    input: H(TextInput, {
+                        value: text,
+                        oninput: (val: string) => {
+                            setState({ text: val, overrideUrl: url });
+                        }
                     })
                 }),
                 H(Field, {
                     label: 'Text Input',
-                    input: H(TextInput, {
+                    input: H(TextArea, {
                         value: text,
                         oninput: (val: string) => {
                             setState({ text: val, overrideUrl: url });

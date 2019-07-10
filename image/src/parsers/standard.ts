@@ -5,7 +5,7 @@ import { getScreens } from './../getData';
 export function parseRequest(req: IncomingMessage) {
     console.log('HTTP ' + req.url);
     const { pathname = '/', query = {} } = parse(req.url || '', true);
-    const { theme, md, pattern, undraw, screen } = query;
+    const { theme, pattern, undraw, screen } = query;
     if (Array.isArray(screen)) {
         throw new Error('Expected a single pattern');
     }
@@ -44,10 +44,10 @@ export function parseRequest(req: IncomingMessage) {
     const parsedRequest: ParsedRequest = {
         fileType: extension === 'jpeg' ? extension : 'png',
         text: decodeURIComponent(text),
-        md: md === '1' || md === 'true',
         theme: theme || 'royal-blue',
         undraw: undraw || 'code-review',
         pattern: pattern || 'bubbles',
+        style: screen || 'social',
         screen: selectedScreen,
     };
 

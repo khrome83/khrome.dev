@@ -8,11 +8,7 @@
       "src": "./image-www/package.json",
       "use": "@now/static-build",
       "config": {
-        "includeFiles": [
-          "data/options.json",
-          "data/screens.json",
-          "data/themes.json"
-        ]
+        "includeFiles": ["data/options.json", "data/screens.json"]
       }
     },
     { "src": "./image/package.json", "use": "@now/static-build" },
@@ -24,6 +20,8 @@
         "includeFiles": [
           "image/src/patterns/**",
           "image/src/illustrations/**",
+          "image/src/styles/**",
+          "image/src/themes/**",
           "data/**"
         ]
       }

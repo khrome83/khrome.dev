@@ -16,10 +16,9 @@
   "license": "MIT",
   "dependencies": {
     "chrome-aws-lambda": "1.11.1",
-    "hex-rgb": "4.1.0",
     "marked": "0.7.0",
-    "twemoji": "11.3.0",
-    "puppeteer-core": "1.11.0"
+    "puppeteer-core": "1.11.0",
+    "twemoji": "11.3.0"
   },
   "devDependencies": {
     "@types/marked": "0.6.1",

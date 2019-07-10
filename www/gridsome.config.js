@@ -85,6 +85,10 @@ module.exports = {
           "/*": {
             changefreq: "monthly",
             priority: 1.0
+          },
+          "/": {
+            changefreq: "monthly",
+            priority: 0.5
           }
         }
       }

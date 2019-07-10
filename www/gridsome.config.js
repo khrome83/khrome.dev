@@ -46,8 +46,6 @@ module.exports = {
         }
       }
     },
-
-    // TODO - Fix (URL)
     {
       use: "gridsome-plugin-rss",
       options: {
@@ -73,7 +71,18 @@ module.exports = {
     {
       use: "@gridsome/plugin-sitemap",
       options: {
-        cacheTime: 600000 // default
+        cacheTime: 600000,
+        exclude: ["/signed-up", "/thanks"],
+        config: {
+          "/blog": {
+            changefreq: "daily",
+            priority: 0.7
+          },
+          "/blog/*": {
+            changefreq: "monthly",
+            priority: 1.0
+          }
+        }
       }
     }
   ],

@@ -76,9 +76,13 @@ module.exports = {
         config: {
           "/blog": {
             changefreq: "daily",
-            priority: 0.7
+            priority: 0.9
           },
-          "/blog/*": {
+          "/tag/*": {
+            changefreq: "weekly",
+            priority: 0.8
+          },
+          "/*": {
             changefreq: "monthly",
             priority: 1.0
           }

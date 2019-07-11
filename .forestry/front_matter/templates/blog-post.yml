@@ -28,4 +28,5 @@ fields:
   name: tags
   label: Tags
 pages:
+- www/posts/testing-2.md
 - www/posts/testing.md

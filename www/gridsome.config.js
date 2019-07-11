@@ -26,7 +26,7 @@ module.exports = {
       use: "@gridsome/source-filesystem",
       options: {
         typeName: "Post",
-        path: "blog/**/*.md",
+        path: "posts/**/*.md",
         route: "/:slug",
         refs: {
           tags: {
@@ -74,7 +74,7 @@ module.exports = {
         cacheTime: 600000,
         exclude: ["/signed-up", "/thanks"],
         config: {
-          "/blog": {
+          "/posts": {
             changefreq: "daily",
             priority: 0.9
           },

@@ -11,7 +11,7 @@ Testing why this is failing?
 
 I do not know. Hopefully this will fix it.
 
-![Test Image](assets/Forestry Logo.png "Testing")
+![Test Image](uploads/Forestry Logo.png "Testing")
 
 ## Things I want to go Right
 

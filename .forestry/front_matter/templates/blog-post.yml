@@ -28,4 +28,5 @@ fields:
   name: tags
   label: Tags
 pages:
+- www/posts/verifying-firebase-domain.md
 - www/posts/the-rise-of-privacy-focused-analytics.md

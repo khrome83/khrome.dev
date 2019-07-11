@@ -27,7 +27,6 @@
         "includeFiles": ["data/options.json", "data/screens.json"]
       }
     },
-    { "src": "./image/package.json", "use": "@now/static-build" },
     {
       "src": "image/src/card.ts",
       "use": "@now/node",

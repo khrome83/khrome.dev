@@ -5,15 +5,8 @@ admin_path: admin
 webhook_url: 
 sections:
 - type: directory
-  path: www/drafts
-  label: Drafts
-  create: all
-  match: "**/*"
-  templates:
-  - blog-post
-- type: directory
   path: www/blog
-  label: Blog
+  label: Posts
   create: all
   match: "**/*"
   exclude: images/*

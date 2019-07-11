@@ -20,9 +20,3 @@ fields:
 - type: list
   name: tags
   label: tags
-- type: boolean
-  name: series
-  label: series
-- type: boolean
-  name: canonical_url
-  label: canonical_url

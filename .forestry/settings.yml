@@ -12,7 +12,7 @@ sections:
   exclude: images/*
   templates:
   - blog-post
-upload_dir: www/uploads
+upload_dir: assets
 public_path: "/assets"
 front_matter_path: ''
 use_front_matter_path: false

@@ -12,6 +12,10 @@
       }
     },
     {
+      "src": "assets/**",
+      "use": "@now/static"
+    },
+    {
       "src": "./image-www/package.json",
       "use": "@now/static-build",
       "config": {
@@ -46,6 +50,7 @@
       "src": "/(style|browser).([^.]+)?.?(css|js|css).?(map)?",
       "dest": "/image-www/$1.$2.$3"
     },
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
     { "src": "/(.*)", "dest": "/www/$1" },
     { "handle": "filesystem" },
     { "src": "/.*", "status": 404, "dest": "/www/404" }

@@ -27,3 +27,5 @@ fields:
 - type: list
   name: tags
   label: Tags
+pages:
+- www/posts/the-rise-of-privacy-focused-analytics.md

@@ -5,6 +5,13 @@
   "regions": ["all"],
   "builds": [
     {
+      "src": "admin/**",
+      "use": "@now/static",
+      "config": {
+        "includeFiles": [".forestry/**"]
+      }
+    },
+    {
       "src": "./image-www/package.json",
       "use": "@now/static-build",
       "config": {

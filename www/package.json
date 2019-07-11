@@ -42,7 +42,7 @@
     "gridsome-plugin-remark-codesandbox": "0.4.2",
     "gridsome-plugin-remark-shiki": "0.3.0",
     "gridsome-plugin-rss": "1.1.0",
-    "gridsome-plugin-simple-analytics": "1.1.0",
+    "gridsome-plugin-simple-analytics": "1.0.3",
     "vscode-textmate": "4.0.1",
     "vue-fuse": "2.1.0",
     "vue-scrollto": "2.15.0"

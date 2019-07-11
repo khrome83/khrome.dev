@@ -45,6 +45,7 @@
   ],
   "routes": [
     { "src": "/admin/(.*)", "dest": "/admin/$1" },
+    { "src": "/admin", "dest": "/admin/" },
     { "src": "/uploads/(.*)", "dest": "/uploads/$1" },
     { "src": "/image", "dest": "/image-www/index.html" },
     {

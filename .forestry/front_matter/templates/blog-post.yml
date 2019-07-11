@@ -26,3 +26,5 @@ fields:
 - type: list
   name: tags
   label: Tags
+pages:
+- www/posts/testing.md

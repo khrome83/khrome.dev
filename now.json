@@ -5,14 +5,14 @@
   "regions": ["all"],
   "builds": [
     {
-      "src": "uploads/**",
+      "src": "admin/**",
       "use": "@now/static",
       "config": {
         "includeFiles": [".forestry/**"]
       }
     },
     {
-      "src": "assets/**",
+      "src": "uploads/**",
       "use": "@now/static"
     },
     {

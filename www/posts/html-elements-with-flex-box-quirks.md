@@ -1,6 +1,6 @@
 ---
 title: HTML Elements with Flex-box Quirks
-published: false
+published: true
 date: 2019-07-08
 description: Flex-box is almost 10 years old, but some quirks still exist. Here are several elements to avoid using with flex-box.
 cover_image: https://khrome.dev/image/**HTML**%20Elements%20with%20Flex-box%20**Quirks**%20%F0%9F%93%A6%F0%9F%93%A6%F0%9F%93%A6.png?theme=royal-blue&md=1&pattern=squares&screen=cover-image&undraw=code-typing

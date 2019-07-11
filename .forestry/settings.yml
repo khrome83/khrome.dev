@@ -24,7 +24,7 @@ build:
   preview_output_directory: www/.dist
   output_directory: ".vuepress/dist"
   instant_preview_command: cd www & gridsome develop -p 8080 -h 0.0.0.0
-  install_dependencies_command: ls
+  install_dependencies_command: npm --prefix www install
   preview_docker_image: node:10
   mount_path: "/srv"
   working_dir: "/srv"

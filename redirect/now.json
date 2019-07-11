@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "alias": ["www.khrome.dev"],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "headers": { "Location": "https://khrome.dev/$1" }
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 ---
 title: Testing
 published: false
-date: 2019-07-16T05:00:00.000+00:00
+date: 2019-07-16
 description: Test
 cover_image: https://khromedev.khrome83.now.sh/image/**Hello**%20World.png?theme=royal-blue&pattern=bubbles&screen=cover-image&undraw=version-control
 tags: []

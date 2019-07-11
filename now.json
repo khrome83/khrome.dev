@@ -50,6 +50,7 @@
       "src": "/(style|browser).([^.]+)?.?(css|js|css).?(map)?",
       "dest": "/image-www/$1.$2.$3"
     },
+    { "src": "/admin/(.*)", "dest": "/admin/$1" },
     { "src": "/uploads/(.*)", "dest": "/uploads/$1" },
     { "src": "/(.*)", "dest": "/www/$1" },
     { "handle": "filesystem" },

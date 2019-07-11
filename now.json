@@ -3,6 +3,11 @@
   "name": "khrome.dev",
   "alias": ["khrome.dev"],
   "regions": ["all"],
+  "build": {
+    "env": {
+      "NOW_ENV": "production"
+    }
+  },
   "builds": [
     {
       "src": "admin/**",

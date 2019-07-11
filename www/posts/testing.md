@@ -11,7 +11,9 @@ Testing why this is failing?
 
 I do not know. Hopefully this will fix it.
 
-![Test Image](uploads/Forestry Logo.png "Testing")
+![](uploads/Forestry%20Logo.png)
+
+![](https://thepracticaldev.s3.amazonaws.com/i/je4wl8m2fjnby161ql40.gif)
 
 ## Things I want to go Right
 

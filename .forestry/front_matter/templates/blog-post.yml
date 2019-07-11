@@ -2,27 +2,27 @@
 label: Post
 hide_body: false
 fields:
-  - type: text
-    name: title
-    label: Title
-  - type: boolean
-    name: published
-    label: published
-  - type: datetime
-    name: date
-    label: Date
-    description: The creation date for this page
-    hidden: false
-    config:
-      date_format: "YYYY-MM-DD"
-      time_format:
-      display_utc: false
-  - type: textarea
-    name: description
-    label: Description
-  - type: textarea
-    name: cover_image
-    label: Dev.To Image
-  - type: list
-    name: tags
-    label: Tags
+- type: text
+  name: title
+  label: Title
+- type: boolean
+  name: published
+  label: published
+- type: datetime
+  name: date
+  label: Date
+  description: The creation date for this page
+  hidden: false
+  config:
+    date_format: YYYY-MM-DD
+    time_format: 
+    display_utc: false
+- type: textarea
+  name: description
+  label: Description
+- type: textarea
+  name: cover_image
+  label: Dev.To Image
+- type: list
+  name: tags
+  label: Tags

@@ -20,5 +20,3 @@ fields:
 - type: list
   name: tags
   label: tags
-pages:
-- www/blog/testing-if-draft-works.md

@@ -70,5 +70,5 @@ typings/
 static/rss.xml
 static/search.json
 dist/
-rss.xml
-search.json
+www/static/rss.xml
+www/static/search.json

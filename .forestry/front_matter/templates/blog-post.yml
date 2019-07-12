@@ -28,6 +28,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- www/posts/fix-vuex-module-errors-with-nuxt-and-storybook.md
 - www/posts/build-components-for-different-backgrounds.md
 - www/posts/your-not-using-enough-article-tags.md
 - www/posts/verifying-firebase-domain.md

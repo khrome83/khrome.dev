@@ -28,6 +28,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- www/posts/setting-up-maker-log-and-github-integration.md
 - www/posts/helpful-tips-for-nuxt-and-typescript.md
 - www/posts/fix-vuex-module-errors-with-nuxt-and-storybook.md
 - www/posts/build-components-for-different-backgrounds.md

@@ -67,8 +67,6 @@ typings/
 
 # Generated Files
 .temp
-static/rss.xml
-static/search.json
+www/static/rss.xml
+www/static/search.json
 dist/
-rss.xml
-search.json

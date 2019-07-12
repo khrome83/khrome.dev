@@ -27,3 +27,7 @@ fields:
 - type: list
   name: tags
   label: Tags
+pages:
+- www/posts/your-not-using-enough-article-tags.md
+- www/posts/verifying-firebase-domain.md
+- www/posts/the-rise-of-privacy-focused-analytics.md

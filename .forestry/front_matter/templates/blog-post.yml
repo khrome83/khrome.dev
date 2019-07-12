@@ -28,6 +28,7 @@ fields:
   name: tags
   label: Tags
 pages:
+- www/posts/tracking-github-with-maker-log-for-motivation.md
 - www/posts/show-multiple-background-with-custom-decorators-in-storybook.md
 - www/posts/setting-up-maker-log-and-github-integration.md
 - www/posts/helpful-tips-for-nuxt-and-typescript.md

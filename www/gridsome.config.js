@@ -60,7 +60,9 @@ module.exports = {
           description: node.description,
           url: "https://khrome.dev" + node.path,
           author: "Zane C. Milakovic",
-          date: node.date
+          date: node.date,
+          tags: node.tags,
+          content: node.content
         }),
         output: {
           dir: "./static",

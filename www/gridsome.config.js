@@ -52,6 +52,9 @@ module.exports = {
         contentTypeName: "Post",
         feedOptions: {
           title: "Khrome.dev",
+          description:
+            "All about frontend web development and serverless technologies",
+          language: "en",
           feed_url: "https://khrome.dev/rss.xml",
           site_url: "https://khrome.dev/"
         },
@@ -61,8 +64,10 @@ module.exports = {
           url: "https://khrome.dev" + node.path,
           author: "Zane C. Milakovic",
           date: node.date,
-          tags: node.tags,
-          content: node.content
+          custom_elements: [
+            { published: node.published },
+            { content: node.content }
+          ]
         }),
         output: {
           dir: "./static",

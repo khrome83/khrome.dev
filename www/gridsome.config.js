@@ -66,7 +66,13 @@ module.exports = {
           date: node.date,
           custom_elements: [
             { published: node.published },
-            { content: node.content }
+            {
+              content: `${
+                node.content
+              } \r\n *Originally published on [Khrome.dev](https://khrome.dev${
+                node.path
+              })*`
+            }
           ]
         }),
         output: {

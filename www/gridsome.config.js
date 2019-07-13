@@ -19,7 +19,7 @@ module.exports = {
     {
       use: "gridsome-plugin-simple-analytics",
       options: {
-        domain: "api.adriaan.io"
+        domain: "sa.khrome.dev"
       }
     },
     {

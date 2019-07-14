@@ -24,7 +24,7 @@ fields:
 - name: cover_image
   type: text
   config:
-    required: true
+    required: false
   label: Dev.to Image
   description: Dev.to Cover Image
 - type: list

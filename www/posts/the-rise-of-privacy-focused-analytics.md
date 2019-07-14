@@ -10,15 +10,15 @@ tags:
 - privacy
 
 ---
-Privacy is growing to be a bigger concern in users mind. Every week it seems that a new scandal is surfacing over at Facebook that is making headlines. Or we have a smart gadget that is revealed to have a hidden microphone. Zoom's teleconference software was recently revealed to secretly install a hidden unsecured server without a users consent. Frequently, the news headlines are teaching us that we can not trust the big tech companies to handle our information correctly.
+Privacy is growing to be a bigger concern in your users minds. Every week it seems that a new scandal is surfacing over at Facebook that is making headlines. Or we have a smart gadget that is revealed to have a hidden microphone. Zoom's teleconference software was recently revealed to secretly be installing a hidden unsecured server without a users consent. Frequently, the news headlines are teaching us that we can not trust the tech companies to handle our information correctly. Why should your users trust you?
 
-Changes are happening. The EU signed the GDPR in 2016, the biggest data privacy regulation in over 20 years. But it's not enough. Yes, Facebook announced on the switch to be a privacy focused company, but they rely on ad revenue.
+Changes are happening in the public eye. The EU signed the GDPR in 2016, the biggest data privacy regulation in over 20 years. Companies recently facing scrutiny are scrambling to try change their public image. Yes, Facebook announced on the switch to be a privacy focused company, but they rely on ad revenue. How can they be?
 
-How can we trust these mega tech corporations to power our analytics and give us actionable insights without exploiting the data? There is a reason Google Analytics is free. The data they collect is the payment, and then some. It's time we are responsible to our users.
+How can we trust these mega tech corporations to power our analytics and give us actionable insights without exploiting the data? There is a reason Google Analytics is free. The data they collect is the payment, and then some. It's time you and I are responsible to our users. After all, we both want to make products that are trusted, right?
 
 ## The Data We Need
 
-The point of website analytics is to delve information that is meaningful to understand about our users. The information we need boils down to a few themes. 
+The point of website analytics is to delve information that is meaningful to us about our users. The information we need boils down to a few themes. 
 
 1. We need to understand growth. 
 2. We need to understand some basics about our audience. 
@@ -34,7 +34,9 @@ As the internet grew and sites became more global, we started asking about our u
 
 ### Technology
 
-As web technologies exploded, devices changed, and access expanded, we needed to understand how to support our audience. What browsers are they using? What devices did they connect from? What was the screen size of those devices?
+Finally, as web technologies exploded, devices changed, and access expanded, we needed to understand how to support our audience. What browsers are they using? What devices did they connect from? What was the screen size of those devices?
+
+These basic data concepts can power a wave of changes to our business. We might change where to advertise, because of the sudden success of traffic from a specific source. We may focus on our mobile experience, because the user base shifted over the last few months.
 
 ### The Cost of Privacy
 
@@ -46,11 +48,17 @@ Privacy focused analytics also typically have a slightly higher cost. Either cha
 
 ## The New Breed of Analytics
 
-1. 
+Privacy focused analytics are not new. The early days of the web were all self hosted analytics that captured little information. Yet we use to drown ourselves in the charts month to month charting success. 
+
+Google Analytics and others of it's ilk were sparks that lit the fire. It moved analytics off our systems and into the cloud. It expanded the capabilities by being backed by one of the leading web technology companies. And maybe in the beginning it was ok. Remember, Google motto use to be "Don't be evil." It's hard to argue that is still the case.
+
+Luckily in the last few years, several companies have released products give us some many of the same capabilities but focused around privacy.
 
 ### Simple Analytics
 
 ### Fathom Analytics
+
+The brain child of Jack Ellis and Paul Jarvis, two independent developers. They 
 
 ### Netlify Analytics
 

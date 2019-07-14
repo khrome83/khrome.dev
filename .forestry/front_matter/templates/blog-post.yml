@@ -18,6 +18,8 @@ fields:
     time_format: 
     display_utc: false
     export_format: YYYY-MM-DD
+    required: true
+  default: now
 - type: textarea
   name: description
   label: Description
@@ -31,11 +33,11 @@ fields:
   name: tags
   label: Tags
 pages:
+- www/posts/show-multiple-background-with-custom-decorators-in-storybook.md
+- www/posts/helpful-tips-for-nuxt-and-typescript.md
 - www/posts/the-rise-of-privacy-focused-analytics.md
 - www/posts/tracking-github-with-maker-log-for-motivation.md
-- www/posts/show-multiple-background-with-custom-decorators-in-storybook.md
 - www/posts/setting-up-maker-log-and-github-integration.md
-- www/posts/helpful-tips-for-nuxt-and-typescript.md
 - www/posts/fix-vuex-module-errors-with-nuxt-and-storybook.md
 - www/posts/build-components-for-different-backgrounds.md
 - www/posts/your-not-using-enough-article-tags.md

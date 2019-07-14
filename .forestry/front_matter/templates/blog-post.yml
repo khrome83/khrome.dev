@@ -18,12 +18,15 @@ fields:
     time_format: 
     display_utc: false
     export_format: YYYY-MM-DD
+- name: cover_image
+  type: file
+  config:
+    maxSize: 250
+  label: Dev.to Image
+  description: Image for Dev.to Post
 - type: textarea
   name: description
   label: Description
-- type: textarea
-  name: cover_image
-  label: Dev.To Image
 - type: list
   name: tags
   label: Tags

@@ -18,15 +18,15 @@ How can we trust these mega tech corporations to power our analytics and give us
 
 ## The Data We Need
 
-The point of website analytics is to delve information that is meaningful to us about our users. The information we need boils down to a few themes. 
+The point of website analytics is to delve information that is meaningful to us about our users. The information we need boils down to a few themes.
 
-1. We need to understand growth. 
-2. We need to understand some basics about our audience. 
+1. We need to understand growth.
+2. We need to understand some basics about our audience.
 3. We need to understand what technology we need to support.
 
 ### Growth
 
-This is pretty basic concept that has been a staple since the early days of the web. Are we gaining or loosing visitors? Where are those visitors going on our site? How are they getting to our site? 
+This is pretty basic concept that has been a staple since the early days of the web. Are we gaining or loosing visitors? Where are those visitors going on our site? How are they getting to our site?
 
 ### Demographics
 
@@ -40,15 +40,19 @@ These basic data concepts can power a wave of changes to our business. We might 
 
 ### The Cost of Privacy
 
-Privacy focused solutions tend to capture a lot less data. Does this make them less beneficial? Maybe. But it depends on your specific needs. Analytics suites tend to have a lot of tools that go underused and don't serve many of the users. But you pay for them with the data you capture about your users. 
+Privacy focused solutions tend to capture a lot less data. Does this make them less beneficial? Maybe. But it depends on your specific needs. Analytics suites tend to have a lot of tools that go underused and don't serve many of the sites using them. But your paying for this extra features with the data you capture about your users. 
 
-Most of this information you need can be seen in privacy focused tools. The difference? You give up some demographic data around age or gender, viewing habits, and other invasive data points. 
+Most of the information most sites need can be found in privacy focused tools. So what is the difference? What are you giving up? The answer is it depends.
 
-Privacy focused analytics also typically have a slightly higher cost. Either charging a monthly fee, unlike the free Google Analytics. Or requiring self hosting, infrastructure, and technical setup. You will have to judge for yourself if you can live without the features, or do the setup. But the result is you will be no longer tracking unneeded data about your users.
+A privacy focused toolset means to understand less around your users in invasive and intimate ways. Demographic data around age or gender for example is provided by Google Analytics. Your site visitors viewing habits and interests are also identified. Many if these are invasive data points. Yes, they may help you target an ad campaign. After all ads are one of Google primary sources of revenue. That being said, what did we do before Google Analytics? We surveyed our audience where the user could self identify, and opt in themselves, and it was responsible and transparent.
+
+Privacy focused analytics also typically have a slightly higher cost. Either monetary like charging a monthly fee, or requiring additional overhead like self hosting, infrastructure, and technical setup.
+
+You will have to judge for yourself if you can live without the features, or do the setup. But the result is you will be no longer tracking unneeded data about your users.
 
 ## The New Breed of Analytics
 
-Privacy focused analytics are not new. The early days of the web were all self hosted analytics that captured little information. Yet we use to drown ourselves in the charts month to month charting success. 
+Privacy focused analytics are not new. The early days of the web were all self hosted analytics that captured little information. Yet we use to drown ourselves in the charts month to month charting success.
 
 Google Analytics and others of it's ilk were sparks that lit the fire. It moved analytics off our systems and into the cloud. It expanded the capabilities by being backed by one of the leading web technology companies. And maybe in the beginning it was ok. Remember, Google motto use to be "Don't be evil." It's hard to argue that is still the case.
 
@@ -58,7 +62,7 @@ Luckily in the last few years, several companies have released products give us 
 
 ### Fathom Analytics
 
-The brain child of Jack Ellis and Paul Jarvis, two independent developers. They 
+The brain child of Jack Ellis and Paul Jarvis, two independent developers. They
 
 ### Netlify Analytics
 

@@ -1,9 +1,8 @@
 ---
 title: Build Components for Different Backgrounds
 published: false
-date: 
-description: ''
-cover_image: ''
+date: 11-02-1983
+description: ""
+cover_image: ""
 tags: []
-
 ---

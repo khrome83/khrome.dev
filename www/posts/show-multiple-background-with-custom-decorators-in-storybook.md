@@ -10,6 +10,9 @@ tags:
 - storybook
 
 ---
+
+![](/uploads/badge-on-single-background.png)
+
 ```vue
 <template>
   <span class="badge" :class="{ secondary, small, large }">
@@ -94,7 +97,6 @@ export default class BaseBadge extends Vue {
 </style>
 ```
 
-
 ```js
 import { storiesOf, addDecorator } from "@storybook/vue";
 import { radios, text, boolean } from "@storybook/addon-knobs";
@@ -145,12 +147,7 @@ stories.add(
       `
     } as object)
 );
-
-
 ```
-
-
-
 
 ```js
 const sectionStates = () => ({

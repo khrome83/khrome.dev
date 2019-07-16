@@ -10,7 +10,6 @@ tags:
 - storybook
 
 ---
-
 ![](/uploads/badge-on-single-background.png)
 
 ```vue
@@ -192,3 +191,11 @@ const sectionStates = () => ({
 
 export { sectionStates as default };
 ```
+
+g
+
+![](/uploads/badge-on-multiple-backgrounds.png)
+
+d
+
+![](/uploads/badge-with-a11y.png)

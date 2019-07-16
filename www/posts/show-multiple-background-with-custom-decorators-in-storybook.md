@@ -10,7 +10,11 @@ tags:
 - storybook
 
 ---
-intro
+Storybook has excellent Vue support. While it did not support Vue at launch, it now does. And it has become my goto technology while fleshing out base components. It is critical to my development process, and I think it should be critical to yours. 
+
+No longer do I need to stub out pages or hack together a test page. Instead I can focus on my design language. Each story is a base component, make it incredibly clear and easy the purpose. The ecosystem with Storybook also covers a lot of my concerns. I love the “knobs” plugin. It allows me to stress test each component by mixing settings. The a11y plugin gives me a high level view of the current state of the component to ensure everything passes. I use the breakpoint component to simulate devices. In short, I think about these things much earlier in the process, and my work is better for it.
+
+I did run into an issue. How to build for multiple themes at once? One of the most common use cases in my design work is use background colors to modify the pallet in the foreground.
 
 ![](/uploads/badge-on-single-background.png)
 

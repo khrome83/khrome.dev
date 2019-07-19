@@ -1,5 +1,5 @@
 ---
-title: Show Multiple Background with Custom Decorators in Storybook
+title: Custom Decorators with Storybook & Vue
 published: false
 date: 2019-07-18
 description: Using Storybook and Vue to build multiple components that are section

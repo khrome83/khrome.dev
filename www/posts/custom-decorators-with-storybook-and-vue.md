@@ -1,16 +1,17 @@
 ---
 title: Custom Decorators with Storybook & Vue
-published: false
+published: true
 date: 2019-07-18
-description: Using Storybook and Vue to build multiple components that are section
+description:
+  Using Storybook and Vue to build multiple components that are section
   aware. An easy way to support multiple themes.
 cover_image: https://khrome.dev/image/**Custom%20Decorators**%20with%20*Storybook*%20%26%20*Vue*.png?theme=dark-mode&pattern=polka-dots&screen=cover-image&undraw=programmer
 tags:
-- typescript
-- vue
-- storybook
-
+  - typescript
+  - vue
+  - storybook
 ---
+
 Storybook has excellent Vue support. While it did not support Vue at launch, it now does. So it has become my goto technology while fleshing out base components. It is critical to my development process, and I think it should be considered for your process as well.
 
 No longer do I need to stub out pages or hack together a test page. Instead, I can focus on my design language. Each story is a base component, making it incredibly clear and more comfortable to process. It has sped up my development in unexpected ways.
@@ -346,30 +347,30 @@ Finally, the `<story />` component within the template, tells Storybook where to
 const sectionStates = () => ({
   data: () => ({
     wrapper: {
-      margin: '0 2rem 2rem',
-      border: 'thin solid transparent',
-      boxShadow: 'rgba(0, 0, 0, 0.15) 0rem 0.125rem 0.3125rem 0rem',
-      borderRadius: '0.3125rem',
-      padding: '2rem',
+      margin: "0 2rem 2rem",
+      border: "thin solid transparent",
+      boxShadow: "rgba(0, 0, 0, 0.15) 0rem 0.125rem 0.3125rem 0rem",
+      borderRadius: "0.3125rem",
+      padding: "2rem"
     },
     light: {
-      backgroundColor: '#ffffff',
+      backgroundColor: "#ffffff"
     },
     grey: {
-      backgroundColor: '#fdfcfb',
-      boxShadow: 'rgba(0, 0, 0, 0.2) 0rem 0.125rem 0.3125rem 0rem',
+      backgroundColor: "#fdfcfb",
+      boxShadow: "rgba(0, 0, 0, 0.2) 0rem 0.125rem 0.3125rem 0rem"
     },
     dark: {
-      backgroundColor: '#010b19',
-      boxShadow: 'rgba(0, 0, 0, 0.5) 0rem 0.125rem 0.3125rem 0rem',
+      backgroundColor: "#010b19",
+      boxShadow: "rgba(0, 0, 0, 0.5) 0rem 0.125rem 0.3125rem 0rem"
     },
     heading: {
-      fontSize: '0.75rem',
-      margin: '0',
-      padding: '0.5rem 0 0.5rem 2rem',
-      color: '#737373',
-      textTransform: 'uppercase',
-    },
+      fontSize: "0.75rem",
+      margin: "0",
+      padding: "0.5rem 0 0.5rem 2rem",
+      color: "#737373",
+      textTransform: "uppercase"
+    }
   }),
   template: `
     <div>
@@ -380,7 +381,7 @@ const sectionStates = () => ({
       <div :style="heading">On Dark Background</div>
       <div class="__bg-dark" :style="[wrapper, dark]"><story/></div>
     </div>
-    `,
+    `
 });
 
 export { sectionStates as default };
@@ -402,7 +403,9 @@ import { storiesOf, addDecorator } from "@storybook/vue";
 Finally, we chain the `storesOf` method and call `addDecorator` method passing in `sectionStates`.
 
 ```ts
-const stories = storiesOf("Components/Base Badge", module).addDecorator(sectionStates);
+const stories = storiesOf("Components/Base Badge", module).addDecorator(
+  sectionStates
+);
 ```
 
 The output is three instances instead of one. Each instance has a different background color. Every child within each instance is respecting its parents' container. The outcome perfectly mimics the behavior of the `BaseSection.vue` component.
@@ -415,9 +418,10 @@ As a bonus, this allows us to validate the accessibility of each change. We see 
 
 ### Conclusion
 
-This pattern is beneficial in many situations - 
-* Building multiple themes like this example
-* Supporting shared components across multiple brands
-* Working with other types of external modifiers that work by CSS namespacing.
+This pattern is beneficial in many situations -
 
- In general, this is very easy to do, provided your comfortable with CSS in JS, and you follow the strict class naming structure.
+- Building multiple themes like this example
+- Supporting shared components across multiple brands
+- Working with other types of external modifiers that work by CSS namespacing.
+
+In general, this is very easy to do, provided your comfortable with CSS in JS, and you follow the strict class naming structure.

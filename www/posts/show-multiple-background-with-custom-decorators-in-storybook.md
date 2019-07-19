@@ -1,9 +1,10 @@
 ---
 title: Show Multiple Background with Custom Decorators in Storybook
 published: false
-date: 2019-07-15
-description: ''
-cover_image: ''
+date: 2019-07-18
+description: Using Storybook and Vue to build multiple components that are section
+  aware. An easy way to support multiple themes.
+cover_image: https://khrome.dev/image/**Custom%20Decorators**%20with%20*Storybook*%20%26%20*Vue*.png?theme=dark-mode&pattern=polka-dots&screen=cover-image&undraw=programmer
 tags:
 - typescript
 - vue

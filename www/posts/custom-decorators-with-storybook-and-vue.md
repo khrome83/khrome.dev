@@ -2,16 +2,15 @@
 title: Custom Decorators with Storybook & Vue
 published: true
 date: 2019-07-18
-description:
-  Using Storybook and Vue to build multiple components that are section
+description: Using Storybook and Vue to build multiple components that are section
   aware. An easy way to support multiple themes.
 cover_image: https://khrome.dev/image/**Custom%20Decorators**%20with%20*Storybook*%20%26%20*Vue*.png?theme=dark-mode&pattern=polka-dots&screen=cover-image&undraw=programmer
 tags:
-  - typescript
-  - vue
-  - storybook
----
+- typescript
+- vue
+- storybook
 
+---
 Storybook has excellent Vue support. While it did not support Vue at launch, it now does. So it has become my goto technology while fleshing out base components. It is critical to my development process, and I think it should be considered for your process as well.
 
 No longer do I need to stub out pages or hack together a test page. Instead, I can focus on my design language. Each story is a base component, making it incredibly clear and more comfortable to process. It has sped up my development in unexpected ways.
@@ -266,6 +265,7 @@ Then we want to extend the story definition object to include a props object tha
 
 Lastly, we want to modify the template to use the values from these knobs.
 
+```vue
             <base-badge v-bind="{
               secondary: theme === 'secondary',
               small: size === 'small',
@@ -273,6 +273,7 @@ Lastly, we want to modify the template to use the values from these knobs.
             }">
               {{text}}
             </base-badge>
+```
 
 Here is the whole story completed. While we have not solved for the multiple background colors, we have built the Vue component and the Storybook story for it.
 

@@ -67,9 +67,10 @@ module.exports = {
           custom_elements: [
             { published: node.published },
             {
-              content: `${
-                node.content
-              } \r\n *Originally published on [Khrome.dev](https://khrome.dev${
+              content: `${node.content.replace(
+                "![](/uploads",
+                "![](https://khrome.dev/uploads"
+              )} \r\n *Originally published on [Khrome.dev](https://khrome.dev${
                 node.path
               })*`
             }

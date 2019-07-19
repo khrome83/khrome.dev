@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "alias": ["www.khrome.dev"],
   "routes": [
     {
       "src": "/(.*)",

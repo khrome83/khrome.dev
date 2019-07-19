@@ -10,19 +10,19 @@ tags:
 - storybook
 
 ---
-Storybook has excellent Vue support. While it did not support Vue at launch, it now does. And it has become my goto technology while fleshing out base components. It is critical to my development process, and I think it should be considered for yours.
+Storybook has excellent Vue support. While it did not support Vue at launch, it now does. So it has become my goto technology while fleshing out base components. It is critical to my development process, and I think it should be considered for your process as well.
 
-No longer do I need to stub out pages or hack together a test page. Instead I can focus on my design language. Each story is a base component, making it incredibly clear and easier to process. It has sped up my development in unexpected ways.
+No longer do I need to stub out pages or hack together a test page. Instead, I can focus on my design language. Each story is a base component, making it incredibly clear and more comfortable to process. It has sped up my development in unexpected ways.
 
-The ecosystem within Storybook also covers a lot of my concerns. I love the “knobs” plugin. It allows me to stress test each component by mixing settings. The a11y plugin gives me a high level view of the current state of the component to ensure everything is acessible. I use the breakpoint component to simulate different viewports. These tools ensure that I think about these concerns much earlier in my process. And my work is better for it.
+The ecosystem within Storybook also covers many of my concerns. I love the "knobs" plugin. It allows me to stress test each component by mixing settings. The a11y plugin gives me a high-level view of the current state of the component to ensure that everything is accessible. To simulate different viewports, I use the breakpoint component. These tools ensure that I think about these concerns much earlier in my process. Also, my work is better for it.
 
 ## The Problem
 
-I did run into a small issue recently though. How to build for multiple themes at once? One of the patterns I rely on is the use of background colors to modify the pallet in the foreground. I like the concept of breaking up the page. And as content shifts in my marketing pages, I want the flexibility to change the pallet on the fly. Here is an example of the same signup banner across three different pallets.
+I did run into a small issue recently, in any case. How to build for multiple themes at once? One of the patterns I rely on is the use of background colors to modify the pallet in the foreground. I like the concept of breaking up the page. Moreover, as content shifts in my marketing pages, I want the flexibility to change the pallet on the fly. Here is an example of the same signup banner across three different pallets.
 
 ![](/uploads/multiple_themes.png)
 
-So I want to demonstrate with a simple `<base-badge>` component. This is a simple component that takes a label and shows it in a colored badge. It is great for notification counts, and tagging content. Here is a example of it in Storybook.
+So I want to demonstrate with a simple `<base-badge>` component. This component takes a label in its default slot and shows it in a colored badge. It is excellent for notification counts and tagging content. Here is an example of it in Storybook.
 
 ![](/uploads/badge-on-single-background.png)
 
@@ -30,7 +30,7 @@ So I want to demonstrate with a simple `<base-badge>` component. This is a simpl
 
 Here is the `BaseBadge.vue` file.
 
-> _Note_ - This uses TypeScript and `nuxt-property-decorator` which I am a huge fan of.
+> _Note_ - This uses TypeScript and `nuxt-property-decorator` of which I am a massive fan.
 
 ```vue
 <template>
@@ -116,7 +116,7 @@ export default class BaseBadge extends Vue {
 </style>
 ```
 
-For those new to Vue and TypeScript, I am going to quickly break this down.
+For those new to Vue and TypeScript, I am going to break this down quickly.
 
 ```vue
 <template>
@@ -126,7 +126,7 @@ For those new to Vue and TypeScript, I am going to quickly break this down.
 </template>
 ```
 
-The template section is fairly simple and standard Vue. We are creating a span that contains the text passed to the default slot. The interface accepts a size and a color pallet. The default is assumed to be normal size and primary color pallet.
+The template section is relatively standard and straightforward Vue. We are creating a span that contains the text passed to the default slot. The interface accepts a size and a color pallet. The default is assumed to be standard size and primary color pallet.
 
 ```vue
 <script lang="ts">
@@ -141,13 +141,11 @@ export default class BaseBadge extends Vue {
 </script>
 ```
 
-This is where the TypeScript syntax comes into play. Notice the `<script lang="ts">` where we tell Vue to process this as TypeScript.
+Notice the `<script lang=" ts">` where we tell Vue to process this as TypeScript.
 
 The `import` line is used to pull in our decorators and classes from [nuxt-property-decorator](https://github.com/nuxt-community/nuxt-property-decorator) which is a nice wrapper around four other modules. This just cleans up the interface instead of having to pull in [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator), [vue-class-component](https://github.com/vuejs/vue-class-component), [vuex-class](https://github.com/ktsn/vuex-class/), and [nuxt-class-component](https://github.com/nuxt-community/nuxt-class-component) separately.
 
-The `@Component({})` decorator defines the class as a component. The `@Prop(Boolean)` defines props for the Vue component, and sets up both TypeScript type checking, and Vue prop type checking. Hence why `Boolean`/`boolean` is repeated.
-
-I choose a very simple component for the purpose of this article. Notice that we do not have any state or logic to deal with.
+The `@Component({})` decorator defines the class as a component. The `@Prop(Boolean)` defines props for the Vue component. Notice that `Boolean`/`boolean` repeated during the prop declaration, this sets up both TypeScript type checking and Vue prop type checking. Notice that we do not have any state or logic to deal with inside the Vue component. I wanted to focus on the CSS instead.
 
 ### CSS Styling
 
@@ -172,27 +170,27 @@ I choose a very simple component for the purpose of this article. Notice that we
 </style>
 ```
 
-Looking at just a small subset of the CSS, you can see that we are modifying `.secondary` three times. The default pallet is considered the "Primary" theme and sets the background color. When the component is within a element with the `.__bg-grey` or `.__bg-dark` class applied, it gets modified.
+Looking at just a small subset of the CSS, you can see that we are modifying `.secondary` three times. The default pallet is considered the "Primary" theme and sets the background color. When the component is within an element with the `.__bg-grey` or `.__bg-dark` class applied, it gets modified.
 
 The structure I use for different sections within my site is to have a section define the background color. Then the contents within respond to that.
 
 ```vue
 <section class="__bg-dark">
-	<base-badge secondary/>
+    <base-badge secondary/>
 </section>
 ```
 
-This ensures that as the parent section changes it's pallet, all the children behave accordingly.
+The goal is to ensure that as the parent section changes the theme, all the children behave accordingly, modifying their color pallets accordingly.
 
 ## The Storybook Story
 
-The Storybook setup is fairly basic. It uses the standard patterns for using Vue within Storybook, as well as a few "Knobs".
+The Storybook setup is relatively basic. It uses the standard patterns for using Vue within Storybook, as well as a few "Knobs."
 
 ### Basic Storybook Story
 
-First we import `storiesOf` method from the `@storybook/vue` module. This allows us to create a story and define it in a namespace. We also import our `BaseBadge.vue` component.
+First, we import `storiesOf` method from the `@storybook/vue` module. The method allows us to create a story and define it in a namespace. We also import our `BaseBadge.vue` component.
 
-> Tip - I place all my base component within a folder called "Components". This makes it clear to others what components can be combined to create larger. Base Components typically have minimal to no state, and are the lowest level component in Vue.
+> Tip - I place all my base component within a folder called "Components." The purpose is to make it clear to others what components can be combined to create more significant sets of components. Base Components typically have minimal to no state and are the lowest level component in Vue.
 
 ```ts
 import { storiesOf } from "@storybook/vue";
@@ -201,9 +199,9 @@ import BaseBadge from "../components/BaseBadge.vue";
 const stories = storiesOf("Components/Base Badge", module);
 ```
 
-Next we are going to display the `BaseBadge` on the page. We add the story to Storybook using the `stories.add` method. I name the page for all root instances of my components "Default" unless I have different implementation setups.
+Next, we are going to display the `BaseBadge` on the page. We add the story to Storybook using the `stories.add` method. I name the page for all root instances of my components "Default" unless I have different implementation setups.
 
-The template is just a simple ES6 template string that exports the same contents you would have in a a Vue template.
+The template is just a simple ES6 template string that exports the same contents you would have in a Vue template.
 
 ```ts
 stories.add(
@@ -223,17 +221,17 @@ stories.add(
 
 ### Adding Knobs
 
-This is great so far, but we can't test any of the stress cases. We want to be able to change the text, modify the size and color pallet. First we want to import the interface types we need from `@storybook/addon-knobs`.
+We have a basic rendering, but we can't test any of the stress cases. We want to be able to change the text, modify the size and color pallet. First, we want to import the interface types we need from `@storybook/addon-knobs`.
 
 ```ts
 import { radios, text } from "@storybook/addon-knobs";
 ```
 
-Then we want to extend the story definition object to include a props object that tells Storybook what "knobs" to enable and the rules and labels for each knob. In this case we use `text` knob to define the content within the badge. The `radio` knob is used to select the theme and size of the badge.
+Then we want to extend the story definition object to include a props object that tells Storybook what "knobs" to enable and the rules and labels for each knob. In this case, we use `text` knob to define the content within the badge. The `radio` knob is used to select the theme and size of the badge.
 
 ```ts
     {
-	  components: { BaseBadge },
+      components: { BaseBadge },
       props: {
         text: {
           default: text("Text", "NEW")
@@ -274,7 +272,7 @@ Lastly, we want to modify the template to use the values from these knobs.
               {{text}}
             </base-badge>
 
-Here is the whole story completed. While we have not solved for the multiple background colors, we have build the Vue component and the Storybook story for it.
+Here is the whole story completed. While we have not solved for the multiple background colors, we have built the Vue component and the Storybook story for it.
 
 ```ts
 import { storiesOf } from "@storybook/vue";
@@ -333,15 +331,15 @@ So far we have built this. The thing I showed you in the beginning.
 
 ### Building our Decorator
 
-Storybook uses decorators to extend the functionality of a story. This looks a little different than the ES7 decorators we see in typescript, but the concept is similar. We wan to extend the functionality of the core object, and introduce additional behavior.
+Storybook uses decorators to extend the functionality of a story. These decorators look a little different than the ES7 decorators we see in typescript, but the concept is similar. We want to extend the functionality of the core object and introduce new behavior.
 
-Building a decorator in Storybook is fairly simple. It is just an export of an object from a method. The `data` method within the object is used to return properties for the template. The `template` then has access to anything data returns.
+Building a decorator in Storybook is reasonably straightforward. It is just an export of an object from a method. The `data` method within the object is used to return properties for the template. The `template` then has access to anything data returns.
 
-In this case, the data method is returning objects of CSS styles. This follows the rules of using styles in JS for Vue. So `box-shadow` becomes `boxShadow` and is the key. While the value is a string of the contents for that css property.
+In this case, the data method is returning objects of CSS styles. This object follows the rules of using styles in JS for Vue. So `box-shadow` becomes `boxShadow` and is the key while the value is a string of the contents for that CSS property.
 
 We then use `:style="wrapper"` bindings to apply those styles to the HTML elements.
 
-Finally the `<story />` component within the template, tells Storybook where to inject our root story. This is where the magic happens, because for every instance of `<story />`, Storybook makes a copy of the template the decorator is being applied too. We want this applied to our `<base-badge>` template.
+Finally, the `<story />` component within the template, tells Storybook where to inject our root story. For every instance of `<story />`, Storybook makes a copy of the template the decorator is applied too. We want this applied to our `<base-badge>` template.
 
 ```js
 const sectionStates = () => ({
@@ -387,33 +385,38 @@ const sectionStates = () => ({
 export { sectionStates as default };
 ```
 
-The thing that makes this work with multiple backgrounds, is the inclusion of the `**.__bg-light**`**,** `.__bg-grey`, and `.__bg-dark` css classes. These are using in my global styles to augment any children.
+The thing that makes this work with multiple backgrounds is the inclusion of the `**.__bg-light**`**,** `.__bg-grey`, and `.__bg-dark` CSS classes. These are using in my global styles to augment any children.
 
-> Note - I called this **sectionStates** because the normal Vue component that defines the background color is section. And it has a few colored states.
+> Note - I called this **sectionStates** because the standard Vue component that defines the background color in my project is a section. So it has a few colored states that children components have to react too.
 
 ### Including our Decorator
 
-The next step is to make use of this decorator in the story we built earlier. First we want to add the `addDecorator` method to our imports. This will be used to actually add the decorator.
+The next step is to make use of this decorator in the story we built earlier. First, we want to add the `addDecorator` method to our imports. This method is used to apply custom decorators to Storybook stories.
 
 ```ts
 import sectionStates from "../utils/sectionStates.ts";
 import { storiesOf, addDecorator } from "@storybook/vue";
 ```
 
-Finally we chain the `storesOf` method and call `addDecorator` method passing in `sectionStates`.
+Finally, we chain the `storesOf` method and call `addDecorator` method passing in `sectionStates`.
 
 ```ts
 const stories = storiesOf("Components/Base Badge", module).addDecorator(sectionStates);
 ```
 
-The output is three instances instead of one. Each one with a different background color. Each one respecting it's container to modify the color pallet within.
+The output is three instances instead of one. Each instance has a different background color. Every child within each instance is respecting its parents' container. The outcome perfectly mimics the behavior of the `BaseSection.vue` component.
 
 ![](/uploads/badge-on-multiple-backgrounds.png)
 
-As an added bonus, this allows us to validate teh accessibility of each change on all backgrounds at the same time.
+As a bonus, this allows us to validate the accessibility of each change. We see all the possibilities across all backgrounds pallets.
 
 ![](/uploads/badge-with-a11y.png)
 
 ### Conclusion
 
-This pattern can be extended to handle multiple themes. For example building components that are shared across different brands or white labels. In general this is very easy to do, provided your comfortable with CSS in JS and you follow strict class naming structure.
+This pattern is beneficial in many situations - 
+* Building multiple themes like this example
+* Supporting shared components across multiple brands
+* Working with other types of external modifiers that work by CSS namespacing.
+
+ In general, this is very easy to do, provided your comfortable with CSS in JS, and you follow the strict class naming structure.

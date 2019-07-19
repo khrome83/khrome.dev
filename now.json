@@ -1,7 +1,6 @@
 {
   "version": 2,
   "name": "khrome.dev",
-  "alias": ["khrome.dev"],
   "regions": ["all"],
   "build": {
     "env": {

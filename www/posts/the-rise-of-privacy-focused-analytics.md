@@ -34,7 +34,7 @@ As the internet grew and sites became more global, we started asking about our u
 
 ### Technology
 
-We need to understand how to support our audience. We technologies have exploded. The devices to access the web have changed. There is more surface area than ever. What browsers are they using? What devices did they connect from? What was the screen size of those devices? 
+We need to understand how to support our audience. We technologies have exploded. The devices to access the web have changed. There is more surface area than ever. What browsers are they using? What devices did they connect from? What was the screen size of those devices?
 
 These basic data concepts can power a wave of changes to our business. From changing where to advertise due to inbound sources changing. Or we may focus on our mobile experience, because the user base shifted over the last few months.
 
@@ -60,11 +60,15 @@ Recently, several companies have released privacy focused analytics. These produ
 
 ### Simple Analytics
 
+j
+
 ### Fathom Analytics
 
 The brain child of Jack Ellis and Paul Jarvis, two independent developers. They
 
 ### Netlify Analytics
+
+This addition to privacy focused analytics is very new. Launching just a few weeks ago, it is already making some headlines. One of the coolest tricks, is that you don’t need to install it. You do need to be a Netlify customer, and pay for the feature though.
 
 ## The Middle Ground
 

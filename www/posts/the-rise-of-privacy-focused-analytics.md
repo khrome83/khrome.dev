@@ -60,11 +60,15 @@ Recently, several companies have released privacy focused analytics. These produ
 
 ### Simple Analytics
 
-j
+fgf
+
+![](/uploads/simple_analytics.png)
 
 ### Fathom Analytics
 
 The brain child of Jack Ellis and Paul Jarvis, two independent developers. They
+
+![](/uploads/fathom.png)
 
 ### Netlify Analytics
 

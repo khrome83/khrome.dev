@@ -24,7 +24,7 @@ build:
   - NODE_ENV=STAGE
   preview_output_directory: www/.dist
   output_directory: ".vuepress/dist"
-  instant_preview_command: gridsome develop -p 8080 -h 0.0.0.0
+  instant_preview_command: npm run develop
   install_dependencies_command: npm install
   preview_docker_image: node:10
   mount_path: "/srv"

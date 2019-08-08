@@ -33,8 +33,8 @@ fields:
   name: tags
   label: Tags
 pages:
-- www/posts/build-components-for-different-backgrounds.md
 - www/posts/the-rise-of-privacy-focused-analytics.md
+- www/posts/build-components-for-different-backgrounds.md
 - www/posts/helpful-tips-for-nuxt-and-typescript.md
 - www/posts/tracking-github-with-maker-log-for-motivation.md
 - www/posts/setting-up-maker-log-and-github-integration.md

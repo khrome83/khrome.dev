@@ -66,9 +66,9 @@ You type the domain your going to add, and your left with this snipped.
 
 \`\`\`html  
 <script async defer src="[https://cdn.simpleanalytics.io/hello.js](https://cdn.simpleanalytics.io/hello.js "https://cdn.simpleanalytics.io/hello.js")"></script>  
-<noscript><img src="[https://api.simpleanalytics.io/hello.gif](https://cdn.simpleanalytics.io/hello.js "https://cdn.simpleanalytics.io/hello.js")" alt=""></noscript>   
+<noscript><img src="[https://api.simpleanalytics.io/hello.gif](https://cdn.simpleanalytics.io/hello.js "https://cdn.simpleanalytics.io/hello.js")" alt=""></noscript>  
 \`\`\`  
-This is the shortest and easiest analytics snipped I have seen. There is no complicated tracking code, or additional javascript closures based into the page. Just a linked file off of a CDN, and a small `.gif` for tracking sites when JavaScript is disabled.
+This is the shortest and easiest analytics snipped I have seen. There is no complicated tracking code, or additional javascript closures inserted into the page. Just a linked file off of a CDN, and a small `.gif` for tracking sites when JavaScript is disabled.
 
 There is a really great benefit for not having a unique tracking code. I don’t have to disable to separate my lower environments and review apps. Because they are not `khrome.dev` or `www.khrome.dev` they are simply not counted. Pretty slick since I host on with \[zeit.co\](https://zeit.co).
 

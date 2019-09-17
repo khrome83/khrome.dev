@@ -2,18 +2,18 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: admin
-webhook_url: 
+webhook_url:
 sections:
-- type: directory
-  path: www/posts
-  label: Posts
-  create: documents
-  match: "**/*"
-  templates:
-  - blog-post
+  - type: directory
+    path: posts
+    label: Posts
+    create: documents
+    match: "**/*"
+    templates:
+      - blog-post
 upload_dir: uploads
 public_path: "/uploads"
-front_matter_path: ''
+front_matter_path: ""
 use_front_matter_path: false
 file_template: ":filename:"
 instant_preview: true
@@ -21,7 +21,7 @@ build:
   preview_command: vuepress build -d .vuepress/dist
   publish_command: vuepress build -d .vuepress/dist
   preview_env:
-  - NODE_ENV=STAGE
+    - NODE_ENV=STAGE
   preview_output_directory: www/.dist
   output_directory: ".vuepress/dist"
   instant_preview_command: npm run develop

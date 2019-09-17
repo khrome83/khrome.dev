@@ -20,7 +20,7 @@
       "use": "@now/static"
     },
     {
-      "src": "./image-www/package.json",
+      "src": "image-www/package.json",
       "use": "@now/static-build",
       "config": {
         "includeFiles": ["data/options.json", "data/screens.json"]
@@ -40,9 +40,23 @@
         ]
       }
     },
-    { "src": "./www/package.json", "use": "@now/static-build" }
+    {
+      "src": "search/index.ts",
+      "use": "@now/node",
+      "config": {
+        "includeFiles": ["posts/*.md"]
+      }
+    },
+    {
+      "src": "www/package.json",
+      "use": "@now/static-build",
+      "config": {
+        "includeFiles": ["posts/*.md"]
+      }
+    }
   ],
   "routes": [
+    { "src": "/search/(.*)", "dest": "/search/index.ts" },
     { "src": "/admin/(.*)", "dest": "/admin/$1" },
     { "src": "/admin", "dest": "/admin/" },
     { "src": "/uploads/(.*)", "dest": "/uploads/$1" },

@@ -15,10 +15,15 @@ module.exports = {
         "20": "20rem"
       },
       maxHeight: {
+        none: "0",
         "25": "25rem"
       },
       inset: {
         "1/2": "25%"
+      },
+      listStyleType: {
+        "l-roman": "lower-roman",
+        "l-alpha": "lower-alpha"
       }
     },
     container: {
@@ -50,5 +55,7 @@ module.exports = {
         "monospace"
       ]
     }
-  }
+  },
+  variants: {},
+  plugins: [require("tailwindcss-transitions")()]
 };

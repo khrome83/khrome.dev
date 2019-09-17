@@ -1,4 +1,4 @@
-<template>
+
   <footer class="bg-white text-black">
     <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
       <div class="text-sm mb-8 lg:mb-0">
@@ -70,8 +70,3 @@
       </ul>
     </div>
   </footer>
-</template>
-
-<script>
-export default {};
-</script>

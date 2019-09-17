@@ -3,7 +3,7 @@
     class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen"
   >
     <the-header />
-    <div class="flex-grow testing">
+    <div class="flex-grow">
       <slot />
     </div>
     <the-footer />

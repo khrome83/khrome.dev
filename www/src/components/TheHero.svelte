@@ -1,0 +1,19 @@
+<div
+  class="bg-regal-blue text-white overflow-hidden bg-repeat"
+  style="background-image: linear-gradient(to bottom, rgba(40,69,105,0)
+  0%,rgba(36,60,90,1) 80%), url('./dots.svg');">
+  <div class="hero container-inner mx-auto flex flex-col justify-between py-16">
+    <div class="mt-8 sm:mt-0">
+      <img src="code_review.svg" alt="hero" class="mx-auto sm:mx-0" />
+    </div>
+    <div class="text-4xl font-bold w-full text-center mt-16">
+      <div class="text-white">
+        I build
+        <strong class="text-orange-700">products</strong>
+        &nbsp;&amp;&nbsp;
+        <strong class="text-orange-700">teams</strong>
+        .
+      </div>
+    </div>
+  </div>
+</div>

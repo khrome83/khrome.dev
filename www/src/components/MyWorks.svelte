@@ -15,8 +15,8 @@
         My Works
       </h2>
 
-      <ul class="text-lg sm:text-xl text-left mt-16">
-        <li class="checkmark mb-12 relative">
+      <ul class="text-lg sm:text-xl text-left mt-16 pl-0">
+        <li class="checkmark mb-12 relative list-none">
           <div class="absolute top-1/2 left-0">
             {@html one}
           </div>
@@ -27,7 +27,7 @@
             digital properties.
           </div>
         </li>
-        <li class="checkmark mb-12 relative">
+        <li class="checkmark mb-12 relative list-none">
           <div class="absolute top-1/2 left-0">
             {@html two}
           </div>
@@ -39,7 +39,7 @@
             <em>#TooManyButtonDesigns</em>
           </div>
         </li>
-        <li class="checkmark mb-12 relative">
+        <li class="checkmark mb-12 relative list-none">
           <div class="absolute top-1/2 left-0">
             {@html three}
           </div>
@@ -52,7 +52,7 @@
             with outside design agencies.
           </div>
         </li>
-        <li class="checkmark mb-12 relative">
+        <li class="checkmark mb-12 relative list-none">
           <div class="absolute top-1/2 left-0">
             {@html four}
           </div>

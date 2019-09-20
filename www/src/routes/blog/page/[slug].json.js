@@ -1,6 +1,7 @@
-import graph from "../../libs/Graph.js";
+import graph from "../../../libs/Graph.js";
 
 export async function get(req, res, next) {
+  const { slug } = req.params;
   const query = `
     query FetchPosts($page: Int!, $limit: Int!) {
       getPosts(page: $page, limit: $limit) {
@@ -22,7 +23,7 @@ export async function get(req, res, next) {
       }
     }
   `;
-  const variables = { page: 1, limit: 2 };
+  const variables = { page: parseInt(slug, 10), limit: 2 };
 
   try {
     const response = await graph.run(query, variables);

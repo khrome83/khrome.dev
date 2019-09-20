@@ -34,6 +34,12 @@ class Posts {
     }
   }
 
+  // Pagination
+  paginate(array, page, limit) {
+    --page;
+    return array.slice(page * limit, (page + 1) * limit);
+  }
+
   // Date Formatter
   formatDate(isoDate) {
     const months = [
@@ -120,6 +126,9 @@ class Posts {
           if (attributes.tags && attributes.tags.length > 0) {
             tags = this.parseTags(postSlug, attributes.tags);
           }
+
+          // keep original date as iso date for sorting
+          attributes.isoDate = attributes.date;
 
           // format date from iso string to Month D, YYYY
           attributes.date = this.formatDate(attributes.date);
@@ -220,10 +229,42 @@ class Posts {
 
   // Posts
   // TODO: pagination, sort order, limit
-  getPosts(page) {
-    const posts = [...this.posts.values()];
-    const count = this.posts.size;
-    return { posts, count };
+  getPosts(page, limit) {
+    const allPosts = [...this.posts.values()];
+    let previousPage = "";
+    let nextPage = "";
+    let currentPage = "/blog";
+
+    // Pagination Data
+    const totalPages = Math.ceil(this.posts.size / limit);
+
+    if (page > 1) {
+      currentPage = `/blog/page/${page}`;
+    }
+
+    if (page > 2) {
+      previousPage = `/blog/page/${page - 1}`;
+    } else if (page === 2) {
+      previousPage = `/blog`;
+    }
+
+    if (page < totalPages) {
+      nextPage = `/blog/page/${page + 1}`;
+    }
+
+    // Sort Descending by isoDate
+    allPosts.sort((a, b) => {
+      return a.attributes.isoDate < b.attributes.isoDate
+        ? 1
+        : a.attributes.isoDate > b.attributes.isoDate
+        ? -1
+        : 0;
+    });
+
+    // Enforce Limit and Pagination
+    const posts = this.paginate(allPosts, page, limit);
+
+    return { posts, page, currentPage, totalPages, previousPage, nextPage };
   }
 
   // Tags
@@ -244,6 +285,7 @@ class Posts {
   }
 }
 
+// Promised based return to ensure that the data is processed before used
 let posts;
 const initPosts = () => {
   if (posts && posts.posts.size) {
@@ -252,6 +294,7 @@ const initPosts = () => {
   return new Promise(async (res, rej) => {
     posts = new Posts();
     try {
+      // Need to handle differences in paths given differnet enviroments to run this within
       if (process.env.NOW_REGION === undefined) {
         // LOCAL: `npm run develop` from 'www/'
         await posts.parsePosts("../posts/*.md");

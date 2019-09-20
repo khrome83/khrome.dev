@@ -28,38 +28,43 @@
       </button>
     </div>
     <ul
-      class="uppercase tracking-wide font-bold w-full block flex-grow
+      class="uppercase tracking-wide font-bold w-full block flex-grow mb-0
       overflow-y-hidden lg:flex lg:flex-initial lg:w-auto items-center
-      lg:overflow-auto lg:max-h-screen transition-all transition-ease"
+      lg:overflow-auto lg:max-h-screen transition-all transition-ease pl-0"
       class:max-h-screen={isOpen}
       class:max-h-none={!isOpen}>
-      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:mb-0">
+      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:mb-0 list-none">
         <a
           href="/#works"
-          class="text-black hover:text-gray-700 hover:underline">
+          class="text-base text-black hover:text-gray-700 hover:underline">
           Works
         </a>
       </li>
-      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:mb-0">
+      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:mb-0 list-none ">
         <a
           href="/#about"
-          class="text-black hover:text-gray-700 hover:underline">
+          class="text-base text-black hover:text-gray-700 hover:underline">
           About
         </a>
       </li>
-      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:mb-0">
+      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:mb-0 list-none ">
         <a
           href="/#contact"
-          class="text-black hover:text-gray-700 hover:underline">
+          class="text-base text-black hover:text-gray-700 hover:underline">
           Contact
         </a>
       </li>
-      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:mb-0">
-        <a href="/" class="text-black hover:text-gray-700 hover:underline">
+      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:mb-0 list-none ">
+        <a
+          on:click={toggle}
+          href="/blog"
+          class="text-base text-black hover:text-gray-700 hover:underline">
           Blog
         </a>
       </li>
-      <li class="text-center mb-6 lg:mb-0">Search Input Goes Here</li>
+      <li class="text-base text-center mb-6 lg:mb-0 list-none">
+        Search Input Goes Here
+      </li>
     </ul>
   </nav>
 </header>

@@ -12,7 +12,7 @@
         <strong class="text-orange-700">products</strong>
         &nbsp;&amp;&nbsp;
         <strong class="text-orange-700">teams</strong>
-        .
+        <span>.</span>
       </div>
     </div>
   </div>

@@ -35,12 +35,16 @@ class Graph {
 
     type Posts {
       posts: [Post]!
-      count: Int!
+      page: Int!
+      totalPages: Int!
+      currentPage: String!
+      previousPage: String!
+      nextPage: String!
     }
 
     type Query {
       getPost(slug: ID!): Post,
-      getPosts(page: ID!): Posts
+      getPosts(page: Int!, limit: Int!): Posts
     }
   `);
 
@@ -59,9 +63,9 @@ class Graph {
     return null;
   }
 
-  async getPosts({ page }) {
+  async getPosts({ page, limit }) {
     const posts = await initPosts();
-    return posts.getPosts(page);
+    return posts.getPosts(page, limit);
   }
 
   run(query, variables) {

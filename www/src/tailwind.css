@@ -168,11 +168,11 @@ img {
 
 /* code, */
 pre {
-  @apply font-mono rounded leading-normal p-4 mb-8 break-words text-base;
+  @apply font-mono rounded leading-normal p-4 mb-8 text-base overflow-auto;
 }
 
 pre code {
-  @apply bg-transparent border-0 inline m-0 p-0 overflow-visible whitespace-pre break-words text-sm;
+  @apply bg-transparent border-0 inline m-0 p-0 overflow-visible whitespace-pre text-sm;
 }
 
 .container-inner {

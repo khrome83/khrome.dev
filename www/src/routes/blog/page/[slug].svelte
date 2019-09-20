@@ -1,6 +1,6 @@
 <script context="module">
   export async function preload({ params, query }) {
-    const res = await this.fetch(`/blog/page/1.json`);
+    const res = await this.fetch(`/blog/page/${params.slug}.json`);
     const data = await res.json();
 
     if (res.status === 200) {
@@ -12,8 +12,8 @@
 </script>
 
 <script>
-  import TheNewsletter from "../../components/TheNewsletter.svelte";
-  import PaginationControl from "../../components/PaginationControl.svelte";
+  import TheNewsletter from "../../../components/TheNewsletter.svelte";
+  import PaginationControl from "../../../components/PaginationControl.svelte";
   export let data;
   export let title = "Khrome.dev Blog - JAM Stack and Front-end Development";
 </script>

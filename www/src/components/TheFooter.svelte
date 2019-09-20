@@ -25,8 +25,8 @@
       </div>
     </div>
 
-    <ul class="flex items-center">
-      <li class="mr-8">
+    <ul class="flex items-center mb-0 pl-0">
+      <li class="mr-8 my-0 list-none">
         <a
           href="https://twitter.com/khromedotdev"
           target="_blank"
@@ -35,7 +35,7 @@
         </a>
       </li>
 
-      <li class="mr-8">
+      <li class="mr-8 my-0 list-none">
         <a
           href="https://github.com/khrome83"
           target="_blank"
@@ -44,13 +44,13 @@
         </a>
       </li>
 
-      <li class="mr-8">
+      <li class="mr-8 my-0 list-none">
         <a href="https://dev.to/khrome83" class="hover:text-black">
           {@html devto}
         </a>
       </li>
 
-      <li>
+      <li class="my-0 list-none">
         <a
           href="https://www.linkedin.com/in/zanecmilakovic"
           class="hover:text-black">

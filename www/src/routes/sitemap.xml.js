@@ -10,6 +10,11 @@ export async function get(req, res, next) {
           slug
         }
       }
+      getTags {
+        tags {
+          slug
+        }
+      }
     }
   `;
 
@@ -23,11 +28,13 @@ export async function get(req, res, next) {
 
     // All Posts we Have
     const { posts } = response.data.getPosts;
+    const { tags } = response.data.getTags;
 
     // URLs that don't get programaticly created
     const siteUrls = [
       { url: "/", changefreq: "monthly", priority: 0.5 },
-      { url: "/blog/", changefreq: "weekly", priority: 0.8 }
+      { url: "/blog/", changefreq: "weekly", priority: 0.8 },
+      { url: "/tag/", changefreq: "monthly", priority: 0.7 }
     ];
 
     // Blog Post Urls
@@ -39,7 +46,8 @@ export async function get(req, res, next) {
 
     // Blog Pagination Urls (minus first poage)
     const blogPaginationUrls = [];
-    const pages = Math.ceil(posts.length / 2);
+    const limit = 10; // Pagination Limit
+    const pages = Math.ceil(posts.length / limit);
     for (let i = pages; i >= 2; i--) {
       blogPaginationUrls.push({
         url: `/blog/page/${i}/`,
@@ -48,10 +56,19 @@ export async function get(req, res, next) {
       });
     }
 
+    console.log(tags);
+
+    // Tag List Urls
+    const tagUrls = tags.map(({ slug }) => ({
+      url: `/tag/${slug}/`,
+      changefreq: "weekly",
+      priority: 0.8
+    }));
+
     const sitemap = createSitemap({
       hostname: "https://khrome.dev",
       cacheTime: 600000,
-      urls: [...siteUrls, ...blogUrls, ...blogPaginationUrls]
+      urls: [...siteUrls, ...blogUrls, ...blogPaginationUrls, ...tagUrls]
     });
 
     res.writeHead(200, {

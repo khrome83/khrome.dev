@@ -350,7 +350,9 @@ class Posts {
 
   // Tags
   getTags() {
-    return [...this.tags.values()];
+    return {
+      tags: [...this.tags.values()]
+    };
   }
 
   // Posts by Tag

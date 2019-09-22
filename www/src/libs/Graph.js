@@ -55,6 +55,17 @@ class Graph {
       ldjson: String
     }
 
+    type Tag {
+      label: String!
+      slug: String!
+      posts: [String]!
+      count: Int!
+    }
+
+    type Tags {
+      tags: [Tag]!
+    }
+
     type Content {
       meta: Meta!
       ldjson: String
@@ -64,12 +75,14 @@ class Graph {
       getPost(slug: ID!): Post
       getPosts(page: Int!, limit: Int!): Posts
       getHomepage: Content
+      getTags: Tags
     }
   `);
 
     this.root = {
       getPost: this.getPost,
       getPosts: this.getPosts,
+      getTags: this.getTags,
       getHomepage: this.getHomepage
     };
   }
@@ -86,6 +99,11 @@ class Graph {
   async getPosts({ page, limit }) {
     const posts = await initPosts();
     return posts.getPosts(page, limit);
+  }
+
+  async getTags() {
+    const posts = await initPosts();
+    return posts.getTags();
   }
 
   async getHomepage() {

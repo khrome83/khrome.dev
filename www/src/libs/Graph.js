@@ -55,15 +55,22 @@ class Graph {
       ldjson: String
     }
 
+    type Content {
+      meta: Meta!
+      ldjson: String
+    }
+
     type Query {
-      getPost(slug: ID!): Post,
+      getPost(slug: ID!): Post
       getPosts(page: Int!, limit: Int!): Posts
+      getHomepage: Content
     }
   `);
 
     this.root = {
       getPost: this.getPost,
-      getPosts: this.getPosts
+      getPosts: this.getPosts,
+      getHomepage: this.getHomepage
     };
   }
 
@@ -79,6 +86,35 @@ class Graph {
   async getPosts({ page, limit }) {
     const posts = await initPosts();
     return posts.getPosts(page, limit);
+  }
+
+  async getHomepage() {
+    const title = "Khrome.dev - Maker and Team Builder";
+    const description =
+      "Personal site of Zane C. Milakovic. I run the technology for a startup making peoples like better. Loves the JAM Stack.";
+    const name = "Khrome.dev";
+    const url = "https://khrome.dev";
+
+    const ldjson = `<script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "${name}",
+        "url": "${url}",
+        "sameAs": [
+          "https://dev.to/khrome83",
+          "https://twitter.com/KhromeDotDev"
+        ],
+      }</script>`;
+
+    return {
+      ldjson,
+      meta: {
+        title,
+        description,
+        name,
+        url
+      }
+    };
   }
 
   run(query, variables) {

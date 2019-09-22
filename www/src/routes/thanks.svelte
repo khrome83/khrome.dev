@@ -12,17 +12,11 @@
 </script>
 
 <script>
-  import AboutMe from "../components/AboutMe.svelte";
-  import ContactMe from "../components/ContactMe.svelte";
-  import MyWorks from "../components/MyWorks.svelte";
-  import TheNewsletter from "../components/TheNewsletter.svelte";
-  import TheHero from "../components/TheHero.svelte";
-
   export let data;
 </script>
 
 <svelte:head>
-  <title>{data.meta.title}</title>
+  <title>Khrome.dev - Thank You for Reaching Out</title>
   <meta name="description" content={data.meta.description} />
   <meta name="twitter:domain" content="khrome.dev" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -32,7 +26,7 @@
   <meta name="twitter:description" content={data.meta.description} />
   <meta
     name="twitter:image"
-    content="https://khrome.dev/image/**%40KhromeDotDev**%3Cbr%3Ekhrome.dev.png?theme=royal-blue&pattern=falling-triangles&screen=social&undraw=on-the-office" />
+    content="https://khrome.dev/image/**Khrome.dev**%3Cbr%3E%40KhromeDotDev.png?theme=dark-mode&pattern=topography&screen=social&undraw=on-the-office" />
   <meta name="twitter:url" content={data.meta.url} />
   <meta property="og:title" content={data.meta.title} />
   <meta property="og:site_name" content="KhromeDotDev" />
@@ -41,12 +35,16 @@
   <meta property="og:type" content="website" />
   <meta
     property="og:image"
-    content="https://khrome.dev/image/**%40KhromeDotDev**%3Cbr%3Ekhrome.dev.png?theme=royal-blue&pattern=falling-triangles&screen=social&undraw=on-the-office" />
+    content="https://khrome.dev/image/**Khrome.dev**%3Cbr%3E%40KhromeDotDev.png?theme=dark-mode&pattern=topography&screen=social&undraw=on-the-office" />
   {@html data.ldjson}
 </svelte:head>
 
-<TheHero />
-<MyWorks />
-<AboutMe />
-<ContactMe />
-<TheNewsletter />
+<div class="container-inner mx-auto py-16 text-center">
+  <h2 class="text-2xl font-bold border-b-4 border-orange-600 inline p-4">
+    Thank You for Reaching Out!
+  </h2>
+  <img
+    alt="Giant letter envelop showing mail was sent"
+    src="mail_sent.svg"
+    class="mt-32 mx-auto sm:max-w-lg" />
+</div>

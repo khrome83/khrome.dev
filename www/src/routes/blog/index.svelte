@@ -36,6 +36,7 @@
   {/if}
 
   <meta name="description" content={data.meta.description} />
+  <meta name="twitter:domain" content="khrome.dev" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@khromeDotDev" />
   <meta name="twitter:creator" content="@khromeDotDev" />
@@ -43,6 +44,9 @@
   <meta
     name="twitter:image"
     content="https://khrome.dev/image/**%40KhromeDotDev**%3Cbr%3Ekhrome.dev.png?theme=royal-blue&pattern=falling-triangles&screen=social&undraw=on-the-office" />
+  <meta
+    name="twitter:url"
+    content="https://khrome.dev{data.pagination.currentPage}" />
   <meta property="og:site_name" content="KhromeDotDev" />
   <meta
     property="og:url"

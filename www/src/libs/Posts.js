@@ -121,7 +121,8 @@ class Posts {
             },
           },
           "sameAs": [
-            "https://dev.to/khrome83"
+            "https://dev.to/khrome83",
+            "https://twitter.com/KhromeDotDev"
           ],
           "blogPosts": [
             ${content.join(",")}
@@ -287,7 +288,6 @@ class Posts {
   }
 
   // Posts
-  // TODO: pagination, sort order, limit
   getPosts(page, limit) {
     const allPosts = [...this.posts.values()];
     let previousPage = "";

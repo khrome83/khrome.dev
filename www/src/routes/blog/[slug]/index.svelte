@@ -18,6 +18,7 @@
 <svelte:head>
   <title>{data.attributes.title}</title>
   <meta name="description" content={data.attributes.description} />
+  <meta name="twitter:domain" content="khrome.dev" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@khromeDotDev" />
   <meta name="twitter:creator" content="@khromeDotDev" />
@@ -26,6 +27,13 @@
   <meta
     name="twitter:image"
     content={data.attributes.cover_image.replace('screen=cover-image', 'screen=social')} />
+  <meta name="twitter:url" content="https://khrome.dev/blog/{data.slug}" />
+
+  <meta name="twitter:label1" content="Published" />
+  <meta name="twitter:data1" content={data.attributes.date} />
+  <meta name="twitter:label2" content="Reading Time" />
+  <meta name="twitter:data2" content="{data.timeToRead} min read" />
+
   <meta property="og:title" content={data.attributes.title} />
   <meta property="og:site_name" content="KhromeDotDev" />
   <meta property="og:url" content="https://khrome.dev/blog/{data.slug}" />

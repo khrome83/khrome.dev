@@ -16,10 +16,18 @@ export async function get(req, res, next) {
           timeToRead
         }
         page
-        currentPage
-        totalPages
-        previousPage
-        nextPage
+        pagination {
+          currentPage
+          totalPages
+          previousPage
+          nextPage
+        }
+        meta {
+          title
+          description
+          name
+        }
+        ldjson
       }
     }
   `;

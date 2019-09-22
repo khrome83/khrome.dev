@@ -33,13 +33,26 @@ class Graph {
       ldjson: String
     }
 
-    type Posts {
-      posts: [Post]!
-      page: Int!
+    type Pagination {
       totalPages: Int!
       currentPage: String!
       previousPage: String!
       nextPage: String!
+    }
+
+    type Meta {
+      name: String!
+      url: String!
+      description: String!
+      title: String!
+    }
+
+    type Posts {
+      posts: [Post]!
+      page: Int!
+      meta: Meta!
+      pagination: Pagination!
+      ldjson: String
     }
 
     type Query {

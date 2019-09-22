@@ -2,6 +2,7 @@ import fs from "fs";
 import fm from "front-matter";
 import fg from "fast-glob";
 import slug from "slug";
+import words from "lodash.words";
 const shiki = require("shiki");
 import markdown from "markdown-it";
 
@@ -64,10 +65,70 @@ class Posts {
   }
 
   // JSONLD
-  getLdJson(attributes, content, type = "post") {
+  getLdJson(attributes, content, type = "BlogPost") {
     let ldjson;
     switch (type) {
-      case "post":
+      // ONLY A PARTIAL REFERENCE FOR USE WITHIN BLOG
+      case "BlogPostReference":
+        ldjson = `
+          {
+            "@type": "blogPosting",
+            "mainEntityOfPage": "https://khrome.dev/blog/${content}",
+            "headline": "${attributes.title}",
+            "description": "${attributes.description}",
+            "datePublished": "${attributes.date}",
+            "dateModified": "${attributes.date}",
+            "image": {
+              "@type": "ImageObject",
+              "url": "${attributes.cover_image.replace(
+                "screen=cover-image",
+                "screen=social"
+              )}",
+              "height": "2048",
+              "width": "1170"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Khrome.dev"
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://khrome.dev/social/social-profile-icon.png",
+                "height": "400",
+                "width": "400"
+              },
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Zane C. Milakovic"
+            },
+          }`;
+        break;
+      case "Blog":
+        ldjson = `<script type="application/ld+json">{
+          "@context": "http://schema.org",
+          "@type": "Blog",
+          "name": "${attributes.name}",
+          "url": "${attributes.url}",
+          "description": "${attributes.description}",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Khrome.dev"
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://khrome.dev/social/social-profile-icon.png",
+              "height": "400",
+              "width": "400"
+            },
+          },
+          "sameAs": [
+            "https://dev.to/khrome83"
+          ],
+          "blogPosts": [
+            ${content.join(",")}
+          ]
+        }</script>`;
+        break;
+      case "BlogPost":
       default:
         ldjson = `<script type="application/ld+json">{
             "@context": "http://schema.org/",
@@ -139,14 +200,12 @@ class Posts {
           // time to read
           // gridsome used lodash, might offer differernt count with 230 division
           // https://github.com/lodash/lodash/blob/master/words.js
-          const count = content.match(
-            /[^\x00-\x2f\x3a-\x40\x5b-\x60\x7b-\x7f]+/g
-          ).length;
+          const count = words(body).length;
           // gridsome uses 230
-          const timeToRead = Math.round(count / 500) || 1;
+          const timeToRead = Math.round(count / 230) || 1;
 
           // json+ld - structured content
-          const ldjson = this.getLdJson(attributes, content, "post");
+          const ldjson = this.getLdJson(attributes, content, "BlogPost");
 
           this.setPost(postSlug, {
             attributes,
@@ -235,6 +294,14 @@ class Posts {
     let nextPage = "";
     let currentPage = "/blog";
 
+    const meta = {
+      name: "Khrome.dev",
+      url: "https://khrome.dev/blog/",
+      description:
+        "A blog about JAM Stack and Front-end Development. Writing hastily by a developer with no time.",
+      title: "Khrome.dev Blog - JAM Stack and Front-end Development"
+    };
+
     // Pagination Data
     const totalPages = Math.ceil(this.posts.size / limit);
 
@@ -263,8 +330,22 @@ class Posts {
 
     // Enforce Limit and Pagination
     const posts = this.paginate(allPosts, page, limit);
+    const postReferences = [];
+    posts.forEach(post => {
+      postReferences.push(
+        this.getLdJson(post.attributes, post.slug, "BlogPostReference")
+      );
+    });
 
-    return { posts, page, currentPage, totalPages, previousPage, nextPage };
+    const ldjson = this.getLdJson(meta, postReferences, "Blog");
+
+    return {
+      posts,
+      page,
+      meta,
+      ldjson,
+      pagination: { currentPage, totalPages, previousPage, nextPage }
+    };
   }
 
   // Tags

@@ -4,7 +4,7 @@
     const data = await res.json();
 
     if (res.status === 200) {
-      return { data: data };
+      return { data };
     } else {
       this.error(res.status, data.message);
     }
@@ -15,34 +15,57 @@
   import TheNewsletter from "../../../components/TheNewsletter.svelte";
   import PaginationControl from "../../../components/PaginationControl.svelte";
   export let data;
-  export let title = "Khrome.dev Blog - JAM Stack and Front-end Development";
 </script>
 
 <!---
   TODO:
-    - Title
-    - Description
     - Twitter Card
     - OG Setup
-    - JSON+LD
-      - https://jsonld-examples.com/schema.org/code/blog-markup.php
 -->
 <svelte:head>
   {#if data.page > 1}
-    <title>Page {data.page} of {title}</title>
+    <title>Page {data.page} of {data.meta.title}</title>
+    <meta
+      name="twitter:title"
+      content="Page {data.page} of {data.meta.title}" />
+    <meta property="og:title" content="Page {data.page} of {data.meta.title}" />
   {:else}
-    <title>{title}</title>
+    <title>{data.meta.title}</title>
+    <meta name="twitter:title" content={data.meta.title} />
+    <meta property="og:title" content={data.meta.title} />
   {/if}
 
-  {#if data.previousPage}
-    <link rel="prev" href="https://khrome.dev{data.previousPage}" />
+  <meta name="description" content={data.meta.description} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@khromeDotDev" />
+  <meta name="twitter:creator" content="@khromeDotDev" />
+  <meta name="twitter:description" content={data.meta.description} />
+  <meta
+    name="twitter:image"
+    content="https://khrome.dev/image/**%40KhromeDotDev**%3Cbr%3Ekhrome.dev.png?theme=royal-blue&pattern=falling-triangles&screen=social&undraw=on-the-office" />
+  <meta property="og:site_name" content="KhromeDotDev" />
+  <meta
+    property="og:url"
+    content="https://khrome.dev{data.pagination.currentPage}" />
+  <meta property="og:description" content={data.meta.description} />
+  <meta property="og:type" content="article:section" />
+  <meta
+    property="og:image"
+    content="https://khrome.dev/image/**%40KhromeDotDev**%3Cbr%3Ekhrome.dev.png?theme=royal-blue&pattern=falling-triangles&screen=social&undraw=on-the-office" />
+
+  {#if data.pagination.previousPage}
+    <link rel="prev" href="https://khrome.dev{data.pagination.previousPage}" />
   {/if}
 
-  {#if data.nextPage}
-    <link rel="next" href="https://khrome.dev{data.nextPage}" />
+  {#if data.pagination.nextPage}
+    <link rel="next" href="https://khrome.dev{data.pagination.nextPage}" />
   {/if}
 
-  <link rel="canonical" href="https://khrome.dev{data.currentPage}" />
+  <link
+    rel="canonical"
+    href="https://khrome.dev{data.pagination.currentPage}" />
+
+  {@html data.ldjson}
 </svelte:head>
 
 <div
@@ -79,11 +102,7 @@
     </div>
   {/each}
 
-  <PaginationControl
-    page={data.page}
-    totalPages={data.totalPages}
-    previousPage={data.previousPage}
-    nextPage={data.nextPage} />
+  <PaginationControl page={data.page} {...data.pagination} />
 
 </div>
 <TheNewsletter />

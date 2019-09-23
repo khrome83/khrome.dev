@@ -1,6 +1,6 @@
 <script context="module">
   export async function preload({ params, query }) {
-    const res = await this.fetch(`/blog/page/${params.slug}.json`);
+    const res = await this.fetch(`/blog/page/${params.page}.json`);
     const data = await res.json();
 
     if (res.status === 200) {

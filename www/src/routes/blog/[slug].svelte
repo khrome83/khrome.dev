@@ -12,6 +12,8 @@
 </script>
 
 <script>
+  import TheNewsletter from "../../components/TheNewsletter.svelte";
+
   export let data;
 </script>
 
@@ -78,3 +80,7 @@
     {@html data.content}
   </div>
 </div>
+<div class="px-8 container-inner sm:px-8 mb-16 mx-auto">
+  <a href="/blog" class="font-bold uppercase">Back to Blog</a>
+</div>
+<TheNewsletter />

@@ -1,4 +1,4 @@
-import graph from "../../../libs/Graph.js";
+import graph from "../../libs/Graph.js";
 
 export async function get(req, res, next) {
   const { slug } = req.params;

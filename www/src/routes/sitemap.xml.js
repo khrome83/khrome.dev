@@ -34,7 +34,7 @@ export async function get(req, res, next) {
     const siteUrls = [
       { url: "/", changefreq: "monthly", priority: 0.5 },
       { url: "/blog/", changefreq: "weekly", priority: 0.8 },
-      { url: "/tag/", changefreq: "monthly", priority: 0.7 }
+      { url: "/blog/tag/", changefreq: "monthly", priority: 0.7 }
     ];
 
     // Blog Post Urls
@@ -56,11 +56,9 @@ export async function get(req, res, next) {
       });
     }
 
-    console.log(tags);
-
     // Tag List Urls
     const tagUrls = tags.map(({ slug }) => ({
-      url: `/tag/${slug}/`,
+      url: `/blog/tag/${slug}/`,
       changefreq: "weekly",
       priority: 0.8
     }));

@@ -67,7 +67,7 @@
   <div class="flex mb-8 text-sm">
     {#each data.tags as { label, slug }}
       <a
-        href="/tag/{slug}"
+        href="/blog/tag/{slug}"
         class="inline-block bold pl-2 pr-2 pt-1 pb-1 leading-none m-1 text-sm
         bg-orange-600 hover:bg-orange-700 text-white hover:text-white">
         #{label}

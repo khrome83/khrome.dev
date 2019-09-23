@@ -70,6 +70,104 @@
       "src": "/(style|browser).([^.]+)?.?(css|js|css).?(map)?",
       "dest": "/image-www/$1.$2.$3"
     },
+    {
+      "src": "/custom-decorators-with-storybook-and-vue",
+      "status": 301,
+      "headers": {
+        "Location": "/blog/custom-decorators-with-storybook-and-vue"
+      }
+    },
+    {
+      "src": "/html-elements-with-flex-box-quirks",
+      "status": 301,
+      "headers": {
+        "Location": "/blog/html-elements-with-flex-box-quirks"
+      }
+    },
+    {
+      "src": "/custom-404-pages-on-zeit-now-v2-platform",
+      "status": 301,
+      "headers": {
+        "Location": "/blog/custom-404-pages-on-zeit-now-v2-platform"
+      }
+    },
+    {
+      "src": "/tag/404",
+      "status": 301,
+      "headers": {
+        "Location": "/blog/tag/404"
+      }
+    },
+    {
+      "src": "/tag/zeit",
+      "status": 301,
+      "headers": {
+        "Location": "/blog/tag/zeit"
+      }
+    },
+    {
+      "src": "/tag/now",
+      "status": 301,
+      "headers": {
+        "Location": "/blog/tag/now"
+      }
+    },
+    {
+      "src": "/tag/serverless",
+      "status": 301,
+      "headers": {
+        "Location": "/blog/tag/serverless"
+      }
+    },
+    {
+      "src": "/tag/frontend",
+      "status": 301,
+      "headers": {
+        "Location": "/blog/tag/frontend"
+      }
+    },
+    {
+      "src": "/tag/html",
+      "status": 301,
+      "headers": {
+        "Location": "/blog/tag/html"
+      }
+    },
+    {
+      "src": "/tag/css",
+      "status": 301,
+      "headers": {
+        "Location": "/blog/tag/css"
+      }
+    },
+    {
+      "src": "/tag/flexbox",
+      "status": 301,
+      "headers": {
+        "Location": "/blog/tag/flexbox"
+      }
+    },
+    {
+      "src": "/tag/typescript",
+      "status": 301,
+      "headers": {
+        "Location": "/blog/tag/typescript"
+      }
+    },
+    {
+      "src": "/tag/vue",
+      "status": 301,
+      "headers": {
+        "Location": "/blog/tag/vue"
+      }
+    },
+    {
+      "src": "/tag/storybook",
+      "status": 301,
+      "headers": {
+        "Location": "/blog/tag/storybook"
+      }
+    },
     { "src": "/(.*)", "dest": "/www/$1" },
     { "handle": "filesystem" },
     { "src": "/.*", "status": 404, "dest": "/www/404" }

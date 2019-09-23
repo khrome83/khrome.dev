@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg style="width: 20px; height: 19px" class="fill-current"
+<svg style="width: 20px; height: 19px; fill: currentColor;"
   xmlns="http://www.w3.org/2000/svg">
   <path
     d="M10 0c1.814 0 3.487.435 5.02 1.306a9.827 9.827 0 0 1 3.639

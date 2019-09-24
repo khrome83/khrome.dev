@@ -63,6 +63,8 @@ class Graph {
     }
 
     type Tags {
+      meta: Meta!
+      ldjson: String
       tags: [Tag]!
     }
 

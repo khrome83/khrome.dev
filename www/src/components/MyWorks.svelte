@@ -67,9 +67,9 @@
         </li>
       </ul>
       <img
-        src="developer.svg"
+        data-src="developer.svg"
         alt="hero"
-        class="mx-auto ml-auto mr-auto md:max-w-md" />
+        class="lazy mx-auto ml-auto mr-auto md:max-w-md" />
     </div>
   </div>
 </div>

@@ -17,6 +17,7 @@
   import MyWorks from "../components/MyWorks.svelte";
   import TheNewsletter from "../components/TheNewsletter.svelte";
   import TheHero from "../components/TheHero.svelte";
+  import LazyLoading from "../components/LazyLoading.svelte";
 
   export let data;
 </script>
@@ -50,3 +51,4 @@
 <AboutMe />
 <ContactMe />
 <TheNewsletter />
+<LazyLoading />

@@ -34,9 +34,9 @@
       class="flex flex-col mt-16 sm:flex-row justify-between items-center mb-16">
       <div>
         <img
-          src="avatar.jpg"
+          data-src="avatar.jpg"
           alt="avatar"
-          class="w-32 h-32 rounded-full mb-8 lg:mb-0" />
+          class="lazy w-32 h-32 rounded-full mb-8 lg:mb-0" />
       </div>
       <div class="flex-1 text-lg sm:text-xl md:ml-12 text-center md:text-left">
         <p>

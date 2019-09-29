@@ -26,7 +26,9 @@ class Posts {
             highlight: (code, lang) => {
               return highlighter.codeToHtml(code, lang);
             }
-          });
+          })
+            .use(require("markdown-it-anchor"))
+            .use(require("markdown-it-img-lazy"), { useLoading: true });
 
           return md.render(content);
         });

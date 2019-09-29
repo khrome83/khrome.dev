@@ -13,6 +13,7 @@
 
 <script>
   import TheNewsletter from "../../../components/TheNewsletter.svelte";
+  import LazyLoading from "../../../components/LazyLoading.svelte";
   export let data;
 </script>
 
@@ -71,3 +72,4 @@
     src="/problem_solving.svg" />
 </div>
 <TheNewsletter />
+<LazyLoading />

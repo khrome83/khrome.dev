@@ -14,6 +14,8 @@
 <script>
   import TheNewsletter from "../../components/TheNewsletter.svelte";
   import PaginationControl from "../../components/PaginationControl.svelte";
+  import LazyLoading from "../../components/LazyLoading.svelte";
+
   export let data;
 </script>
 
@@ -105,3 +107,4 @@
 
 </div>
 <TheNewsletter />
+<LazyLoading />

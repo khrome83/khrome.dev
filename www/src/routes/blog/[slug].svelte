@@ -13,6 +13,7 @@
 
 <script>
   import TheNewsletter from "../../components/TheNewsletter.svelte";
+  import LazyLoading from "../../components/LazyLoading.svelte";
 
   export let data;
 </script>
@@ -84,3 +85,4 @@
   <a href="/blog" class="font-bold uppercase">&larr; Back to Blog</a>
 </div>
 <TheNewsletter />
+<LazyLoading />

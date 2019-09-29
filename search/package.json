@@ -10,12 +10,13 @@
   "scripts": {
     "generate": "node ../data/generateOptions.js",
     "build": "tsc",
-    "now-build": "tsc",
+    "now-build": "npx tsc",
     "now-dev": "tsc --watch",
     "watch": "tsc --watch"
   },
   "license": "MIT",
   "dependencies": {
+    "@types/glob": "7.1.1",
     "fuse.js": "3.4.5",
     "glob": "7.1.4",
     "gray-matter": "4.0.2"

@@ -17,11 +17,6 @@
   export let data;
 </script>
 
-<!---
-  TODO:
-    - Twitter Card
-    - OG Setup
--->
 <svelte:head>
   {#if data.page > 1}
     <title>Page {data.page} of {data.meta.title}</title>

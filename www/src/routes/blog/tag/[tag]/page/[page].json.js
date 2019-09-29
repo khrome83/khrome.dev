@@ -1,10 +1,10 @@
-import graph from "../../../libs/Graph.js";
+import graph from "../../../../../libs/Graph.js";
 
 export async function get(req, res, next) {
-  const { page } = req.params;
+  const { tag, page } = req.params;
   const query = `
-    query FetchPosts($page: Int!, $limit: Int!) {
-      getPosts(page: $page, limit: $limit) {
+    query FetchPostsByTag($tag: ID!, $page: Int!, $limit: Int!) {
+      getPostsByTag(tag: $tag, page: $page, limit: $limit) {
         posts {
           slug
           attributes {
@@ -31,7 +31,7 @@ export async function get(req, res, next) {
       }
     }
   `;
-  const variables = { page: parseInt(page, 10), limit: 10 };
+  const variables = { tag: tag, page: parseInt(page, 10), limit: 10 };
 
   try {
     const response = await graph.run(query, variables);
@@ -43,7 +43,7 @@ export async function get(req, res, next) {
       "Content-Type": "application/json"
     });
 
-    res.end(JSON.stringify(response.data.getPosts));
+    res.end(JSON.stringify(response.data.getPostsByTag));
   } catch (error) {
     console.log("ERROR: ", error);
     res.writeHead(404, {

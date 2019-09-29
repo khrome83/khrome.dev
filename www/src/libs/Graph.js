@@ -76,6 +76,7 @@ class Graph {
     type Query {
       getPost(slug: ID!): Post
       getPosts(page: Int!, limit: Int!): Posts
+      getPostsByTag(tag: ID!, page: Int!, limit: Int!): Posts
       getHomepage: Content
       getTags: Tags
     }
@@ -84,6 +85,7 @@ class Graph {
     this.root = {
       getPost: this.getPost,
       getPosts: this.getPosts,
+      getPostsByTag: this.getPostsByTag,
       getTags: this.getTags,
       getHomepage: this.getHomepage
     };
@@ -101,6 +103,11 @@ class Graph {
   async getPosts({ page, limit }) {
     const posts = await initPosts();
     return posts.getPosts(page, limit);
+  }
+
+  async getPostsByTag({ tag, page, limit }) {
+    const posts = await initPosts();
+    return posts.getPostsByTag(tag, page, limit);
   }
 
   async getTags() {

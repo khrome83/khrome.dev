@@ -30,6 +30,7 @@
         <a
           href="https://twitter.com/khromedotdev"
           target="_blank"
+          rel="me"
           class="hover:text-black">
           {@html twitter}
         </a>
@@ -39,13 +40,14 @@
         <a
           href="https://github.com/khrome83"
           target="_blank"
+          rel="me"
           class="hover:text-black">
           {@html github}
         </a>
       </li>
 
       <li class="mr-8 my-0 list-none">
-        <a href="https://dev.to/khrome83" class="hover:text-black">
+        <a href="https://dev.to/khrome83" rel="me" class="hover:text-black">
           {@html devto}
         </a>
       </li>
@@ -53,6 +55,7 @@
       <li class="my-0 list-none">
         <a
           href="https://www.linkedin.com/in/zanecmilakovic"
+          rel="me"
           class="hover:text-black">
           {@html linkedin}
         </a>

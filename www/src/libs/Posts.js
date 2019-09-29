@@ -72,7 +72,7 @@ class Posts {
       case "BlogPostReference":
         ldjson = `
           {
-            "@type": "blogPosting",
+            "@type": "BlogPosting",
             "mainEntityOfPage": "https://khrome.dev/blog/${content}",
             "headline": "${attributes.title}",
             "description": "${attributes.description}",
@@ -102,6 +102,29 @@ class Posts {
               "name": "Zane C. Milakovic"
             },
           }`;
+        break;
+      case "Tag":
+        ldjson = `<script type="application/ld+json">{
+            "@context": "http://schema.org",
+            "@type": "Blog",
+            "name": "${attributes.name}",
+            "url": "${attributes.url}",
+            "description": "${attributes.description}",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Khrome.dev"
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://khrome.dev/social/social-profile-icon.png",
+                "height": "400",
+                "width": "400"
+              },
+            },
+            "sameAs": [
+              "https://dev.to/khrome83",
+              "https://twitter.com/KhromeDotDev"
+            ]
+          }</script>`;
         break;
       case "Blog":
         ldjson = `<script type="application/ld+json">{
@@ -350,19 +373,89 @@ class Posts {
 
   // Tags
   getTags() {
+    const meta = {
+      name: "Khrome.dev",
+      url: "https://khrome.dev/blog/tag/",
+      description: "Here are all the topics written about in this blog.",
+      title: "Khrome.dev Blog - All topics I write about"
+    };
+    const tags = [...this.tags.values()];
+    const ldjson = this.getLdJson(meta, tags, "Tag");
+
     return {
-      tags: [...this.tags.values()]
+      meta,
+      tags,
+      ldjson
     };
   }
 
   // Posts by Tag
-  getPostsByTag(tag) {
-    const output = [];
+  getPostsByTag(tag, page, limit) {
+    const allPosts = [];
     const tagData = this.tags.get(tag);
 
     tagData.posts.forEach(postSlug => {
-      output.push(this.getPost(postSlug));
+      allPosts.push(this.getPost(postSlug));
     });
+
+    const [first, ...rest] = tag;
+    const capitalTag = first.toUpperCase() + rest.join("");
+    let previousPage = "";
+    let nextPage = "";
+    let currentPage = `/blog/tag/${tag}`;
+
+    const meta = {
+      name: "Khrome.dev",
+      url: `https://khrome.dev/blog/tag/${tag}`,
+      description:
+        "A blog about JAM Stack and Front-end Development. Writing hastily by a developer with no time.",
+      title: `Khrome.dev Blog - Articles about ${capitalTag}`
+    };
+
+    // Pagination Data
+    const totalPages = Math.ceil(allPosts.length / limit);
+
+    if (page > 1) {
+      currentPage = `/blog/tag/${tag}/page/${page}`;
+    }
+
+    if (page > 2) {
+      previousPage = `/blog/tag/${tag}/page/${page - 1}`;
+    } else if (page === 2) {
+      previousPage = `/blog/tag/${tag}`;
+    }
+
+    if (page < totalPages) {
+      nextPage = `/blog/tag/${tag}/page/${page + 1}`;
+    }
+
+    // Sort Descending by isoDate
+    allPosts.sort((a, b) => {
+      return a.attributes.isoDate < b.attributes.isoDate
+        ? 1
+        : a.attributes.isoDate > b.attributes.isoDate
+        ? -1
+        : 0;
+    });
+
+    // Enforce Limit and Pagination
+    const posts = this.paginate(allPosts, page, limit);
+    const postReferences = [];
+    posts.forEach(post => {
+      postReferences.push(
+        this.getLdJson(post.attributes, post.slug, "BlogPostReference")
+      );
+    });
+
+    const ldjson = this.getLdJson(meta, postReferences, "Blog");
+
+    return {
+      posts,
+      page,
+      meta,
+      ldjson,
+      pagination: { currentPage, totalPages, previousPage, nextPage }
+    };
 
     return output;
   }

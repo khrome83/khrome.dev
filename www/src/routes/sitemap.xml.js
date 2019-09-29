@@ -13,6 +13,7 @@ export async function get(req, res, next) {
       getTags {
         tags {
           slug
+          count
         }
       }
     }
@@ -57,11 +58,25 @@ export async function get(req, res, next) {
     }
 
     // Tag List Urls
-    const tagUrls = tags.map(({ slug }) => ({
-      url: `/blog/tag/${slug}/`,
-      changefreq: "weekly",
-      priority: 0.8
-    }));
+    const tagUrls = [];
+    for (let i = 0; i < tags.length; i++) {
+      const { slug, count } = tags[i];
+      tagUrls.push({
+        url: `/blog/tag/${slug}/`,
+        changefreq: "weekly",
+        priority: 0.8
+      });
+
+      // Pagination for Tag List Urls
+      const tagPages = Math.ceil(count / limit);
+      for (let i = tagPages; i >= 2; i--) {
+        tagUrls.push({
+          url: `/blog/tag/${slug}/page/${i}/`,
+          changefreq: "weekly",
+          priority: 0.8
+        });
+      }
+    }
 
     const sitemap = createSitemap({
       hostname: "https://khrome.dev",

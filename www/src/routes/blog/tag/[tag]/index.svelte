@@ -1,10 +1,10 @@
 <script context="module">
   export async function preload({ params, query }) {
-    const res = await this.fetch(`/blog/page/1.json`);
+    const res = await this.fetch(`/blog/tag/${params.tag}/page/1.json`);
     const data = await res.json();
 
     if (res.status === 200) {
-      return { data };
+      return { data, tag: params.tag };
     } else {
       this.error(res.status, data.message);
     }
@@ -12,9 +12,10 @@
 </script>
 
 <script>
-  import TheNewsletter from "../../components/TheNewsletter.svelte";
-  import PaginationControl from "../../components/PaginationControl.svelte";
+  import TheNewsletter from "../../../../components/TheNewsletter.svelte";
+  import PaginationControl from "../../../../components/PaginationControl.svelte";
   export let data;
+  export let tag;
 </script>
 
 <svelte:head>
@@ -74,6 +75,12 @@
 <div
   class="container-inner mx-auto -mt-48 mb-16 relative bg-white pt-4
   sm:rounded-t-lg sm:px-8 sm:pt-8">
+  <h1
+    class="text-4xl font-bold inline-block bold pl-2 pr-2 pt-1 pb-1 leading-none
+    m-1 mx-auto bg-orange-600 text-white mb-12">
+    #{tag}
+  </h1>
+
   {#each data.posts as { attributes, slug, timeToRead }}
     <div class="post border-gray-400 border-b mb-12">
       {#if attributes.cover_image}
@@ -102,6 +109,10 @@
   {/each}
 
   <PaginationControl page={data.page} {...data.pagination} />
+
+  <div class="px-8 container-inner sm:px-8 my-16 mx-auto text-center">
+    <a href="/blog/tag" class="font-bold uppercase">See All Topics</a>
+  </div>
 
 </div>
 <TheNewsletter />

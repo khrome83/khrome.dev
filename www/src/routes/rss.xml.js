@@ -79,14 +79,13 @@ export async function get(req, res, next) {
         json: "https://khrome.dev/json",
         atom: "https://khrome.dev/atom"
       },
-      author: "zane.milakovic@icloud.com (Zane C. Milakovic)"
+      author: "zane@khrome.dev (Zane C. Milakovic)"
     });
 
     posts.forEach(({ content, slug, attributes, tags }) => {
       feed.item({
         title: attributes.title,
-        guid: `https://khrome.dev/blog/${slug}`,
-        link: `https://khrome.dev/blog/${slug}`,
+        url: `https://khrome.dev/blog/${slug}`,
         description: attributes.description,
         categories: tags.map(({ label }) => label),
         date: new Date(attributes.date),
@@ -96,8 +95,9 @@ export async function get(req, res, next) {
           dc: "http://purl.org/dc/elements/1.1/"
         },
         custom_elements: [
-          { "dc:creator": "Zane C. Milakovic" },
-          { "content:encoded": content }
+          {
+            "content:encoded": `${content} <br /><em>Originally published on <a href="https://khrome.dev/blog/${slug}">Khrome.dev</a>.</em>`
+          }
         ]
       });
     });

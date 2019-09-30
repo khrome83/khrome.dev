@@ -33,28 +33,28 @@
       lg:overflow-auto lg:max-h-screen transition-all transition-ease pl-0"
       class:max-h-screen={isOpen}
       class:max-h-none={!isOpen}>
-      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:mb-0 list-none">
+      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:my-0 list-none">
         <a
           href="/#works"
           class="text-base text-black hover:text-gray-700 hover:underline">
           Works
         </a>
       </li>
-      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:mb-0 list-none ">
+      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:my-0 list-none ">
         <a
           href="/#about"
           class="text-base text-black hover:text-gray-700 hover:underline">
           About
         </a>
       </li>
-      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:mb-0 list-none ">
+      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:my-0 list-none ">
         <a
           href="/#contact"
           class="text-base text-black hover:text-gray-700 hover:underline">
           Contact
         </a>
       </li>
-      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:mb-0 list-none ">
+      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:my-0 list-none ">
         <a
           on:click={toggle}
           href="/blog"

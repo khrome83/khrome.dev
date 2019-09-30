@@ -54,16 +54,13 @@
           Contact
         </a>
       </li>
-      <li class="text-center lg:text-left lg:mr-8 mb-6 lg:my-0 list-none ">
+      <li class="text-center lg:text-left mb-6 lg:my-0 list-none ">
         <a
           on:click={toggle}
           href="/blog"
           class="text-base text-black hover:text-gray-700 hover:underline">
           Blog
         </a>
-      </li>
-      <li class="text-base text-center mb-6 lg:mb-0 list-none">
-        Search Input Goes Here
       </li>
     </ul>
   </nav>

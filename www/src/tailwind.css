@@ -170,6 +170,10 @@ img[data-src] {
   min-height: 25rem;
 }
 
+img[data-loaded="true"] {
+  min-height: initial;
+}
+
 /* code, */
 pre {
   @apply font-mono rounded leading-normal p-4 mb-8 text-base overflow-auto;

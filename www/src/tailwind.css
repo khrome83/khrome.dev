@@ -166,6 +166,10 @@ img {
   @apply max-w-full;
 }
 
+img[data-src] {
+  min-height: 25rem;
+}
+
 /* code, */
 pre {
   @apply font-mono rounded leading-normal p-4 mb-8 text-base overflow-auto;

@@ -2,7 +2,8 @@
 title: The Rise of Privacy Focused Analytics
 published: false
 date: 2019-07-11
-description: ''
+description: Privacy is becoming a larger focus on the web. New players in the Analytics
+  space promise to bring better security around users data.
 cover_image: ''
 tags:
 - indie web

@@ -11,7 +11,7 @@ module.exports = {
     "./src/**/*.html",
     "./src/**/*.md"
   ],
-  whitelist: ["body", "html", "img", "a", "font-bold", "lazy"],
+  whitelist: ["body", "html", "img", "a", "font-bold", "lazy", "blockquote"],
   extractors: [
     {
       extractor: TailwindExtractor,

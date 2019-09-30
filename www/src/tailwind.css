@@ -4,6 +4,8 @@
 
 @import "tailwindcss/utilities";
 
+/* purgecss start ignore */
+
 body {
   @apply font-sans text-base;
 }
@@ -204,3 +206,5 @@ pre code {
     max-width: 800px;
   }
 }
+
+/* purgecss end ignore */

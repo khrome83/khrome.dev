@@ -32,12 +32,3 @@ fields:
 - type: list
   name: tags
   label: Tags
-pages:
-- www/posts/the-rise-of-privacy-focused-analytics.md
-- www/posts/build-components-for-different-backgrounds.md
-- www/posts/helpful-tips-for-nuxt-and-typescript.md
-- www/posts/tracking-github-with-maker-log-for-motivation.md
-- www/posts/setting-up-maker-log-and-github-integration.md
-- www/posts/fix-vuex-module-errors-with-nuxt-and-storybook.md
-- www/posts/your-not-using-enough-article-tags.md
-- www/posts/verifying-firebase-domain.md

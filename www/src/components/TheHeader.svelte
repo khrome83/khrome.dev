@@ -22,6 +22,7 @@
     <div class="block lg:hidden">
       <button
         on:click={toggle}
+        aria-label="Menu"
         class="flex items-center px-3 py-2 border rounded border-gray-500
         hover:text-gray-700 hover:underline hover:border-gray-600">
         {@html menu}

@@ -88,8 +88,8 @@
         <a href="/blog/{slug}">
           <img
             alt="Cover image"
-            class="w-full mx-auto mb-8 rounded-lg"
-            src={attributes.cover_image} />
+            class="lazy w-full mx-auto mb-8 rounded-lg"
+            data-src={attributes.cover_image} />
         </a>
       {/if}
       <h2 class="text-3xl font-bold">

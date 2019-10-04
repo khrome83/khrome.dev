@@ -31,6 +31,7 @@
             name="_next"
             value="https://khrome.dev/signed-up" />
           <input
+            aria-label="Email Address"
             type="email"
             name="email"
             placeholder="Your email address"

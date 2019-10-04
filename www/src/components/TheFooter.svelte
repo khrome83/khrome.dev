@@ -28,6 +28,7 @@
     <ul class="flex items-center mb-0 pl-0">
       <li class="mr-8 my-0 list-none">
         <a
+          aria-label="My Twitter Profile"
           href="https://twitter.com/khromedotdev"
           target="_blank"
           rel="noopener noreferrer me"
@@ -38,6 +39,7 @@
 
       <li class="mr-8 my-0 list-none">
         <a
+          aria-label="My GitHub Profile"
           href="https://github.com/khrome83"
           target="_blank"
           rel="noopener noreferrer me"
@@ -48,6 +50,7 @@
 
       <li class="mr-8 my-0 list-none">
         <a
+          aria-label="My Dev.To Profile"
           href="https://dev.to/khrome83"
           rel="noopener noreferrer me"
           class="hover:text-black">
@@ -57,6 +60,7 @@
 
       <li class="my-0 list-none">
         <a
+          aria-label="My LinkedIn Profile"
           href="https://www.linkedin.com/in/zanecmilakovic"
           rel="noopener noreferrer me"
           class="hover:text-black">

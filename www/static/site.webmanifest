@@ -1,6 +1,8 @@
 {
   "name": "Khrome.dev",
   "short_name": "Khrome.dev",
+  "start_url": ".",
+  "description": "A blog about JAM Stack and Front-end Development. Writing hastily by a developer with no time.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

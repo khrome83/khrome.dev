@@ -11,11 +11,11 @@ tags:
 - privacy
 
 ---
-Privacy is growing to be a bigger concern in your users minds. Every week it seems that a new scandal is surfacing over at Facebook that is making headlines. Or we have a smart gadget that hide a microphone for years. Zoom's teleconference software was recently revealed with a security gafe.  It was installing  a hidden unsecured server the users consent. The trending headlines teach us not to trust the tech companies with our information. Why should your users trust you?
+Privacy is growing to be a more significant concern in your user's minds. Every week it seems that a new scandal is surfacing over at Facebook that is making headlines. Or we have a smart gadget that hides a microphone for years. Zoom's teleconference software was recently revealed with a security mistake. It was installing a hidden unsecured server for the 's consent. The trending headlines teach us not to trust the tech companies with our information. Why should your users trust you?
 
-Changes are happening in the public eye. The EU signed the GDPR in 2016, the biggest data privacy regulation in over 20 years. Companies recently facing scrutiny are scrambling to try change their public image. Yes, Facebook announced on the switch to be a privacy focused company, but they rely on ad revenue. How can they be?
+Changes are happening in the public eye. The EU signed the GDPR in 2016, the biggest data privacy regulation in over 20 years. Companies recently facing scrutiny are scrambling to try change their public image. Yes, Facebook announced on the switch to be a privacy-focused company, but they rely on ad revenue. How can they be?
 
-How can we trust these mega tech corporations to power our analytics? Actionable insights these tools provide come at a cost, the abuse of our users data. There is a reason Google Analytics is free. The data they collect is the payment, and then some. It's time you and I are responsible to our users. After all, we both want to make products that users can trust, right?
+How can we trust these mega tech corporations to power our analytics? Actionable insights these tools provide come at a cost, the abuse of our user's data. There is a reason Google Analytics is free. The data they collect is the payment, and then some. It's time you and I are responsible for our users. After all, we both want to make products that users can trust.
 
 ## The Data We Need
 
@@ -27,7 +27,7 @@ The point of website analytics is to delve information that is meaningful to us 
 
 ### Growth
 
-This is pretty basic concept that has been a staple since the early days of the web. Are we gaining or loosing visitors? Where are those visitors going on our site? How are they getting to our site?
+This is a pretty basic concept that has been a staple since the early days of the web. Are we gaining or losing visitors? Where are those visitors going on our site? How are they getting to our site?
 
 ### Demographics
 
@@ -35,9 +35,9 @@ As the internet grew and sites became more global, we started asking about our u
 
 ### Technology
 
-We need to understand how to support our audience. We technologies have exploded. The devices to access the web have changed. There is more surface area than ever. What browsers are they using? What devices did they connect from? What was the screen size of those devices?
+We need to understand how to support our audience. We techniques have exploded. The devices to access the web have changed. There is more surface area than ever. What browsers are they using? What physical devices did they connect with? What was the screen size of those devices?
 
-These basic data concepts can power a wave of changes to our business. From changing where to advertise due to inbound sources changing. Or we may focus on our mobile experience, because the user base shifted over the last few months.
+These basic data concepts can power a wave of changes to our business from changing where to advertise due to inbound sources changing. Or we may focus on our mobile experience because the user base shifted over the last few months.
 
 ### The Cost of Privacy
 
@@ -76,7 +76,7 @@ This is the shortest and easiest analytics snipped I have seen. There is no comp
 
 There is a really great benefit for not having a unique tracking code. I don’t have to disable tracking in my lower environments and review apps. Because they are not `khrome.dev` or `www.khrome.dev` they are simply not counted. Pretty convenient since I host on with \[zeit.co\](https://zeit.co) and make great use of review deployments.
 
-![Website showing graphs of pageviews and device and browser demographs.](https://app.forestry.io/sites/alqvjwjxl8e63q/body-media//uploads/simple_analytics.png "Simple Analytics Dashboard")
+![/uploads/simple_analytics.png](https://app.forestry.io/sites/alqvjwjxl8e63q/body-media//uploads/simple_analytics.png)
 
 > I am currently using Simple Analytics on my own site. I have found the expereince to be as easy as described.
 
@@ -90,7 +90,7 @@ The brainchild of Jack Ellis and Paul Jarvis, two independent developers. They a
 
 One of the more interesting things about Fathom Analytics is the amount of care and work put into tracking more than just pageviews. Fathom Analytics uses a fairly complex hashing solution with table lookup to estimate the number of unique visitors and unique pageviews. What is critical though, is that they can not determine the individual path of a single user. You can read more about that in a post they wrote about \[anonymization\]([https://usefathom.com/anonymization/](https://usefathom.com/anonymization/ "https://usefathom.com/anonymization/")).
 
-![Image showing graphs and chats of website activity.](https://app.forestry.io/sites/alqvjwjxl8e63q/body-media//uploads/fathom.png "Fathom Analytics Dashboard")
+![/uploads/fathom.png](https://app.forestry.io/sites/alqvjwjxl8e63q/body-media//uploads/fathom.png)
 
 ### Netlify Analytics
 

@@ -72,22 +72,29 @@ You type the domain you are going to add, and you’re left with this snipped.
 
 Once inserted into your site, the analytics page automatically updates with data. Pretty slick!
 
-  
-This is the shortest and easiest analytics snipped I have seen. There is no complicated tracking code, or additional javascript closures inserted into the page. Just a linked file off of a CDN, and a small `.gif` for tracking sites when JavaScript is disabled.
+This is the shortest and easiest analytics snipped I have seen. There is no complicated tracking code or additional javascript closures inserted into the page. Just a linked file off of a CDN, and a small `.gif` for tracking sites when JavaScript is disabled.
 
 There is a really great benefit for not having a unique tracking code. I don’t have to disable tracking in my lower environments and review apps. Because they are not `khrome.dev` or `www.khrome.dev` they are simply not counted. Pretty convenient since I host on with \[zeit.co\](https://zeit.co) and make great use of review deployments.
 
-![](/uploads/simple_analytics.png)
+![Website showing graphs of pageviews and device and browser demographs.](https://app.forestry.io/sites/alqvjwjxl8e63q/body-media//uploads/simple_analytics.png "Simple Analytics Dashboard")
+
+> I am currently using Simple Analytics on my own site. I have found the expereince to be as easy as described.
+
+Visit \[Simple Analytics\]([https://referral.simpleanalytics.com/zane-milakovic](https://referral.simpleanalytics.com/zane-milakovic "https://referral.simpleanalytics.com/zane-milakovic")) to sign up. Using this link will give you a 7-day trial, plus one month free!
 
 ### Fathom Analytics
 
-The brain child of Jack Ellis and Paul Jarvis, two independent developers. They
+The brainchild of Jack Ellis and Paul Jarvis, two independent developers. They also wanted to build a privacy-focused analytics solution.
 
-![](/uploads/fathom.png)
+> As of this writing, the team is currently working on version 2.0, expected out about a month from this article being published.
+
+One of the more interesting things about Fathom Analytics is the amount of care and work put into tracking more than just pageviews. Fathom Analytics uses a fairly complex hashing solution with table lookup to estimate the number of unique visitors and unique pageviews. What is critical though, is that they can not determine the individual path of a single user. You can read more about that in a post they wrote about \[anonymization\]([https://usefathom.com/anonymization/](https://usefathom.com/anonymization/ "https://usefathom.com/anonymization/")).
+
+![Image showing graphs and chats of website activity.](https://app.forestry.io/sites/alqvjwjxl8e63q/body-media//uploads/fathom.png "Fathom Analytics Dashboard")
 
 ### Netlify Analytics
 
-This addition to privacy focused analytics is very new. Launching just a few weeks ago, it is already making some headlines. One of the coolest tricks, is that you don’t need to install it. You do need to be a Netlify customer, and pay for the feature though.
+This addition to privacy-focused analytics is very new. Launching just a few weeks ago, it is already making some headlines. One of the coolest tricks is that you don’t need to install it. You do need to be a Netlify customer and pay for the feature though.
 
 ## The Middle Ground
 

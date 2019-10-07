@@ -2,9 +2,6 @@
 label: Post
 hide_body: false
 fields:
-- type: boolean
-  name: published
-  label: published
 - type: text
   name: title
   label: Title
@@ -20,9 +17,39 @@ fields:
     export_format: YYYY-MM-DD
     required: true
   default: now
+- type: boolean
+  name: published
+  label: Published
+  description: Should the article be published
+- name: release_date
+  type: datetime
+  label: Release Date
+  description: Date article should be available to see on website.
+  config:
+    required: true
+    date_format: MM/DD/YYYY
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD
+  showOnly:
+    field: published
+    value: true
+  default: now
 - type: textarea
   name: description
   label: Description
+- name: heading_image
+  type: file
+  config:
+    maxSize: 250
+  label: Heading Image
+  description: Image used in the head of the article.
+- name: social_image
+  type: file
+  config:
+    maxSize: 250
+  label: Social Image
+  description: Social Image used for Twitter Cards
 - name: cover_image
   type: text
   config:

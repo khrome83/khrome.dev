@@ -22,11 +22,11 @@ The ecosystem within Storybook also covers many of my concerns. I love the "knob
 
 I did run into a small issue recently, in any case. How to build for multiple themes at once? One of the patterns I rely on is the use of background colors to modify the pallet in the foreground. I like the concept of breaking up the page. Moreover, as content shifts in my marketing pages, I want the flexibility to change the pallet on the fly. Here is an example of the same signup banner across three different pallets.
 
-![](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448524/multiple_themes_yexmrm.png)
+![Three examples of the same form with different background colors and foreground colors passing accessibility.](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448524/multiple_themes_yexmrm.png "Examples of a subscription start form on different backgrounds.")
 
 So I want to demonstrate with a simple `<base-badge>` component. This component takes a label in its default slot and shows it in a colored badge. It is excellent for notification counts and tagging content. Here is an example of it in Storybook.
 
-![](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448523/badge-on-single-background_u2e15g.png)
+![The interface for storybook showing a single red badge with the words "new"](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448523/badge-on-single-background_u2e15g.png "Storybook interface and BaseBadge component")
 
 ### BaseBadge Breakdown
 
@@ -334,7 +334,7 @@ stories.add(
 
 So far we have built this. The thing I showed you in the beginning.
 
-![](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448523/badge-on-single-background_u2e15g.png)
+![Showing a single red BaseBadge component.](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448523/badge-on-single-background_u2e15g.png "Just a single BaseBadge component")
 
 ### Building our Decorator
 
@@ -415,7 +415,7 @@ const stories = storiesOf("Components/Base Badge", module).addDecorator(
 
 The output is three instances instead of one. Each instance has a different background color. Every child within each instance is respecting its parents' container. The outcome perfectly mimics the behavior of the `BaseSection.vue` component.
 
-![](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448524/badge-on-multiple-backgrounds_gz281d.png)
+![The storybook interface where BaseBadge is now wrapped with different background colors and the foreground colors are adjusted.](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448524/badge-on-multiple-backgrounds_gz281d.png "The BaseBadge on different backgrounds")
 
 As a bonus, this allows us to validate the accessibility of each change. We see all the possibilities across all backgrounds pallets.
 

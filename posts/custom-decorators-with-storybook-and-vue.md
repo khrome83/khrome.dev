@@ -2,16 +2,16 @@
 title: Custom Decorators with Storybook & Vue
 published: true
 date: 2019-07-18
-description:
-  Using Storybook and Vue to build multiple components that are section
+description: Using Storybook and Vue to build multiple components that are section
   aware. An easy way to support multiple themes.
 cover_image: https://khrome.dev/image/**Custom%20Decorators**%20with%20*Storybook*%20%26%20*Vue*.png?theme=dark-mode&pattern=polka-dots&screen=cover-image&undraw=programmer
 tags:
-  - typescript
-  - vue
-  - storybook
----
+- typescript
+- vue
+- storybook
+release_date: 2019-07-18
 
+---
 Storybook has excellent Vue support. While it did not support Vue at launch, it now does. So it has become my goto technology while fleshing out base components. It is critical to my development process, and I think it should be considered for your process as well.
 
 No longer do I need to stub out pages or hack together a test page. Instead, I can focus on my design language. Each story is a base component, making it incredibly clear and more comfortable to process. It has sped up my development in unexpected ways.
@@ -22,11 +22,11 @@ The ecosystem within Storybook also covers many of my concerns. I love the "knob
 
 I did run into a small issue recently, in any case. How to build for multiple themes at once? One of the patterns I rely on is the use of background colors to modify the pallet in the foreground. I like the concept of breaking up the page. Moreover, as content shifts in my marketing pages, I want the flexibility to change the pallet on the fly. Here is an example of the same signup banner across three different pallets.
 
-![](/uploads/multiple_themes.png)
+![](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448524/multiple_themes_yexmrm.png)
 
 So I want to demonstrate with a simple `<base-badge>` component. This component takes a label in its default slot and shows it in a colored badge. It is excellent for notification counts and tagging content. Here is an example of it in Storybook.
 
-![](/uploads/badge-on-single-background.png)
+![](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448523/badge-on-single-background_u2e15g.png)
 
 ### BaseBadge Breakdown
 
@@ -334,7 +334,7 @@ stories.add(
 
 So far we have built this. The thing I showed you in the beginning.
 
-![](/uploads/badge-on-single-background.png)
+![](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448523/badge-on-single-background_u2e15g.png)
 
 ### Building our Decorator
 
@@ -415,18 +415,18 @@ const stories = storiesOf("Components/Base Badge", module).addDecorator(
 
 The output is three instances instead of one. Each instance has a different background color. Every child within each instance is respecting its parents' container. The outcome perfectly mimics the behavior of the `BaseSection.vue` component.
 
-![](/uploads/badge-on-multiple-backgrounds.png)
+![](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448524/badge-on-multiple-backgrounds_gz281d.png)
 
 As a bonus, this allows us to validate the accessibility of each change. We see all the possibilities across all backgrounds pallets.
 
-![](/uploads/badge-with-a11y.png)
+![](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448523/badge-with-a11y_hzgjvc.png)
 
 ### Conclusion
 
 This pattern is beneficial in many situations -
 
-- Building multiple themes like this example
-- Supporting shared components across multiple brands
-- Working with other types of external modifiers that work by CSS namespacing.
+* Building multiple themes like this example
+* Supporting shared components across multiple brands
+* Working with other types of external modifiers that work by CSS namespacing.
 
 In general, this is very easy to do, provided your comfortable with CSS in JS, and you follow the strict class naming structure.

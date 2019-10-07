@@ -2,14 +2,20 @@
 title: HTML Elements with Flex-box Quirks
 published: true
 date: 2019-07-08
-description: Flex-box is almost 10 years old, but some quirks still exist. Here are several elements to avoid using with flex-box.
+description: Flex-box is almost 10 years old, but some quirks still exist. Here are
+  several elements to avoid using with flex-box.
 cover_image: https://khrome.dev/image/**HTML**%20Elements%20with%20Flex-box%20**Quirks**%20%F0%9F%93%A6%F0%9F%93%A6%F0%9F%93%A6.png?theme=royal-blue&md=1&pattern=squares&screen=cover-image&undraw=code-typing
-tags: ["frontend", "html", "css", "flexbox"]
+tags:
+- frontend
+- html
+- css
+- flexbox
 series: false
 canonical_url: false
----
+release_date: 2019-07-08
 
-I have interviewed many frontend developers. One of the methods I have used during the candidate screening process is to give a CSS pair programming exam. The exam allowed my team to have an accurate way to rule out candidates that did not have strong HTML and CSS knowledge. Given that one of the current trends in the industry is to focus on frameworks, I find that knowledge of basic web fundamentals is lacking. Attention to detail is always an issue with young developers as well.
+---
+I have interviewed many frontend developers. One of the methods I have used during the candidate screening process is to give a CSS pair programming exam. The exam allowed my team to have an accurate way to rule out candidates that did not have strong HTML and CSS knowledge. Given that one of the current trends in the industry is to focus on frameworks, I find that the understanding of basic web fundamentals is lacking. Attention to detail is always an issue with young developers as well.
 
 The setup for the interview was simple - the interviewing candidate would start a phone conversation with the interviewer. We would give them a collaborative link to a CodePen. After a few minutes of explanation of what we were expecting, they would start coding.
 
@@ -17,7 +23,7 @@ The task was simple; we asked them to create the styling for a simple login form
 
 ## The Problem
 
-During about ~50 interviews with this method, we kept seeing the same issue. Young developers would rely heavily on flex-box and fail at aligning the content vertically within a `fieldset`. Even talented developers that nailed all the colors and understood the details struggled.
+During about \~50 interviews with this method, we kept seeing the same issue. Young developers would rely heavily on flex-box and fail at aligning the content vertically within a `fieldset`. Even talented developers that nailed all the colors and understood the details struggled.
 
 It turns out that the browsers have some nasty quirks when it comes to flex-box.
 
@@ -27,9 +33,9 @@ Flex-box is buggy. Philip Walton has a great readme on his [GitHub](https://gith
 
 ### Fieldset
 
-In the exam above, the `fieldset` element was the biggest surprise challenge. In Chrome and Edge, the `display: flex` property does not get applied by the browser. This issue has been frustrating developers for years. Years later, both Google and Microsoft have either punted on the bug or flagged it as "by design."
+In the exam above, the `fieldset` element was the biggest surprise challenge. In Chrome and Edge, the `display: flex` property does not get applied by the browser. This issue has been frustrating for developers for years. Years later, both Google and Microsoft have either punted on the bug or flagged it as "by design."
 
-So avoid flex-box on `fieldset`. Unless you are using Firefox or Safari, turns out they fixed this bug.
+So avoid flex-box on `fieldset`. Unless you are using Firefox or Safari, it turns out they fixed this bug.
 
 ### Button
 
@@ -43,4 +49,4 @@ Even though Safari fixed `fieldset`, the `summary` element can't be a flex conta
 
 You can see the solution to the CSS exam below. Want to test your CSS skills? Fork the CodeSandbox and remove the CSS. See if you can reproduce the original without using flexbox.
 
-https://codesandbox.io/embed/css-login-problem-986o4?autoresize=1&fontsize=14&hidenavigation=1&view=preview
+<iframe src="https://codesandbox.io/embed/css-login-problem-986o4?fontsize=14" title="CSS Login Problem" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>

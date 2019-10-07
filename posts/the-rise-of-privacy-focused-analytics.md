@@ -76,7 +76,9 @@ This is the shortest and easiest analytics snipped I have seen. There is no comp
 
 There is a really great benefit for not having a unique tracking code. I don’t have to disable tracking in my lower environments and review apps. Because they are not `khrome.dev` or `www.khrome.dev` they are simply not counted. Pretty convenient since I host on with \[zeit.co\](https://zeit.co) and make great use of review deployments.
 
-![](/v1570448523/simple_analytics_u4pusp.png)I am currently using Simple Analytics on my own site. I have found the experience to be as easy as described.
+![](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448523/simple_analytics_u4pusp.png)
+
+I am currently using Simple Analytics on my own site. I have found the experience to be as easy as described.
 
 Visit [SimpleAnalytics](https://referral.simpleanalytics.com/zane-milakovic "Simple Analytics Signup") to sign up. Using this link will give you a 7-day trial, plus one month free!
 
@@ -88,7 +90,7 @@ The brainchild of Jack Ellis and Paul Jarvis, two independent developers. They a
 
 One of the more interesting things about Fathom Analytics is the amount of care and work put into tracking more than just pageviews. Fathom Analytics uses a fairly complex hashing solution with table lookup to estimate the number of unique visitors and unique pageviews. What is critical though, is that they can not determine the individual path of a single user. You can read more about that in a post they wrote about [anonymization](https://usefathom.com/anonymization/ "Blog post by Fathom Analytics").
 
-![](/v1570448523/fathom_uwf9xc.png)
+![](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448523/fathom_uwf9xc.png)
 
 ### Netlify Analytics
 

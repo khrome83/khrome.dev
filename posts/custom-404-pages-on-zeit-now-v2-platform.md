@@ -2,24 +2,30 @@
 title: Custom 404 Pages on Zeit Now v2 Platform
 published: true
 date: 2019-07-05
-description: Zeit has finally updated the Now v2 platform to allow custom 404 pages. Find out what makes a good 404 page and how to set it up.
+description: Zeit has finally updated the Now v2 platform to allow custom 404 pages.
+  Find out what makes a good 404 page and how to set it up.
 cover_image: https://khromedev.khrome83.now.sh/image/Custom%20**404**%20Pages%20on%20Zeit%20Now%20v2%20Platform.png?theme=dark-mode&md=1&pattern=hexagons&screen=cover-image&undraw=page-not-found
-tags: ["404", "zeit", "now", "serverless"]
+tags:
+- '404'
+- zeit
+- now
+- serverless
 series: false
 canonical_url: false
----
+release_date: 2019-07-05
 
+---
 A custom 404 page has become a hallmark of well-polished websites. It allows expressing the creative brand of the site. Sometimes it shows a neat trick and easter eggs.
 
 ## 404 Page Basics
 
 Take [dev.to](https://dev.to/404) 404 page as an example. It is an incredibly simple page that shows the glitching gif logo of the dev.to brand. It does not offer anything extra, except a link back home.
 
-![](https://thepracticaldev.s3.amazonaws.com/i/je4wl8m2fjnby161ql40.gif)
+![An animated box with the word DEV flashing and erratic.](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448524/dev_to_404_nfgiri.gif "Dev.to 404 Page")
 
 [GitHub](https://github.com/404) takes things a step future with their 404 pages. They use Star Wars as a pop culture reference to relate to the inner geek in me. GitHub goes a step further than most sites by tracking the users' mouse movement to create a parallax effect. I remember that this brought me a moment of joy when I found this page.
 
-![](https://thepracticaldev.s3.amazonaws.com/i/1ezcflm2iq8vt6j9379i.gif)
+![A animage screen of GitHubs 404 page with a SciFi scene moving around the screen in relation to the mouse cursor.](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448524/github_404_ryiozm.gif "GitHub 404 Page")
 
 ### Suggestions Useful 404 Pages
 
@@ -37,7 +43,7 @@ In general, it's hard to say anything negative about giving help to users landin
 
 Zeit launched the second version of the Now platform (Now v2) without custom 404 pages. This forces customers to use the built-in default 404 pages. While the design is sharp and works great to fit the Zeit brand, it offers the user no assistance. It is also very opinioned and stands out against most brands. In short, you should replace it.
 
-![](https://thepracticaldev.s3.amazonaws.com/i/2zhap1qbv653berropu8.png)
+![A simple page showing an error because the expected page is not found.](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448525/zeit_default_404_qb3lge.png "Zeit 404 Page")
 
 ### Replacing the Default 404 Page
 
@@ -84,4 +90,4 @@ The last line captures anything that was not found by the filesystem and sends t
 
 I decided to leave things clean and minimalistic for the launch of my site. I left the header and footer on the page. I then spruced it up with an excellent illustration from [unDraw.io](https://undraw.co)
 
-![](https://thepracticaldev.s3.amazonaws.com/i/s54med88bamlj2bevq4r.png)
+![A illustration of a man holding a map and looking confused.](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448524/custom_404_kgq3ro.png "Khrome.dev 404 Page")

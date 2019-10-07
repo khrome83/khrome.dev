@@ -35,7 +35,7 @@ As the internet grew and sites became more global, we started asking about our u
 
 ### Technology
 
-We need to understand how to support our audience. We techniques have exploded. The devices to access the web have changed. There is more surface area than ever. What browsers are they using? What physical devices did they connect with? What was the screen size of those devices?
+We need to understand how to support our audience. Techniques have exploded for capturing user data. The devices to access the web have changed. There is more surface area than ever. What browsers are they using? What physical devices did they connect with? What was the screen size of those devices?
 
 These basic data concepts can power a wave of changes to our business from changing where to advertise due to inbound sources changing. Or we may focus on our mobile experience because the user base shifted over the last few months.
 
@@ -61,14 +61,14 @@ Recently, several companies have released privacy focused analytics. These produ
 
 ### Simple Analytics
 
-This software is based on a premise, let’s make analytics simple. And the creator \[@AdriaanvRossum\]([https://twitter.com/intent/user?screen_name=AdriaanvRossum](https://twitter.com/intent/user?screen_name=AdriaanvRossum "https://twitter.com/intent/user?screen_name=AdriaanvRossum")) delivers on exactly that goal.
+This software is based on a premise, let’s make analytics simple. And the creator [@AdriaanvRossum](https://twitter.com/intent/user?screen_name=AdriaanvRossum "Twitter Profile") delivers on exactly that goal.
 
 You type the domain you are going to add, and you’re left with this snipped.
 
-\`\`\`html  
-<script async defer src="[https://cdn.simpleanalytics.io/hello.js](https://cdn.simpleanalytics.io/hello.js "https://cdn.simpleanalytics.io/hello.js")"></script>  
-<noscript><img src="[https://api.simpleanalytics.io/hello.gif](https://cdn.simpleanalytics.io/hello.js "https://cdn.simpleanalytics.io/hello.js")" alt=""></noscript>  
-\`\`\`
+```html
+    <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
+    <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+```
 
 Once inserted into your site, the analytics page automatically updates with data. Pretty slick!
 
@@ -76,11 +76,9 @@ This is the shortest and easiest analytics snipped I have seen. There is no comp
 
 There is a really great benefit for not having a unique tracking code. I don’t have to disable tracking in my lower environments and review apps. Because they are not `khrome.dev` or `www.khrome.dev` they are simply not counted. Pretty convenient since I host on with \[zeit.co\](https://zeit.co) and make great use of review deployments.
 
-![/uploads/simple_analytics.png](https://app.forestry.io/sites/alqvjwjxl8e63q/body-media//uploads/simple_analytics.png)
+![](/v1570448523/simple_analytics_u4pusp.png)I am currently using Simple Analytics on my own site. I have found the experience to be as easy as described.
 
-> I am currently using Simple Analytics on my own site. I have found the expereince to be as easy as described.
-
-Visit \[Simple Analytics\]([https://referral.simpleanalytics.com/zane-milakovic](https://referral.simpleanalytics.com/zane-milakovic "https://referral.simpleanalytics.com/zane-milakovic")) to sign up. Using this link will give you a 7-day trial, plus one month free!
+Visit [SimpleAnalytics](https://referral.simpleanalytics.com/zane-milakovic "Simple Analytics Signup") to sign up. Using this link will give you a 7-day trial, plus one month free!
 
 ### Fathom Analytics
 
@@ -88,9 +86,9 @@ The brainchild of Jack Ellis and Paul Jarvis, two independent developers. They a
 
 > As of this writing, the team is currently working on version 2.0, expected out about a month from this article being published.
 
-One of the more interesting things about Fathom Analytics is the amount of care and work put into tracking more than just pageviews. Fathom Analytics uses a fairly complex hashing solution with table lookup to estimate the number of unique visitors and unique pageviews. What is critical though, is that they can not determine the individual path of a single user. You can read more about that in a post they wrote about \[anonymization\]([https://usefathom.com/anonymization/](https://usefathom.com/anonymization/ "https://usefathom.com/anonymization/")).
+One of the more interesting things about Fathom Analytics is the amount of care and work put into tracking more than just pageviews. Fathom Analytics uses a fairly complex hashing solution with table lookup to estimate the number of unique visitors and unique pageviews. What is critical though, is that they can not determine the individual path of a single user. You can read more about that in a post they wrote about [anonymization](https://usefathom.com/anonymization/ "Blog post by Fathom Analytics").
 
-![/uploads/fathom.png](https://app.forestry.io/sites/alqvjwjxl8e63q/body-media//uploads/fathom.png)
+![](/v1570448523/fathom_uwf9xc.png)
 
 ### Netlify Analytics
 

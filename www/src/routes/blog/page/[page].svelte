@@ -71,7 +71,7 @@
 <div
   class="bg-regal-blue text-white overflow-hidden bg-repeat min-h-20"
   style="background-image: linear-gradient(to bottom, rgba(40,69,105,0)
-  0%,rgba(36,60,90,1) 80%), url('./dots.svg');" />
+  0%,rgba(36,60,90,1) 80%), url('/dots.svg');" />
 <div
   class="container-inner mx-auto -mt-48 mb-16 relative bg-white pt-4
   sm:rounded-t-lg sm:px-8 sm:pt-8">

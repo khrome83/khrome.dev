@@ -13,12 +13,12 @@
       <div>Copyright 2019 Zane C. Milakovic. All rights reserved.</div>
       <div class="mt-1 text-center lg:text-left">
         <a
-          href="rss.xml"
+          href="/rss.xml"
           class="hover:text-black hover:underline font-normal mr-4">
           RSS Feed
         </a>
         <a
-          href="sitemap.xml"
+          href="/sitemap.xml"
           class="hover:text-black hover:underline font-normal">
           Sitemap
         </a>

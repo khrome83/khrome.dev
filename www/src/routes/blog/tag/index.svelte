@@ -45,7 +45,7 @@
 <div
   class="bg-regal-blue text-white overflow-hidden bg-repeat min-h-20"
   style="background-image: linear-gradient(to bottom, rgba(40,69,105,0)
-  0%,rgba(36,60,90,1) 80%), url('./dots.svg');" />
+  0%,rgba(36,60,90,1) 80%), url('/dots.svg');" />
 <div
   class="container-inner mx-auto -mt-48 mb-16 relative bg-white pt-4
   sm:rounded-t-lg sm:px-8 sm:pt-8 text-center">
@@ -61,9 +61,9 @@
   {#each data.tags as { label, slug }}
     <a
       href="/blog/tag/{slug}"
-      class="font-mono text-4xl inline-block font-bold inline-block bold pl-2 pr-2 pt-1
-      pb-1 leading-none m-2 bg-orange-600 hover:bg-orange-700 text-white
-      hover:text-white">
+      class="font-mono text-4xl inline-block font-bold inline-block bold pl-2
+      pr-2 pt-1 pb-1 leading-none m-2 bg-orange-600 hover:bg-orange-700
+      text-white hover:text-white">
       #{label}
     </a>
   {/each}

@@ -51,7 +51,7 @@
 <div
   class="bg-regal-blue text-white overflow-hidden bg-repeat min-h-20"
   style="background-image: linear-gradient(to bottom, rgba(40,69,105,0)
-  0%,rgba(36,60,90,1) 80%), url('./dots.svg');" />
+  0%,rgba(36,60,90,1) 80%), url('/dots.svg');" />
 <div
   class="container-inner mx-auto -mt-48 mb-8 relative bg-white pt-4
   sm:rounded-t-lg sm:px-8 sm:pt-8">
@@ -84,7 +84,10 @@
   </div>
 </div>
 <div class="px-8 container-inner sm:px-8 my-16 mx-auto text-center">
-  <a href="/blog" class="font-bold uppercase">&larr; Back to Blog</a>
+  <a href="/blog" class="font-bold uppercase">
+    <span class="font-mono">&larr;</span>
+    &nbsp;Back to Blog
+  </a>
 </div>
 <TheNewsletter />
 <LazyLoading />

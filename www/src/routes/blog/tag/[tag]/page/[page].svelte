@@ -98,7 +98,7 @@
       <h2 class="text-3xl font-display font-bold">
         <a href="/blog/{slug}" class="text-copy-primary">{attributes.title}</a>
       </h2>
-      <div class="text-copy-secondary mb-4">
+      <div class="text-gray-700mb-4">
         <span>{attributes.date}</span>
         <span class="pl-4 pr-4 inline-block">&middot;</span>
         <span>{timeToRead} min read</span>

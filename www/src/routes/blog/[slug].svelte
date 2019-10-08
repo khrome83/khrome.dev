@@ -64,7 +64,7 @@
   <h1 class="text-4xl font-display font-bold leading-tight">
     {data.attributes.title}
   </h1>
-  <div class="text-xl text-gray-600 mb-4">
+  <div class="text-xl text-gray-700 mb-4">
     <span>{data.attributes.date}</span>
     <span class="pl-4 pr-4 inline-block">&middot;</span>
     <span>{data.timeToRead} min read</span>

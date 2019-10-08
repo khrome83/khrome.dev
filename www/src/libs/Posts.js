@@ -17,7 +17,7 @@ class Posts {
     try {
       return await shiki
         .getHighlighter({
-          theme: "Material-Theme-Palenight",
+          theme: "Material-Theme-Palenight-High-Contrast",
           skipInline: true
         })
         .then(highlighter => {

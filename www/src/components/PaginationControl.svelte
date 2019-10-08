@@ -14,7 +14,7 @@
       &nbsp;Prev
     </a>
   {:else}
-    <span class="text-gray-400">
+    <span class="text-gray-700">
       <span class="font-mono">&larr;</span>
       &nbsp;Prev
     </span>
@@ -30,7 +30,7 @@
       <span class="font-mono">&rarr;</span>
     </a>
   {:else}
-    <span class="text-gray-400">
+    <span class="text-gray-700">
       Next&nbsp;
       <span class="font-mono">&rarr;</span>
     </span>

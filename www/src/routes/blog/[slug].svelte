@@ -61,7 +61,9 @@
       class="w-full mx-auto mb-8 rounded-lg"
       src={data.attributes.cover_image} />
   {/if}
-  <h1 class="text-4xl font-bold leading-tight">{data.attributes.title}</h1>
+  <h1 class="text-4xl font-display font-bold leading-tight">
+    {data.attributes.title}
+  </h1>
   <div class="text-xl text-gray-600 mb-4">
     <span>{data.attributes.date}</span>
     <span class="pl-4 pr-4 inline-block">&middot;</span>

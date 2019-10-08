@@ -92,7 +92,7 @@
             data-src={attributes.cover_image} />
         </a>
       {/if}
-      <h2 class="text-3xl font-bold">
+      <h2 class="font-display text-3xl font-bold">
         <a href="/blog/{slug}" class="text-copy-primary">{attributes.title}</a>
       </h2>
       <div class="text-copy-secondary mb-4">

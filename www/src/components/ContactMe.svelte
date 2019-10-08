@@ -7,7 +7,8 @@
     class="container-inner mx-auto py-16 pb-8 text-center textl-xl relative z-10">
     <div class="container-inner mx-auto text-xl pb-4 relative">
       <h2
-        class="text-2xl font-bold border-b-4 border-orange-600 inline p-4"
+        class="font-display text-2xl font-bold border-b-4 border-orange-600
+        inline p-4"
         id="contact">
         Contact Me
       </h2>

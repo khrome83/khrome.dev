@@ -10,7 +10,7 @@
         class="mx-auto sm:mx-0" />
     </div>
     <div class="text-4xl font-bold w-full text-center mt-16">
-      <div class="text-white">
+      <div class="font-display text-white">
         I build
         <strong class="text-orange-700">products</strong>
         &nbsp;&amp;&nbsp;

@@ -51,7 +51,9 @@
   sm:rounded-t-lg sm:px-8 sm:pt-8 text-center">
 
   <div class="mb-16">
-    <h1 class="text-2xl font-bold border-b-4 border-orange-600 inline p-4">
+    <h1
+      class="font-display text-2xl font-bold border-b-4 border-orange-600 inline
+      p-4">
       What are you interested in?
     </h1>
   </div>

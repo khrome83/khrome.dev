@@ -10,9 +10,11 @@
 </svelte:head>
 
 <div class="container-inner mx-auto py-16 text-center">
-  <h2 class="text-2xl font-bold border-b-4 border-orange-600 inline p-4">
+  <h1
+    class="text-2xl font-display font-bold border-b-4 border-orange-600 inline
+    p-4">
     {status}
-  </h2>
+  </h1>
   <p>{error.message}</p>
 
   {#if dev && error.stack}

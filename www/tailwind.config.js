@@ -30,6 +30,7 @@ module.exports = {
       padding: "1rem"
     },
     fontFamily: {
+      display: ["Comfortaa", "cursive"],
       sans: [
         "Lato",
         "Roboto",
@@ -43,7 +44,8 @@ module.exports = {
         '"Apple Color Emoji"',
         '"Segoe UI Emoji"',
         '"Segoe UI Symbol"',
-        '"Noto Color Emoji"'
+        '"Noto Color Emoji"',
+        "sans-serif"
       ],
       serif: ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
       mono: [

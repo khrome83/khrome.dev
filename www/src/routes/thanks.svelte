@@ -40,9 +40,9 @@
 </svelte:head>
 
 <div class="container-inner mx-auto py-16 text-center">
-  <h2 class="text-2xl font-bold border-b-4 border-orange-600 inline p-4">
+  <h1 class="font-display text-2xl font-bold border-b-4 border-orange-600 inline p-4">
     Thank You for Reaching Out!
-  </h2>
+  </h1>
   <img
     alt="Giant letter envelop showing mail was sent"
     src="https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570495015/mail_sent_pvm1vs.svg"

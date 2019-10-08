@@ -5,7 +5,7 @@
 <div class="bg-regal-blue text-white overflow-hidden">
   <div
     class="container-inner mx-auto py-16 pb-8 text-center textl-xl relative z-10">
-    <h2 class="text-2xl font-bold border-b-4 border-orange-600 inline p-4">
+    <h2 class="font-display text-2xl font-bold border-b-4 border-orange-600 inline p-4">
       Get My Newsletter
     </h2>
 

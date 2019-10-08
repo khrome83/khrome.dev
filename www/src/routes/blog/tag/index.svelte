@@ -69,9 +69,9 @@
   {/each}
 
   <img
-    class="mx-auto my-16 w-full max-w-lg"
+    class="lazy mx-auto my-16 w-full max-w-lg"
     alt="Problem Solving"
-    src="https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570494449/problem_solving_lvvkpq.svg" />
+    data-src="https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570494449/problem_solving_lvvkpq.svg" />
 </div>
 <TheNewsletter />
 <LazyLoading />

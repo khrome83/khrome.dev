@@ -16,7 +16,10 @@
     class="container mx-auto flex flex-wrap justify-between items-center py-8">
     <div>
       <a href="/">
-        <img src="logo.svg" class="w-16 lg:w-20" alt="logo" />
+        <img
+          src="https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570495015/logo_yabkzr.svg"
+          class="w-16 lg:w-20"
+          alt="logo" />
       </a>
     </div>
     <div class="block lg:hidden">

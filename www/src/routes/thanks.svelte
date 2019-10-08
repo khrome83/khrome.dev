@@ -45,6 +45,6 @@
   </h2>
   <img
     alt="Giant letter envelop showing mail was sent"
-    src="mail_sent.svg"
+    src="https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570495015/mail_sent_pvm1vs.svg"
     class="mt-32 mx-auto sm:max-w-lg" />
 </div>

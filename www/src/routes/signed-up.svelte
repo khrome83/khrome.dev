@@ -43,5 +43,8 @@
   <h2 class="text-2xl font-bold border-b-4 border-orange-600 inline p-4">
     You Have Signed Up!
   </h2>
-  <img alt="A magnet sucking up @ signs" src="email.svg" class="mt-32" />
+  <img
+    alt="A magnet sucking up @ signs"
+    src="https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570495004/email_ov1wrq.svg"
+    class="mt-32" />
 </div>

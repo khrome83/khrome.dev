@@ -67,7 +67,7 @@
         </li>
       </ul>
       <img
-        data-src="developer.svg"
+        data-src="https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570494448/developer_lijqjr.svg"
         alt="hero"
         class="lazy mx-auto ml-auto mr-auto md:max-w-md" />
     </div>

@@ -28,7 +28,7 @@
     },
     {
       "src": "image/src/card.ts",
-      "use": "@now/node",
+      "use": "@now/node@canary",
       "config": {
         "maxLambdaSize": "36mb",
         "includeFiles": [
@@ -42,7 +42,7 @@
     },
     {
       "src": "search/index.ts",
-      "use": "@now/node",
+      "use": "@now/node@canary",
       "config": {
         "includeFiles": ["posts/*.md"]
       }

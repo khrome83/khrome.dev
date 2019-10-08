@@ -80,7 +80,7 @@
   sm:rounded-t-lg sm:px-8 sm:pt-8">
 
   <h1
-    class="text-4xl font-bold inline-block bold pl-2 pr-2 pt-1 pb-1 leading-none
+    class="font-mono text-4xl font-bold inline-block bold pl-2 pr-2 pt-1 pb-1 leading-none
     m-1 mx-auto bg-orange-600 text-white mb-12">
     #{tag}
   </h1>

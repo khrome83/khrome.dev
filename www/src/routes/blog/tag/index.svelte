@@ -61,7 +61,7 @@
   {#each data.tags as { label, slug }}
     <a
       href="/blog/tag/{slug}"
-      class="text-4xl inline-block font-bold inline-block bold pl-2 pr-2 pt-1
+      class="font-mono text-4xl inline-block font-bold inline-block bold pl-2 pr-2 pt-1
       pb-1 leading-none m-2 bg-orange-600 hover:bg-orange-700 text-white
       hover:text-white">
       #{label}

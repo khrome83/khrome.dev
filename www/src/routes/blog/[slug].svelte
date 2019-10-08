@@ -73,8 +73,8 @@
     {#each data.tags as { label, slug }}
       <a
         href="/blog/tag/{slug}"
-        class="inline-block bold pl-2 pr-2 pt-1 pb-1 leading-none m-1 text-sm
-        bg-orange-600 hover:bg-orange-700 text-white hover:text-white">
+        class="font-mono inline-block bold pl-2 pr-2 pt-1 pb-1 leading-none m-1
+        text-sm bg-orange-600 hover:bg-orange-700 text-white hover:text-white">
         #{label}
       </a>
     {/each}

@@ -1,5 +1,6 @@
 <script>
   export let page;
+  export let currentPage;
   export let totalPages;
   export let previousPage;
   export let nextPage;

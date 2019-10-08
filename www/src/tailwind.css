@@ -19,11 +19,15 @@ p {
 }
 
 a {
-  @apply text-orange-600 font-bold;
+  @apply text-orange-700 font-bold;
 }
 
 a:hover {
-  @apply text-orange-700;
+  @apply text-orange-900;
+}
+
+a:focus {
+  @apply text-orange-900;
 }
 
 nav .active {

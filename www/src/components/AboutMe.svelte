@@ -49,7 +49,7 @@
           {#each tags as tag}
             <span
               class="inline-block bold pl-2 pr-2 pt-1 pb-1 leading-none m-1
-              text-sm bg-orange-600 text-white font-mono">
+              text-sm bg-orange-700 text-white font-mono">
               #{tag}
             </span>
           {/each}

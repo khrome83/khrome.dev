@@ -41,7 +41,7 @@
 
 <div class="container-inner mx-auto py-16 text-center">
   <h1
-    class="font-display text-2xl font-bold border-b-4 border-orange-600 inline
+    class="font-display text-2xl font-bold border-b-4 border-orange-700 inline
     p-4">
     You Have Signed Up!
   </h1>

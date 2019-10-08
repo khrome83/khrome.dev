@@ -40,7 +40,9 @@
 </svelte:head>
 
 <div class="container-inner mx-auto py-16 text-center">
-  <h1 class="font-display text-2xl font-bold border-b-4 border-orange-600 inline p-4">
+  <h1
+    class="font-display text-2xl font-bold border-b-4 border-orange-700 inline
+    p-4">
     Thank You for Reaching Out!
   </h1>
   <img

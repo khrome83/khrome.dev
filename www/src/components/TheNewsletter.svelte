@@ -5,7 +5,9 @@
 <div class="bg-regal-blue text-white overflow-hidden">
   <div
     class="container-inner mx-auto py-16 pb-8 text-center textl-xl relative z-10">
-    <h2 class="font-display text-2xl font-bold border-b-4 border-orange-600 inline p-4">
+    <h2
+      class="font-display text-2xl font-bold border-b-4 border-orange-600 inline
+      p-4">
       Get My Newsletter
     </h2>
 
@@ -41,9 +43,9 @@
             required />
           <button
             data-element="submit"
-            class="flex-2 w-40 uppercase bg-orange-600 text-white rounded
+            class="flex-2 w-40 uppercase bg-orange-700 text-white rounded
             sm:rounded-l-none text-lg py-3 px-8 tracking-wide shadow
-            focus:outline-none hover:bg-orange-700 focus:bg-orange-700 z-10
+            focus:outline-none hover:bg-orange-900 focus:bg-orange-900 z-10
             w-full sm:w-auto mt-4 sm:mt-0">
             <span>Subscribe</span>
           </button>

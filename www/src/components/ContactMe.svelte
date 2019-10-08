@@ -15,11 +15,11 @@
 
       <p class="mb-12 mt-16 text-left">
         Want to work together? I am open to
-        <strong class="text-orange-500">side-gigs</strong>
+        <strong class="text-orange-700">side-gigs</strong>
         and
-        <strong class="text-orange-500">new roles</strong>
+        <strong class="text-orange-700">new roles</strong>
         . I am also free for
-        <strong class="text-orange-500">speaking</strong>
+        <strong class="text-orange-700">speaking</strong>
         engagements.
       </p>
 
@@ -98,9 +98,9 @@
             <input
               type="submit"
               value="Submit"
-              class="block bg-orange-600 hover:bg-orange-700 text-white text-sm
-              font-semibold tracking-wide uppercase shadow rounded
-              cursor-pointer px-6 py-3" />
+              class="block bg-orange-700 hover:bg-orange-900 focus:bg-orange-900
+              text-white text-sm font-semibold tracking-wide uppercase shadow
+              rounded cursor-pointer px-6 py-3" />
           </div>
         </form>
       </div>

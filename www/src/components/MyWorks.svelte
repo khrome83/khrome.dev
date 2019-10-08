@@ -10,7 +10,8 @@
     class="container-inner mx-auto py-16 pb-8 text-center textl-xl relative z-10">
     <div class="container-inner mx-auto text-xl pb-4 relative">
       <h2
-        class="font-display text-2xl font-bold border-b-4 border-orange-600 inline p-4"
+        class="font-display text-2xl font-bold border-b-4 border-orange-600
+        inline p-4"
         id="works">
         My Works
       </h2>
@@ -21,7 +22,7 @@
             {@html one}
           </div>
           <div class="pl-16">Director of Technology for Inside Rx</div>
-          <div class="pl-16 text-lg text-gray-600">
+          <div class="pl-16 text-lg text-gray-700">
             I am currently responsible for the technology organization of a
             startup. I oversee several teams that span multiple consumer-facing
             digital properties.
@@ -32,7 +33,7 @@
             {@html two}
           </div>
           <div class="pl-16">Senior Developer for Rig Up</div>
-          <div class="pl-16 text-lg text-gray-600">
+          <div class="pl-16 text-lg text-gray-700">
             I did a short stint at a startup that is changing the oil and gas
             industry. I built an optimizations platform and worked on improving
             the user experience.
@@ -46,7 +47,7 @@
           <div class="pl-16">
             UI &amp; Solution Architect for General Motors
           </div>
-          <div class="pl-16 text-lg text-gray-600">
+          <div class="pl-16 text-lg text-gray-700">
             Oversaw the solution design and development powering the next
             generation of CMS platform. I managed the technical relationship
             with outside design agencies.
@@ -57,9 +58,9 @@
             {@html four}
           </div>
           <div class="pl-16">Senior Developer for Army Research Labs</div>
-          <div class="pl-16 text-lg text-gray-600">
+          <div class="pl-16 text-lg text-gray-700">
             The job was mostly
-            <span class="text-orange-500 line-through">cowboy</span>
+            <span class="text-orange-700 line-through">cowboy</span>
             contract development. I worked on a variety of internal tools and
             web properties, including analytics trackers, custom calendars,
             WebGL powered apps, and more.

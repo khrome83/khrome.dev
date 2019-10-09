@@ -96,6 +96,18 @@ One of the more interesting things about Fathom Analytics is the amount of care 
 
 This addition to privacy-focused analytics is very new. Launching just a few weeks ago, it is already making some headlines. One of the coolest tricks is that you don’t need to install it. You do need to be a Netlify customer and pay for the feature though.
 
+#### Bandwidth Bar Chart
+
+![](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448576/netlify_bandwidth_xzk1ev.png)
+
+#### Sources Table
+
+![](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448576/netlify_sources_aehvzn.png)
+
+#### Pageviews Chart
+
+![](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448576/netlify_pageviews_rspoyw.png)
+
 ## The Middle Ground
 
 ### Matomo

@@ -10,6 +10,10 @@
   "builds": [
     {
       "src": "admin/**",
+      "use": "@now/node@canary"
+    },
+    {
+      "src": "admin/**",
       "use": "@now/static",
       "config": {
         "includeFiles": [".forestry/**"]
@@ -57,6 +61,7 @@
     }
   ],
   "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": "/search/(.*)", "dest": "/search/index.ts" },
     { "src": "/admin/(.*)", "dest": "/admin/$1" },
     { "src": "/admin", "dest": "/admin/" },

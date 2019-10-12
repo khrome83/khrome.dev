@@ -13,6 +13,8 @@ tags:
 series: false
 canonical_url: false
 release_date: 2019-07-05
+heading_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570847237/Dev.to_Post_-_3_zduldg.png
+social_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570847237/Twitter_Post_-_3_kwhcir.png
 
 ---
 A custom 404 page has become a hallmark of well-polished websites. It allows expressing the creative brand of the site. Sometimes it shows a neat trick and easter eggs.

@@ -61,7 +61,7 @@
     }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/api/bevy/(.*)", "dest": "/api/bevy.js" },
     { "src": "/search/(.*)", "dest": "/search/index.ts" },
     { "src": "/admin/(.*)", "dest": "/admin/$1" },
     { "src": "/admin", "dest": "/admin/" },

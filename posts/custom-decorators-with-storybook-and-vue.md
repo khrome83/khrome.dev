@@ -10,6 +10,8 @@ tags:
 - vue
 - storybook
 release_date: 2019-07-18
+heading_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570847237/Dev.to_Post_-_1_hvjwbs.png
+social_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570847238/Twitter_Post_-_1_effmpj.png
 
 ---
 Storybook has excellent Vue support. While it did not support Vue at launch, it now does. So it has become my goto technology while fleshing out base components. It is critical to my development process, and I think it should be considered for your process as well.

@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "sapper dev",
     "build": "sapper build",
-    "now-build": "pip install fonttools brotli zopfli && sapper export --entry '/ /404 /thanks /signed-up' && npx subfont __sapper__/export/index.html -i",
+    "now-build": "pip install fonttools brotli zopfli && sapper export --entry '/ /404 /thanks /signed-up /bevy' && npx subfont __sapper__/export/index.html -i",
     "now-dev": "sapper dev --port $PORT",
     "export": "sapper export --entry '/ /404 /thanks /signed-up' && npx subfont __sapper__/export/index.html -i",
     "start": "node __sapper__/build",

@@ -25,6 +25,8 @@ export async function get(req, res, next) {
             description
             date
             cover_image
+            social_image
+            heading_image
           }
         }
         meta {
@@ -89,7 +91,7 @@ export async function get(req, res, next) {
         description: attributes.description,
         categories: tags.map(({ label }) => label),
         date: new Date(attributes.date),
-        image: attributes.cover_image,
+        image: attributes.heading_image,
         custom_namespaces: {
           content: "http://purl.org/rss/1.0/modules/content/",
           dc: "http://purl.org/dc/elements/1.1/"

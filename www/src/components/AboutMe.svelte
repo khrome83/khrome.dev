@@ -35,6 +35,7 @@
       class="flex flex-col mt-16 sm:flex-row justify-between items-center mb-16">
       <div>
         <img
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           data-src="https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570495364/avatar_logdm7.jpg"
           alt="avatar"
           class="lazy w-32 h-32 rounded-full mb-8 lg:mb-0" />

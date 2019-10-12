@@ -82,12 +82,9 @@ class Posts {
             "dateModified": "${attributes.date}",
             "image": {
               "@type": "ImageObject",
-              "url": "${attributes.cover_image.replace(
-                "screen=cover-image",
-                "screen=social"
-              )}",
-              "height": "2048",
-              "width": "1170"
+              "url": "${attributes.social_image}",
+              "height": "1012",
+              "width": "506"
             },
             "publisher": {
               "@type": "Organization",
@@ -166,12 +163,9 @@ class Posts {
             "mainEntityOfPage": "True",
             "image": {
               "@type": "ImageObject",
-              "url": "${attributes.cover_image.replace(
-                "screen=cover-image",
-                "screen=social"
-              )}",
-              "height": "2048",
-              "width": "1170"
+              "url": "${attributes.social_image}",
+              "height": "1012",
+              "width": "506"
             },
             "publisher": {
               "@type": "Organization",

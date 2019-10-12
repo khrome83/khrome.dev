@@ -5,7 +5,6 @@
 @import "tailwindcss/utilities";
 
 /* purgecss start ignore */
-
 body {
   @apply font-sans text-base;
 }
@@ -180,6 +179,10 @@ img[data-loaded="true"] {
   min-height: initial;
 }
 
+img[src=""] {
+  display: none;
+}
+
 /* code, */
 pre {
   @apply font-mono rounded leading-normal p-4 mb-8 text-base overflow-auto;
@@ -191,6 +194,10 @@ pre code {
 
 .container-inner {
   @apply px-4;
+}
+
+.dont-speak {
+  speak: none;
 }
 
 @media (min-width: 640px) {

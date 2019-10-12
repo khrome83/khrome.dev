@@ -1,7 +1,4 @@
 <script>
-  // import logo from "../../static/Horizontal Logo/Black & Green.svg";
-  // import SearchInput from "../components/SearchInput";
-
   import menu from "../../static/menu.svg";
 
   let isOpen = false;

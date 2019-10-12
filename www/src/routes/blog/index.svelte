@@ -72,18 +72,20 @@
 <div
   class="bg-regal-blue text-white overflow-hidden bg-repeat min-h-20"
   style="background-image: linear-gradient(to bottom, rgba(40,69,105,0)
-  0%,rgba(36,60,90,1) 80%), url('/dots.svg');" />
+  0%,rgba(36,60,90,1) 80%),
+  url('https://res.cloudinary.com/khromedotdev/image/upload/v1570495004/dots_rkcfoz.svg');" />
 <div
   class="container-inner mx-auto -mt-48 mb-16 relative bg-white pt-4
   sm:rounded-t-lg sm:px-8 sm:pt-8">
   {#each data.posts as { attributes, slug, timeToRead }}
     <div class="post border-gray-400 border-b mb-12">
-      {#if attributes.cover_image}
+      {#if attributes.heading_image}
         <a href="/blog/{slug}">
           <img
             alt="Cover image"
             class="lazy w-full mx-auto mb-8 rounded-lg"
-            data-src={attributes.cover_image} />
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            data-src={attributes.heading_image} />
         </a>
       {/if}
       <h2 class="text-3xl font-display font-bold">

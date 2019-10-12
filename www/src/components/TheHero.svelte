@@ -1,7 +1,7 @@
 <div
   class="bg-regal-blue text-white overflow-hidden bg-repeat"
   style="background-image: linear-gradient(to bottom, rgba(40,69,105,0)
-  0%,rgba(36,60,90,1) 80%), url('/dots.svg');">
+  0%,rgba(36,60,90,1) 80%), url('https://res.cloudinary.com/khromedotdev/image/upload/v1570495004/dots_rkcfoz.svg');">
   <div class="hero container-inner mx-auto flex flex-col justify-between py-16">
     <div class="mt-8 sm:mt-0">
       <img

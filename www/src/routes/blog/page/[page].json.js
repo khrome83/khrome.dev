@@ -12,6 +12,8 @@ export async function get(req, res, next) {
             description
             date
             cover_image
+            social_image
+            heading_image
           }
           timeToRead
         }

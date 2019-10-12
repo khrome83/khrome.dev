@@ -45,7 +45,8 @@
 <div
   class="bg-regal-blue text-white overflow-hidden bg-repeat min-h-20"
   style="background-image: linear-gradient(to bottom, rgba(40,69,105,0)
-  0%,rgba(36,60,90,1) 80%), url('/dots.svg');" />
+  0%,rgba(36,60,90,1) 80%),
+  url('https://res.cloudinary.com/khromedotdev/image/upload/v1570495004/dots_rkcfoz.svg');" />
 <div
   class="container-inner mx-auto -mt-48 mb-16 relative bg-white pt-4
   sm:rounded-t-lg sm:px-8 sm:pt-8 text-center">
@@ -71,6 +72,7 @@
   <img
     class="lazy mx-auto my-16 w-full max-w-lg"
     alt="Problem Solving"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
     data-src="https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570494449/problem_solving_lvvkpq.svg" />
 </div>
 <TheNewsletter />

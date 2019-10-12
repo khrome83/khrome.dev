@@ -10,6 +10,8 @@ class Graph {
       date: String
       description: String
       cover_image: String
+      heading_image: String
+      social_image: String
       tags: [String]
       series: Boolean
       canonical_url: Boolean

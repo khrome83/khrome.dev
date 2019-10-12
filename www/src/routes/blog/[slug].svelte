@@ -27,9 +27,7 @@
   <meta name="twitter:creator" content="@khromeDotDev" />
   <meta name="twitter:title" content={data.attributes.title} />
   <meta name="twitter:description" content={data.attributes.description} />
-  <meta
-    name="twitter:image"
-    content={data.attributes.cover_image.replace('screen=cover-image', 'screen=social')} />
+  <meta name="twitter:image" content={data.attributes.social_image} />
   <meta name="twitter:url" content="https://khrome.dev/blog/{data.slug}" />
 
   <meta name="twitter:label1" content="Published" />
@@ -42,24 +40,23 @@
   <meta property="og:url" content="https://khrome.dev/blog/{data.slug}" />
   <meta property="og:description" content={data.attributes.description} />
   <meta property="og:type" content="article" />
-  <meta
-    property="og:image"
-    content={data.attributes.cover_image.replace('screen=cover-image', 'screen=social')} />
+  <meta property="og:image" content={data.attributes.social_image} />
   {@html data.ldjson}
 </svelte:head>
 
 <div
   class="bg-regal-blue text-white overflow-hidden bg-repeat min-h-20"
   style="background-image: linear-gradient(to bottom, rgba(40,69,105,0)
-  0%,rgba(36,60,90,1) 80%), url('/dots.svg');" />
+  0%,rgba(36,60,90,1) 80%),
+  url('https://res.cloudinary.com/khromedotdev/image/upload/v1570495004/dots_rkcfoz.svg');" />
 <div
   class="container-inner mx-auto -mt-48 mb-8 relative bg-white pt-4
   sm:rounded-t-lg sm:px-8 sm:pt-8">
-  {#if data.attributes.cover_image}
+  {#if data.attributes.heading_image}
     <img
       alt="Cover image"
       class="w-full mx-auto mb-8 rounded-lg"
-      src={data.attributes.cover_image} />
+      src={data.attributes.heading_image} />
   {/if}
   <h1 class="text-4xl font-display font-bold leading-tight">
     {data.attributes.title}

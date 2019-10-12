@@ -1,7 +1,3 @@
-<script>
-  import background from "../../static/background2.svg";
-</script>
-
 <div class="bg-white text-black overflow-hidden relative">
   <div
     class="container-inner mx-auto py-16 pb-8 text-center textl-xl relative z-10">
@@ -108,7 +104,13 @@
   </div>
   <div
     class="container-inner mx-auto mb-0 absolute overflow-x-hidden max-h-25
-    overflow-y-hidden z-0 top-1/2 left-0">
-    {@html background}
+    overflow-y-hidden z-0 top-1/2 left-0 w-full h-full">
+    <img
+      class="lazy w-full h-full"
+      role="presentation"
+      tabindex="-1"
+      alt="three groupings of dots"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      data-src="https://res.cloudinary.com/khromedotdev/image/upload/v1570494448/background2_caesgk.svg" />
   </div>
 </div>

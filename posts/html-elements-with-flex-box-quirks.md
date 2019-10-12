@@ -13,6 +13,8 @@ tags:
 series: false
 canonical_url: false
 release_date: 2019-07-08
+heading_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570847237/Dev.to_Post_-_2_aznkjl.png
+social_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570847238/Twitter_Post_-_2_pooygf.png
 
 ---
 I have interviewed many frontend developers. One of the methods I have used during the candidate screening process is to give a CSS pair programming exam. The exam allowed my team to have an accurate way to rule out candidates that did not have strong HTML and CSS knowledge. Given that one of the current trends in the industry is to focus on frameworks, I find that the understanding of basic web fundamentals is lacking. Attention to detail is always an issue with young developers as well.

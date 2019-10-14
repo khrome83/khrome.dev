@@ -34,7 +34,8 @@ module.exports = (req, res) => {
   }
 
   res.statusCode = 200;
-  res.setHeader("Content-Type", `image/svg+xml`);
+  res.setHeader("Content-Type", "image/svg+xml");
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
     "Cache-Control",
     `public, immutable, no-transform, s-maxage=31536000, max-age=31536000`

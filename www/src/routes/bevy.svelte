@@ -12,17 +12,33 @@
 </script>
 
 <script>
+  import { onMount } from "svelte";
+
   export let data;
 
   let loadStatus = "unknown";
+
+  // onMount(() => {
+  //   const ctx = canvasElement.getContext('2d');
+  //   drawStuff(ctx);
+  // });
+
+  function fetchSVG() {
+    fetch("https://bevy.khrome.dev/svg/")
+      .then(res => res.text())
+      .then(svg => document.getElementById.appendChild(svg));
+  }
 
   function lazy(node) {
     // simulate slow loading network
     setTimeout(() => {
       const img = new Image();
-      img.src = node.getAttribute("src");
+      const currentSrc = node.getAttribute("src");
+      img.src = currentSrc;
       if (img.complete) {
         loadStatus = "cache";
+        const newSrc = `${currentSrc}?p=${Date.now()}`;
+        node.setAttribute("src", newSrc);
       } else {
         img.onload = () => {
           loadStatus = "server";
@@ -67,11 +83,9 @@
     Bevy Test
   </h1>
   <div class="border rounded mt-16 shadow">
-    <img
-      alt="test"
-      src="https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570847237/Dev.to_Post_-_3_zduldg.png"
-      use:lazy
-      class="" />
+    <img alt="test" src="https://bevy.khrome.dev/svg/" use:lazy class="" />
   </div>
   <p class="mt-8">{loadStatus}</p>
+
+  <div id="fetchSVG" use:fetchSVG />
 </div>

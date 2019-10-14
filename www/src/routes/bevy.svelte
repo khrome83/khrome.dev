@@ -23,10 +23,11 @@
   //   drawStuff(ctx);
   // });
 
-  function fetchSVG() {
+  function fetchSVG(node) {
     fetch("https://bevy.khrome.dev/svg/")
       .then(res => res.text())
-      .then(svg => document.getElementById.appendChild(svg));
+      .then(svg => node.insertAdjacentHTML("afterbegin", svg))
+      .then(() => console.log(node.getElementsByTagName("svg")[0]));
   }
 
   function lazy(node) {

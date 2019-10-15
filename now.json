@@ -63,7 +63,7 @@
   "routes": [
     {
       "src": "/api/page/(?<domain>[^/]+)/(?<token>[^/]+)/(?<path>.*)",
-      "dest": "/api/page.js?domain=$domain&token=$token&path=/$path"
+      "dest": "/api/page.js?domain=$domain&token=$token&path=$path"
     },
     {
       "src": "/api/page/(?<domain>[^/]+)/(?<token>[^/]+)",
@@ -75,7 +75,7 @@
     },
     {
       "src": "/api/session/(?<domain>[^/]+)/(?<token>[^/]+)/(?<path>.*)",
-      "dest": "/api/session.js?domain=$domain&token=$token&path=/$path"
+      "dest": "/api/session.js?domain=$domain&token=$token&path=$path"
     },
     {
       "src": "/api/session/(?<domain>[^/]+)/(?<token>[^/]+)",
@@ -87,7 +87,7 @@
     },
     {
       "src": "/api/banner/(?<domain>[^/]+)/(?<token>[^/]+)/(?<path>.*)",
-      "dest": "/api/banner.js?domain=$domain&token=$token&path=/$path"
+      "dest": "/api/banner.js?domain=$domain&token=$token&path=$path"
     },
     {
       "src": "/api/banner/(?<domain>[^/]+)/(?<token>[^/]+)",

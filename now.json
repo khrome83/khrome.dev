@@ -10,7 +10,7 @@
   "builds": [
     {
       "src": "api/**",
-      "use": "@now/node@canary"
+      "use": "@now/node"
     },
     {
       "src": "admin/**",
@@ -32,7 +32,7 @@
     },
     {
       "src": "image/src/card.ts",
-      "use": "@now/node@canary",
+      "use": "@now/node",
       "config": {
         "maxLambdaSize": "36mb",
         "includeFiles": [
@@ -46,7 +46,7 @@
     },
     {
       "src": "search/index.ts",
-      "use": "@now/node@canary",
+      "use": "@now/node",
       "config": {
         "includeFiles": ["posts/*.md"]
       }

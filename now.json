@@ -9,7 +9,7 @@
   },
   "builds": [
     {
-      "src": "svg/**",
+      "src": "api/**",
       "use": "@now/node@canary"
     },
     {
@@ -61,6 +61,42 @@
     }
   ],
   "routes": [
+    {
+      "src": "/api/page/(?<domain>[^/]+)/(?<token>[^/]+)/(?<path>.*)",
+      "dest": "/api/page.js?domain=$domain&token=$token&path=/$path"
+    },
+    {
+      "src": "/api/page/(?<domain>[^/]+)/(?<token>[^/]+)",
+      "dest": "/api/page.js?domain=$domain&token=$token"
+    },
+    {
+      "src": "/api/page/(?<domain>[^/]+)",
+      "dest": "/api/page.js?domain=$domain"
+    },
+    {
+      "src": "/api/session/(?<domain>[^/]+)/(?<token>[^/]+)/(?<path>.*)",
+      "dest": "/api/session.js?domain=$domain&token=$token&path=/$path"
+    },
+    {
+      "src": "/api/session/(?<domain>[^/]+)/(?<token>[^/]+)",
+      "dest": "/api/session.js?domain=$domain&token=$token"
+    },
+    {
+      "src": "/api/session/(?<domain>[^/]+)",
+      "dest": "/api/session.js?domain=$domain"
+    },
+    {
+      "src": "/api/banner/(?<domain>[^/]+)/(?<token>[^/]+)/(?<path>.*)",
+      "dest": "/api/banner.js?domain=$domain&token=$token&path=/$path"
+    },
+    {
+      "src": "/api/banner/(?<domain>[^/]+)/(?<token>[^/]+)",
+      "dest": "/api/banner.js?domain=$domain&token=$token"
+    },
+    {
+      "src": "/api/banner/(?<domain>[^/]+)",
+      "dest": "/api/banner.js?domain=$domain"
+    },
     { "src": "/svg/(.*)", "dest": "/svg/index.js" },
     { "src": "/search/(.*)", "dest": "/search/index.ts" },
     { "src": "/admin/(.*)", "dest": "/admin/$1" },

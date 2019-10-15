@@ -27,7 +27,8 @@
     fetch("https://bevy.khrome.dev/svg/")
       .then(res => res.text())
       .then(svg => node.insertAdjacentHTML("afterbegin", svg))
-      .then(() => console.log(node.getElementsByTagName("svg")[0]));
+      .then(() => node.getElementsByTagName("svg")[0])
+      .then(svgElem => console.log(svgElem.dataset.delay));
   }
 
   function lazy(node) {
@@ -84,7 +85,7 @@
     Bevy Test
   </h1>
   <div class="border rounded mt-16 shadow">
-    <img alt="test" src="https://bevy.khrome.dev/svg/" use:lazy class="" />
+    <img alt="test" src="https://bevy.khrome.dev/api/" use:lazy class="" />
   </div>
   <p class="mt-8">{loadStatus}</p>
 

@@ -26,6 +26,7 @@
     const urlParams = new URLSearchParams(search);
     const ref = (urlParams.has('utm_source') ? urlParams.get('utm_source') : (urlParams.has('source') ? urlParams.get('source') : (urlParams.has('ref') ? urlParams.get('ref') : referrer)));
     const campaign = (urlParams.has('utm_campaign') ? urlParams.get('utm_campaign') : (urlParams.has('campaign') ? urlParams.get('campaign') : ''));
+    const medium = (urlParams.has('utm_medium') ? urlParams.get('utm_medium') : 'website');
 
     // TODO: Check is Hash Mode
 

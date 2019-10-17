@@ -6,8 +6,9 @@
   onMount(() => {
     // Get Analytics Data
     const {
-      naigator: { langage, hostname }
-    };
+      navigator: { langage, useragent },
+      location: { hostname, href, pathname, hash, search }
+    } = window;
 
     // window.navigator.language
     // 'en-US'
@@ -54,6 +55,13 @@
     // Strip out hash
     // - Keep Hash if Hash Mode
     // - Test with \(#!|#\/)\ig
+
+    // var urlParams = new URLSearchParams(location.search);
+
+    // urlParams.has('type');  // true
+    // urlParams.get('id');    // 1234
+    // urlParams.getAll('id'); // ["1234"]
+    // urlParams.toString();   // type=product&id=1234
   });
 </script>
 

@@ -13,6 +13,11 @@
       <div>Copyright 2019 Zane C. Milakovic. All rights reserved.</div>
       <div class="mt-1 text-center lg:text-left">
         <a
+          href="/bevy"
+          class="hover:text-black hover:underline font-normal mr-4">
+          Bevy
+        </a>
+        <a
           href="/rss.xml"
           class="hover:text-black hover:underline font-normal mr-4">
           RSS Feed

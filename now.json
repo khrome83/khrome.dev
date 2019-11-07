@@ -16,31 +16,6 @@
       }
     },
     {
-      "src": "uploads/**",
-      "use": "@now/static"
-    },
-    {
-      "src": "image-www/package.json",
-      "use": "@now/static-build",
-      "config": {
-        "includeFiles": ["data/options.json", "data/screens.json"]
-      }
-    },
-    {
-      "src": "image/src/card.ts",
-      "use": "@now/node@canary",
-      "config": {
-        "maxLambdaSize": "36mb",
-        "includeFiles": [
-          "image/src/patterns/**",
-          "image/src/illustrations/**",
-          "image/src/styles/**",
-          "image/src/themes/**",
-          "data/**"
-        ]
-      }
-    },
-    {
       "src": "search/index.ts",
       "use": "@now/node@canary",
       "config": {
@@ -60,17 +35,6 @@
     { "src": "/search/(.*)", "dest": "/search/index.ts" },
     { "src": "/admin/(.*)", "dest": "/admin/$1" },
     { "src": "/admin", "dest": "/admin/" },
-    { "src": "/uploads/(.*)", "dest": "/uploads/$1" },
-    { "src": "/image", "dest": "/image-www/index.html" },
-    {
-      "src": "/image/(favicon.ico|style.css|robots.txt)",
-      "dest": "/image-www/$1"
-    },
-    { "src": "/image/(.+)", "dest": "/image/src/card.ts" },
-    {
-      "src": "/(style|browser).([^.]+)?.?(css|js|css).?(map)?",
-      "dest": "/image-www/$1.$2.$3"
-    },
     {
       "src": "/custom-decorators-with-storybook-and-vue",
       "status": 301,

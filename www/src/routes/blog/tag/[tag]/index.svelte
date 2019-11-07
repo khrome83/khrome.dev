@@ -85,13 +85,13 @@
 
   {#each data.posts as { attributes, slug, timeToRead }}
     <div class="post border-gray-400 border-b mb-12">
-      {#if attributes.social_image}
+      {#if attributes.heading_image}
         <a href="/blog/{slug}">
           <img
             alt="Cover image"
             class="lazy w-full mx-auto mb-8 rounded-lg"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            data-src={attributes.social_image} />
+            data-src={attributes.heading_image} />
         </a>
       {/if}
       <h2 class="font-display text-3xl font-bold">

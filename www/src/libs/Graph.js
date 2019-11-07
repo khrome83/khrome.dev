@@ -132,7 +132,7 @@ class Graph {
         "sameAs": [
           "https://dev.to/khrome83",
           "https://twitter.com/KhromeDotDev"
-        ],
+        ]
       }</script>`;
 
     return {

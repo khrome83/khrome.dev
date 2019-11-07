@@ -30,7 +30,7 @@
   <meta name="twitter:description" content={data.meta.description} />
   <meta
     name="twitter:image"
-    content="https://khrome.dev/image/**%40KhromeDotDev**%3Cbr%3Ekhrome.dev.png?theme=royal-blue&pattern=falling-triangles&screen=social&undraw=on-the-office" />
+    content="https://res.cloudinary.com/khromedotdev/image/upload/v1573124455/Blue-KhromeDotDev_t8rcp3.png" />
   <meta name="twitter:url" content="https://khrome.dev{data.meta.url}" />
   <meta property="og:site_name" content="KhromeDotDev" />
   <meta property="og:url" content="https://khrome.dev{data.meta.url}" />
@@ -38,7 +38,7 @@
   <meta property="og:type" content="article:section" />
   <meta
     property="og:image"
-    content="https://khrome.dev/image/**%40KhromeDotDev**%3Cbr%3Ekhrome.dev.png?theme=royal-blue&pattern=falling-triangles&screen=social&undraw=on-the-office" />
+    content="https://res.cloudinary.com/khromedotdev/image/upload/v1573124455/Blue-KhromeDotDev_t8rcp3.png" />
 
   {@html data.ldjson}
 </svelte:head>

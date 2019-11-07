@@ -40,7 +40,7 @@
   <meta name="twitter:description" content={data.meta.description} />
   <meta
     name="twitter:image"
-    content="https://khrome.dev/image/**%40KhromeDotDev**%3Cbr%3Ekhrome.dev.png?theme=royal-blue&pattern=falling-triangles&screen=social&undraw=on-the-office" />
+    content="https://res.cloudinary.com/khromedotdev/image/upload/v1573124455/Blue-KhromeDotDev_t8rcp3.png" />
   <meta
     name="twitter:url"
     content="https://khrome.dev{data.pagination.currentPage}" />
@@ -52,7 +52,7 @@
   <meta property="og:type" content="article:section" />
   <meta
     property="og:image"
-    content="https://khrome.dev/image/**%40KhromeDotDev**%3Cbr%3Ekhrome.dev.png?theme=royal-blue&pattern=falling-triangles&screen=social&undraw=on-the-office" />
+    content="https://res.cloudinary.com/khromedotdev/image/upload/v1573124455/Blue-KhromeDotDev_t8rcp3.png" />
 
   {#if data.pagination.previousPage}
     <link rel="prev" href="https://khrome.dev{data.pagination.previousPage}" />
@@ -85,13 +85,13 @@
 
   {#each data.posts as { attributes, slug, timeToRead }}
     <div class="post border-gray-400 border-b mb-12">
-      {#if attributes.social_image}
+      {#if attributes.heading_image}
         <a href="/blog/{slug}">
           <img
             alt="Cover image"
             class="lazy w-full mx-auto mb-8 rounded-lg"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            data-src={attributes.social_image} />
+            data-src={attributes.heading_image} />
         </a>
       {/if}
       <h2 class="font-display text-3xl font-bold">

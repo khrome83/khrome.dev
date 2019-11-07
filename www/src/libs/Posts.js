@@ -88,7 +88,7 @@ class Posts {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Khrome.dev"
+              "name": "Khrome.dev",
               "logo": {
                 "@type": "ImageObject",
                 "url": "https://khrome.dev/social/social-profile-icon.png",
@@ -111,7 +111,7 @@ class Posts {
             "description": "${attributes.description}",
             "publisher": {
               "@type": "Organization",
-              "name": "Khrome.dev"
+              "name": "Khrome.dev",
               "logo": {
                 "@type": "ImageObject",
                 "url": "https://khrome.dev/social/social-profile-icon.png",
@@ -134,7 +134,7 @@ class Posts {
           "description": "${attributes.description}",
           "publisher": {
             "@type": "Organization",
-            "name": "Khrome.dev"
+            "name": "Khrome.dev",
             "logo": {
               "@type": "ImageObject",
               "url": "https://khrome.dev/social/social-profile-icon.png",
@@ -169,7 +169,7 @@ class Posts {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Khrome.dev"
+              "name": "Khrome.dev",
               "logo": {
                 "@type": "ImageObject",
                 "url": "https://khrome.dev/social/social-profile-icon.png",

@@ -94,12 +94,12 @@ class Posts {
                 "url": "https://khrome.dev/social/social-profile-icon.png",
                 "height": "400",
                 "width": "400"
-              },
+              }
             },
             "author": {
               "@type": "Person",
               "name": "Zane C. Milakovic"
-            },
+            }
           }`;
         break;
       case "Tag":
@@ -117,7 +117,7 @@ class Posts {
                 "url": "https://khrome.dev/social/social-profile-icon.png",
                 "height": "400",
                 "width": "400"
-              },
+              }
             },
             "sameAs": [
               "https://dev.to/khrome83",
@@ -140,7 +140,7 @@ class Posts {
               "url": "https://khrome.dev/social/social-profile-icon.png",
               "height": "400",
               "width": "400"
-            },
+            }
           },
           "sameAs": [
             "https://dev.to/khrome83",
@@ -175,7 +175,7 @@ class Posts {
                 "url": "https://khrome.dev/social/social-profile-icon.png",
                 "height": "400",
                 "width": "400"
-              },
+              }
             },
             "author": {
               "@type": "Person",

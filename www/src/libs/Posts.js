@@ -180,8 +180,7 @@ class Posts {
             "author": {
               "@type": "Person",
               "name": "Zane C. Milakovic"
-            },
-            "articleBody": "${content}"
+            }
           }</script>`;
     }
 

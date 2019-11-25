@@ -2,19 +2,17 @@
 title: Creating Compelling and Useful 404 Pages
 published: false
 date: 2019-11-25
-description: Zeit has finally updated the Now v2 platform to allow custom 404 pages.
-  Find out what makes a good 404 page and how to set it up.
+description: 404 Pages are normally an after-thought. But they are a critical part
+  of any website, and they are a good place to show off creative ideas. Here are some
+  examples and tips.
 cover_image: https://khromedev.khrome83.now.sh/image/Custom%20**404**%20Pages%20on%20Zeit%20Now%20v2%20Platform.png?theme=dark-mode&md=1&pattern=hexagons&screen=cover-image&undraw=page-not-found
 tags:
 - '404'
-- zeit
-- now
-- serverless
 series: false
 canonical_url: false
 release_date: 2019-11-25
-heading_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570847237/Dev.to_Post_-_3_zduldg.png
-social_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570847237/Twitter_Post_-_3_kwhcir.png
+heading_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1574687425/Dev.to_Post_-_4_wogqed.png
+social_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1574687425/Twitter_Post_-_4_ztnodm.png
 
 ---
 A custom 404 page has become a hallmark of well-polished websites. It allows expressing the creative brand of the site. Sometimes it shows a neat trick and easter eggs.

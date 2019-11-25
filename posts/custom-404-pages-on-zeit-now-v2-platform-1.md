@@ -1,5 +1,5 @@
 ---
-title: Custom 404 Pages on Zeit Now v2 Platform
+title: Creating Compelling and Useful 404 Pages
 published: true
 date: 2019-07-05
 description: Zeit has finally updated the Now v2 platform to allow custom 404 pages.

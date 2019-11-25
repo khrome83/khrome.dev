@@ -1,6 +1,6 @@
 ---
 title: Creating Compelling and Useful 404 Pages
-published: true
+published: false
 date: 2019-11-25
 description: Zeit has finally updated the Now v2 platform to allow custom 404 pages.
   Find out what makes a good 404 page and how to set it up.

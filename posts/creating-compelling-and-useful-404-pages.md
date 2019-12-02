@@ -41,6 +41,6 @@ In general, it's hard to say anything negative about giving help to users landin
 
 ### Final Results
 
-I decided to leave things clean and minimalistic for the launch of my site. I left the header and footer on the page. I then spruced it up with an excellent illustration from [unDraw.io](https://undraw.co)
+For my own site, I decided to leave things clean and minimalistic during the launch of my site. I left the header and footer on the page. I then spruced it up with an excellent illustration from [unDraw.io](https://undraw.co) that I color matched.
 
 ![A illustration of a man holding a map and looking confused.](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448524/custom_404_kgq3ro.png "Khrome.dev 404 Page")

@@ -29,10 +29,12 @@ Zeit uses a `now.json` file to customize the build process. Most users need this
 
 The typically static site deployed on Now looks something like this -
 
+```json
     {
       "version": 2,
       "builds": [{ "src": "package.json", "use": "@now/static-build" }]
     }
+```
 
 Now uses this JSON file to create a static build based on the output of `npm run build` in your `package.json` file. If you deployed with just this configuration, you would get the default Now v2 404 pages.
 
@@ -40,6 +42,7 @@ To setup custom 404 pages, we have to add routes.
 
 #### Adding Routes
 
+```json
     {
       "version": 2,
       "builds": [{ "src": "package.json", "use": "@now/static-build" }],
@@ -49,6 +52,7 @@ To setup custom 404 pages, we have to add routes.
         { "src": "/.*", "status": 404, "dest": "/404" }
       ]
     }
+```
 
 The first line in the routes array, says that any traffic that enters should look for content within the destination directory. Routing can be a little confusing in Now v2. By default, the `/dist` folder that gets created after running `npm run build` with most static site generators, is treated as the root of your output.
 

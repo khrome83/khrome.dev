@@ -1,6 +1,6 @@
 ---
 title: Creating Compelling and Useful 404 Pages
-published: false
+published: true
 date: 2019-12-01
 description: 404 Pages are normally an after-thought. But they are a critical part
   of any website, and they are a good place to show off creative ideas. Here are some

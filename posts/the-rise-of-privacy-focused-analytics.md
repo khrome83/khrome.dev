@@ -81,9 +81,9 @@ There is a really great benefit for not having a unique tracking code. I don’t
 
 ![https://res.cloudinary.com/khromedotdev/image/upload/c](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448523/simple_analytics_u4pusp.png)
 
-Of all the examples here, Simple Analytics has very high scrutiny in the data they store. Based out of Europe, they are very cautious to make sure their clients do not need to have any disclaimer based on the tracked metrics. For example, IP addresses are not stored, even in an anonymous hashed form. And all of the data is stored in Iceland, which has one of the highest standards for data protection and encryption.
+Of all the examples here, Simple Analytics has very high scrutiny in the data they store, to make sure no processes could be considered device fingerprinting. Based out of Europe, they are very cautious to make sure their clients do not need to have any disclaimer based on the tracked metrics. For example, IP addresses are not stored, even in an anonymous hashed form. This an in compliance with [PECR](https://ico.org.uk/for-organisations/guide-to-pecr/guidance-on-the-use-of-cookies-and-similar-technologies/what-are-cookies-and-similar-technologies/#cookies5 "New PECR Laws in UK") in the UK. And all of the data is stored in Iceland, which has one of the highest standards for data protection and encryption. To 
 
-I am currently using Simple Analytics on my own site. I have found the experience to be as easy as described. Visit [Simple Analytics](https://referral.simpleanalytics.com/zane-milakovic "Simple Analytics Signup") to sign up. Using this link will give you a 7-day trial, plus one month free!
+I am currently using Simple Analytics on my own site. Based on the research I have done, they seem to be the most compliant, especially in Europe. I have found the experience to be as easy as described. Visit [Simple Analytics](https://referral.simpleanalytics.com/zane-milakovic "Simple Analytics Signup") to sign up. Using this link will give you a 7-day trial, plus one month free!
 
 ### Fathom Analytics
 
@@ -93,9 +93,9 @@ One of the more interesting things about Fathom Analytics is the amount of care 
 
 ![https://res.cloudinary.com/khromedotdev/image/upload/c](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1575342260/Screen_Shot_2019-12-02_at_9.03.50_PM_tfsg8y.png)
 
-While version 1.0 seemed to have issues with my SPA, version 2.0 promised to fix these problems. I have not tested this since last summer with version 1.0. But I know Paul Jarvis was receptive of the feedback on twitter.
+While version 1.0 seemed to have issues with my SPA, version 2.0 promised to fix these problems. I have not tested this since last summer with version 1.0. But I know Paul Jarvis was receptive of the feedback on Twitter and promised to address it in version 2.0.
 
-What is really promising about Fathom Analytics, is the amount of data that is captured. The presentation is not only one of the strongest in version 2.0 of the data. But it includes metrics not found elsewhere, like "Average Time on Site", "Bounce Rate" and "Unique Visits".
+What is really promising about Fathom Analytics, is the amount of data that is captured. The presentation is not only one of the strongest in version 2.0 of the data. But it includes metrics not found elsewhere, like "Average Time on Site", "Bounce Rate" and "Unique Visits". I am a really big fan of the previous months' comparisons as well. Clicking on "N Current Visitors" also gets you a great breakdown of the pages that are currently being viewed. A pretty nifty trick that makes the whole interface feel a little smoother.
 
 ### Netlify Analytics
 

@@ -83,7 +83,7 @@ There is a really great benefit for not having a unique tracking code. I don’t
 
 Of all the examples here, Simple Analytics has very high scrutiny in the data they store. Based out of Europe, they are very cautious to make sure their clients do not need to have any disclaimer based on the tracked metrics. For example, IP addresses are not stored, even in an anonymous hashed form. And all of the data is stored in Iceland, which has one of the highest standards for data protection and encryption.
 
-I am currently using Simple Analytics on my own site. I have found the experience to be as easy as described. Visit [SimpleAnalytics](https://referral.simpleanalytics.com/zane-milakovic "Simple Analytics Signup") to sign up. Using this link will give you a 7-day trial, plus one month free!
+I am currently using Simple Analytics on my own site. I have found the experience to be as easy as described. Visit [Simple Analytics](https://referral.simpleanalytics.com/zane-milakovic "Simple Analytics Signup") to sign up. Using this link will give you a 7-day trial, plus one month free!
 
 ### Fathom Analytics
 

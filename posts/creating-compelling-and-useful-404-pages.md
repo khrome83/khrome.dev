@@ -17,7 +17,7 @@ social_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_aut
 ---
 A custom 404 page has become a hallmark of well-polished websites. It allows expressing the creative brand of the site. Sometimes it shows a neat trick and easter eggs.
 
-## 404 Page Basics
+## 404 Page Examples
 
 Take [dev.to](https://dev.to/404) 404 pages as an example. It is an incredibly simple page that shows the glitching gif logo of the dev.to brand. It does not offer anything extra, except a link back home.
 
@@ -29,9 +29,9 @@ Take [dev.to](https://dev.to/404) 404 pages as an example. It is an incredibly s
 
 Another enjoyable example is from the folks over at [Carwow](https://www.carwow.co.uk/404.html "Carwow 404 Page") in the UK. They build a mini-game into the 404 page that feels very retro-inspired. So while not the most practical 404 pages, it gave the development team someplace to show off. The brand charm comes through when you lose, where they try to convert you to a test drive.
 
-![https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1575251153/carwow_xp5xyk.gif](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1575251153/carwow_xp5xyk.gif)
+![https://res.cloudinary.com/khromedotdev/image/upload/c](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1575251153/carwow_xp5xyk.gif)
 
-### Suggestions Useful 404 Pages
+## Suggestions Useful 404 Pages
 
 There is much debate about what makes a useful 404 page. Dev.to does not provide many methods to recover, while GitHub by contract shows the full header and footer of the website and a second search bar.
 
@@ -43,7 +43,7 @@ In general, it's hard to say anything negative about giving help to users landin
 4. Provide links to any monitoring or status pages in case the 404 page shown was by some other error.
 5. Show your brand and messaging off and delight.
 
-### Final Results
+### My Blogs 404 Page
 
 For my site, I decided to leave things clean and minimalistic during the launch of my website. I left the header and footer on the page. I then spruced it up with an excellent illustration from [unDraw.io](https://undraw.co) that I color matched.
 

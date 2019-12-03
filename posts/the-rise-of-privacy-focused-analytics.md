@@ -77,9 +77,9 @@ Once inserted into your site, the analytics page automatically updates with data
 
 This is the shortest and easiest analytics snipped I have seen. There is no complicated tracking code or additional javascript closures inserted into the page. Just a linked file off of a CDN, and a small `.gif` for tracking sites when JavaScript is disabled.
 
-There is a really great benefit for not having a unique tracking code. I don’t have to disable tracking in my lower environments and review apps. Because they are not `khrome.dev` or `www.khrome.dev` they are simply not counted. Pretty convenient since I host on with \[zeit.co\](https://zeit.co) and make great use of review deployments.
+There is a really great benefit for not having a unique tracking code. I don’t have to disable tracking in my lower environments and review apps. Because they are not `khrome.dev` or `www.khrome.dev` they are simply not counted. Pretty convenient since I host on with [zeit.co](https://zeit.co "Zeit Platform") and make great use of review deployments.
 
-![https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448523/simple_analytics_u4pusp.png](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448523/simple_analytics_u4pusp.png)
+![https://res.cloudinary.com/khromedotdev/image/upload/c](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448523/simple_analytics_u4pusp.png)
 
 Of all the examples here, Simple Analytics has very high scrutiny in the data they store. Based out of Europe, they are very cautious to make sure their clients do not need to have any disclaimer based on the tracked metrics. For example, IP addresses are not stored, even in an anonymous hashed form. And all of the data is stored in Iceland, which has one of the highest standards for data protection and encryption.
 
@@ -91,7 +91,7 @@ The brainchild of Jack Ellis and Paul Jarvis, two independent developers. They a
 
 One of the more interesting things about Fathom Analytics is the amount of care and work put into tracking more than just pageviews. Fathom Analytics uses a fairly complex hashing solution with table lookup to estimate the number of unique visitors and unique pageviews. What is critical though, is that they can not determine the individual path of a single user. You can read more about that in a post they wrote about [anonymization](https://usefathom.com/anonymization/ "Blog post by Fathom Analytics").
 
-![https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1575342260/Screen_Shot_2019-12-02_at_9.03.50_PM_tfsg8y.png](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1575342260/Screen_Shot_2019-12-02_at_9.03.50_PM_tfsg8y.png)
+![https://res.cloudinary.com/khromedotdev/image/upload/c](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1575342260/Screen_Shot_2019-12-02_at_9.03.50_PM_tfsg8y.png)
 
 While version 1.0 seemed to have issues with my SPA, version 2.0 promised to fix these problems. I have not tested this since last summer with version 1.0. But I know Paul Jarvis was receptive of the feedback on twitter.
 
@@ -99,18 +99,18 @@ What is really promising about Fathom Analytics, is the amount of data that is c
 
 ### Netlify Analytics
 
-This addition to privacy-focused analytics is very new. Launching just a few weeks ago, it is already making some headlines. You do need to be a Netlify customer and pay $9 a month for the feature though, which does appear to be fairly limited in data. 
+This addition to privacy-focused analytics is very new. Launching just a few weeks ago, it is already making some headlines. You do need to be a Netlify customer and pay $9 a month for the feature though, which does appear to be fairly limited in data.
 
 One of the coolest tricks is that you don’t need to install it. Once you activate it, it's live on your website, using data the CDN captures. Which basically means you don't have any client-side JavaScript that is capturing the data. It is a very neat trick.
 
 #### Bandwidth Bar Chart
 
-![https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448576/netlify_bandwidth_xzk1ev.png](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448576/netlify_bandwidth_xzk1ev.png)
+![https://res.cloudinary.com/khromedotdev/image/upload/c](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448576/netlify_bandwidth_xzk1ev.png)
 
 #### Sources Table
 
-![https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448576/netlify_sources_aehvzn.png](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448576/netlify_sources_aehvzn.png)
+![https://res.cloudinary.com/khromedotdev/image/upload/c](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448576/netlify_sources_aehvzn.png)
 
 #### Pageviews Chart
 
-![https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448576/netlify_pageviews_rspoyw.png](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448576/netlify_pageviews_rspoyw.png)
+![https://res.cloudinary.com/khromedotdev/image/upload/c](https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1570448576/netlify_pageviews_rspoyw.png)

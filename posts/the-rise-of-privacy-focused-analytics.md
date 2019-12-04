@@ -9,8 +9,8 @@ tags:
 - indie web
 - analytics
 - privacy
-social_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1575343596/Twitter_Post_-_5_i3wr34.png
-heading_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1575343603/Dev.to_Post_-_5_u4kc7f.png
+social_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1575430353/Twitter_Post_-_5_lgifo7.png
+heading_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1575430362/Dev.to_Post_-_5_hwveso.png
 release_date: 2019-12-02
 
 ---

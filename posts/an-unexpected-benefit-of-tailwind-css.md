@@ -2,7 +2,7 @@
 date: 2019-12-03
 release_date: 2019-12-03
 title: An Unexpected Benefit of Tailwind CSS
-published: false
+published: true
 description: Utility CSS frameworks can make it easier to refactor a codebase, or
   even change to a new framework.
 heading_image: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto/v1575429855/Dev.to_Post_-_6_m7izv6.png

@@ -13,10 +13,13 @@ sections:
   match: "**/*"
   templates:
   - blog-post
-- type: document
-  path: links/**/*
+- type: directory
+  path: links
   label: Links
+  create: documents
   match: "**/*"
+  templates:
+  - link
 upload_dir: ''
 public_path: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto:100,dpr_auto,f_auto,q_auto
 front_matter_path: ''

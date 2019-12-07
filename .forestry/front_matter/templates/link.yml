@@ -5,6 +5,12 @@ fields:
 - type: datetime
   name: date
   label: date
+- name: link
+  type: text
+  config:
+    required: true
+  label: link
+  description: Link to article
 - type: datetime
   name: release_date
   label: release_date
@@ -23,9 +29,6 @@ fields:
 - type: file
   name: social_image
   label: social_image
-- type: text
-  name: cover_image
-  label: cover_image
 - type: list
   name: tags
   label: tags

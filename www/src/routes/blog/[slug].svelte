@@ -14,6 +14,7 @@
 <script>
   import TheNewsletter from "../../components/TheNewsletter.svelte";
   import LazyLoading from "../../components/LazyLoading.svelte";
+  import AddToAny from "../../components/AddToAny.svelte";
 
   export let data;
 </script>
@@ -80,6 +81,9 @@
   <div class="markdown-body mb-8">
     {@html data.content}
   </div>
+  <AddToAny
+    url="https://khrome.dev/blog/{data.slug}"
+    title={data.attributes.title} />
 </div>
 <div class="px-8 container-inner sm:px-8 my-16 mx-auto text-center">
   <a href="/blog" class="font-bold uppercase">

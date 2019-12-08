@@ -43,7 +43,7 @@ const postcssPlugins = (purgecss = false) => {
           }
         ],
         // Whitelist selectors to stop Purgecss from removing them from your CSS.
-        whitelist: []
+        whitelist: ["bg-twitter", "bg-facebook", "bg-reddit", "bg-hacker-news"]
       }),
     !dev && require("cssnano")
   ].filter(Boolean);

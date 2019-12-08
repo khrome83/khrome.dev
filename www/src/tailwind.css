@@ -200,6 +200,22 @@ pre code {
   speak: none;
 }
 
+.bg-twitter {
+  @apply bg-twitter;
+}
+
+.bg-facebook {
+  @apply bg-facebook;
+}
+
+.bg-reddit {
+  @apply bg-reddit;
+}
+
+.bg-hacker-news {
+  @apply bg-hacker-news;
+}
+
 @media (min-width: 640px) {
   .container-inner {
     max-width: 640px;

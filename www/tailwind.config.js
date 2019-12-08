@@ -4,7 +4,11 @@ module.exports = {
       colors: {
         "regal-blue": "#243c5a",
         "regal-blue-accent": "#284569",
-        "undraw-orange": "#e49c56"
+        "undraw-orange": "#e49c56",
+        facebook: "#3b5998",
+        twitter: "#55acee",
+        reddit: "#ff4500",
+        "hacker-news": "#ff6600"
       },
       spacing: {
         "80": "20rem",

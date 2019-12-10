@@ -15,6 +15,7 @@
   import TheNewsletter from "../../components/TheNewsletter.svelte";
   import LazyLoading from "../../components/LazyLoading.svelte";
   import AddToAny from "../../components/AddToAny.svelte";
+  import EditPage from "../../components/EditPage.svelte";
 
   export let data;
 </script>
@@ -85,6 +86,7 @@
     url="https://khrome.dev/blog/{data.slug}"
     title={data.attributes.title} />
 </div>
+<EditPage slug={data.slug} />
 <div class="px-8 container-inner sm:px-8 my-16 mx-auto text-center">
   <a href="/blog" class="font-bold uppercase">
     <span class="font-mono">&larr;</span>

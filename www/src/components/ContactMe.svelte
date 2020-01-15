@@ -21,6 +21,8 @@
 
       <div class="text-lg sm:text-lg mb-16">
         <form
+          on:submit={() => window.sa('contact_form_submitted')}
+          target="_blank"
           action="https://formsubmit.co/c8ed50837a01e600e685d4a7d2e7f80e"
           method="POST"
           class="mb-12">

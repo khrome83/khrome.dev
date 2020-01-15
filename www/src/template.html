@@ -38,6 +38,14 @@
     <!-- This contains the contents of the <svelte:head> component, if
 	     the current page has one -->
     %sapper.head%
+    <script>
+      window.sa =
+        window.sa ||
+        function() {
+          a = [].slice.call(arguments);
+          sa.q ? sa.q.push(a) : (sa.q = [a]);
+        };
+    </script>
   </head>
   <body>
     <!-- The application will be rendered inside this element,
@@ -49,7 +57,7 @@
 	     initialise the router -->
     %sapper.scripts%
     <script async defer src="https://cdn.getbevy.io/app.min.js"></script>
-    <script async defer src="https://sa.khrome.dev/app.js"></script>
+    <script async defer src="https://sa.khrome.dev/latest.js"></script>
     <noscript><img src="https://sa.khrome.dev/image.gif" alt=""/></noscript>
   </body>
 </html>

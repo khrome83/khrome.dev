@@ -15,6 +15,8 @@
       </p>
 
       <form
+        on:submit={() => window.sa('newsletter_signup')}
+        target="_blank"
         action="https://formsubmit.co/c8ed50837a01e600e685d4a7d2e7f80e"
         method="POST">
         <div class="flex flex-col sm:flex-row">
@@ -39,6 +41,7 @@
             required />
           <button
             data-element="submit"
+            type="submit"
             class="flex-2 w-40 uppercase bg-orange-700 text-white rounded
             sm:rounded-l-none text-lg py-3 px-8 tracking-wide shadow
             focus:outline-none hover:bg-orange-900 focus:bg-orange-900 z-10

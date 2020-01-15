@@ -50,8 +50,8 @@
   <h2 class="font-display lg:hidden">Share this article</h2>
   {#each buttons as { href, src, alt, color, event }}
     <a
-      on:click|preventDefault={() => handleEvents(event, getAddToAnyLink(href, url, title))}
       class="mr-2 block w-8 inline-block lg:block lg:w-8 lg:mr-0 lg:mb-2"
+      on:click|preventDefault={() => handleEvents(event, getAddToAnyLink(href, url, title))}
       href={getAddToAnyLink(href, url, title)}
       target="_blank">
       <img

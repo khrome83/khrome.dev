@@ -60,7 +60,7 @@
     "markdown-it": "9.1.0",
     "markdown-it-anchor": "5.2.4",
     "markdown-it-img-lazy": "1.0.1",
-    "npm": "6.13.4",
+    "npm": "6.14.6",
     "postcss": "^7.0.16",
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",

@@ -41,13 +41,13 @@ fields:
 - name: heading_image
   type: file
   config:
-    maxSize: 250
+    maxSize: 64
   label: Heading Image
   description: Image used in the head of the article.
 - name: social_image
   type: file
   config:
-    maxSize: 250
+    maxSize: 64
   label: Social Image
   description: Social Image used for Twitter Cards
 - name: cover_image

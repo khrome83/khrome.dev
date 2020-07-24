@@ -25,7 +25,6 @@ public_path: https://res.cloudinary.com/khromedotdev/image/upload/c_scale,w_auto
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
-instant_preview: true
 build:
   preview_env:
   - NODE_ENV=STAGE
@@ -35,6 +34,3 @@ build:
   mount_path: "/srv"
   working_dir: "/srv/www"
   instant_preview_command: npm run develop
-  publish_command: vuepress build -d .vuepress/dist
-  output_directory: ".vuepress/dist"
-  preview_command: vuepress build -d .vuepress/dist

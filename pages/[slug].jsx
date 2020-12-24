@@ -7,10 +7,17 @@ import { getAllPosts, getPost } from "../utils/notion.js";
 export const getStaticProps = async ({ params: { slug } }) => {
   const postData = await getPost(slug);
 
+  if (!postData.post) {
+    return {
+      notFound: true,
+    }
+  }
+
   return {
     props: {
       ...postData,
     },
+    revalidate: 10,
   }
 };
 

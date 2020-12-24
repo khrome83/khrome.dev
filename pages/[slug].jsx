@@ -4,6 +4,8 @@ import { NotionRenderer } from "react-notion-x";
 
 import { getAllPosts, getPost } from "../utils/notion.js";
 
+export const config = { amp: 'hybrid' }
+
 export const getStaticProps = async ({ params: { slug } }) => {
   const postData = await getPost(slug);
 

@@ -1,6 +1,5 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 .notion-collection-row {
   display: none;
@@ -11,7 +10,7 @@
 }
 
 .prose code {
-  @apply text-indigo-400 whitespace-nowrap text-sm font-light;
+  @apply text-purple-400 whitespace-nowrap text-sm font-light;
 }
 
 .prose pre code {
@@ -38,11 +37,16 @@
 }
 
 .prose a {
-  @apply text-indigo-600 hover:text-indigo-500;
+  @apply text-purple-600 hover:text-purple-500;
+}
+
+.notion-link {
+  opacity: 1;
+  @apply text-purple-600 hover:text-purple-500;
 }
 
 .prose ul > li::before {
-  @apply bg-indigo-300;
+  @apply bg-purple-300;
   top: 1em;
 }
 
@@ -51,7 +55,7 @@
 }
 
 .prose blockquote {
-  @apply text-indigo-700;
+  @apply text-purple-700;
 }
 
 .prose ol {
@@ -61,3 +65,6 @@
 .notion-asset-wrapper-image > div {
   display: block !important;
 }
+
+@tailwind utilities;
+

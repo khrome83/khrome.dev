@@ -18,7 +18,7 @@ const BlogTile = ({ post: { date, title, description, slug } }) => (
     </Link>
     <div className="mt-3">
       <Link href={`/${encodeURIComponent(slug)}`}>
-        <a className="text-base font-semibold text-indigo-600 hover:text-indigo-500">
+        <a className="text-base font-semibold text-purple-600 hover:text-purple-500">
           Read full story
         </a>
       </Link>

@@ -1,8 +1,8 @@
 import 'react-notion-x/src/styles.css'
-import "prismjs/themes/prism-solarizedlight.css";
+import "prism-themes/themes/prism-duotone-dark.css";
 import "../styles/index.css";
 import Head from "next/head";
-import { useAmp } from 'next/amp'
+import { useAmp } from "next/amp";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 

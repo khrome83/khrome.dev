@@ -20,7 +20,7 @@ const AboutPage = () => (
         <dt className="text-lg pb-2">UI &amp; Solution Architect for General Motors</dt>
         <dd className="mb-8">Oversaw the solution design and development powering the next generation of CMS platform. I managed the technical relationship with outside design agencies.</dd>
         <dt className="text-lg pb-2">Senior Developer for Army Research Labs</dt>
-        <dd className="mb-8">The job was mostly <span className="text-indigo-300 line-through">cowboy</span> contract development. I worked on a variety of internal tools and web properties, including analytics trackers, custom calendars, WebGL powered apps, and more.</dd>
+        <dd className="mb-8">The job was mostly <span className="text-purple-300 line-through">cowboy</span> contract development. I worked on a variety of internal tools and web properties, including analytics trackers, custom calendars, WebGL powered apps, and more.</dd>
       </dl>
     </div>
   </>

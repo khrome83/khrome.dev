@@ -1,6 +1,6 @@
 const Footer = () => (
   <>
-    <footer className="bg-white">
+    <footer className="bg-white mt-20">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           <a
@@ -50,7 +50,7 @@ const Footer = () => (
               aria-hidden="true"
             >
               <path
-                fill-rule="nonzero"
+                fillRule="nonzero"
                 d="M9.893 13.4c-0.24-0.213-0.613-0.307-1.12-0.307h-0.773l0.027
              3.253 0.053 3.267 0.747-0.027c0.547 0 0.84-0.093 1.107-0.347
              0.32-0.32 0.347-0.48 0.347-2.933
@@ -84,7 +84,7 @@ const Footer = () => (
               aria-hidden="true"
             >
               <path
-                fill-rule="nonzero"
+                fillRule="nonzero"
                 d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 26h-4v-14h4v14zM10 10c-1.106 0-2-0.894-2-2s0.894-2 2-2c1.106 0 2 0.894 2 2s-0.894 2-2 2zM26 26h-4v-8c0-1.106-0.894-2-2-2s-2 0.894-2 2v8h-4v-14h4v2.481c0.825-1.131 2.087-2.481 3.5-2.481 2.488 0 4.5 2.238 4.5 5v9z"
               ></path>
             </svg>

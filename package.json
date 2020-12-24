@@ -8,8 +8,11 @@
   },
   "dependencies": {
     "next": "latest",
+    "notion-client": "^2.5.2",
+    "prismjs": "^1.22.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-notion-x": "^2.5.1"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.0",

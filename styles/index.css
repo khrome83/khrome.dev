@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.notion-collection-row {
+  display: none;
+}
+
+.notion-hash-link {
+  @apply pt-2;
+}
+
+.prose code {
+  @apply text-indigo-400 whitespace-nowrap text-sm font-light;
+}
+
+.prose pre code {
+  @apply whitespace-pre;
+}
+
+.prose code::before,
+.prose code::after {
+  content: "";
+  display: none;
+}
+
+.notion-list,
+.prose ul {
+  @apply m-0 py-0;
+}
+
+.prose li {
+  @apply my-0;
+}
+
+.notion-list-disc {
+  list-style: none;
+}
+
+.prose a {
+  @apply text-indigo-600 hover:text-indigo-500;
+}
+
+.prose ul > li::before {
+  @apply bg-indigo-300;
+  top: 1em;
+}
+
+.prose ol > li::before {
+  @apply hidden;
+}
+
+.prose blockquote {
+  @apply text-indigo-700;
+}
+
+.prose ol {
+  counter-reset: initial;
+}
+
+.notion-asset-wrapper-image > div {
+  display: block !important;
+}

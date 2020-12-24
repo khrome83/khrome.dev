@@ -1,9 +1,14 @@
 import Link from "next/link";
 
-const BlogTile = ({ content: { date, title, description, slug } }) => (
+const formatDate = (date) => {
+  const [d, M, D, Y] = new Date(`${date}T05:00:00`).toString().split(' ');
+  return `${M} ${D}, ${Y}`;
+}
+
+const BlogTile = ({ post: { date, title, description, slug } }) => (
   <div>
     <p className="text-sm text-gray-500">
-      <time dateTime="2020-03-16">{date}</time>
+      <time dateTime={date}>{formatDate(date)}</time>
     </p>
     <Link href={`/${encodeURIComponent(slug)}`}>
       <a className="mt-2 block">

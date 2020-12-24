@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+
+.notion-collection-row {
+  display: none;
+}
+
+.notion-hash-link {
+  @apply pt-2;
+}
+
+.prose code {
+  @apply text-purple-400 whitespace-nowrap text-sm font-light;
+}
+
+.prose pre code {
+  @apply whitespace-pre;
+}
+
+.prose code::before,
+.prose code::after {
+  content: "";
+  display: none;
+}
+
+.notion-list,
+.prose ul {
+  @apply m-0 py-0;
+}
+
+.prose li {
+  @apply my-0;
+}
+
+.notion-list-disc {
+  list-style: none;
+}
+
+.prose a {
+  @apply text-purple-600 hover:text-purple-500;
+}
+
+.notion-link {
+  opacity: 1;
+  @apply text-purple-600 hover:text-purple-500;
+}
+
+.prose ul > li::before {
+  @apply bg-purple-300;
+  top: 1em;
+}
+
+.prose ol > li::before {
+  @apply hidden;
+}
+
+.prose blockquote {
+  @apply text-purple-700;
+}
+
+.prose ol {
+  counter-reset: initial;
+}
+
+.notion-asset-wrapper-image > div {
+  display: block !important;
+}
+
+@tailwind utilities;
+

@@ -1,0 +1,74 @@
+{
+  "redirects": [
+    {
+      "source": "/blog/the-rise-of-privacy-focused-analytics",
+      "destination": "/the-rise-of-privacy-focused-analytics",
+      "permanent": true
+    },
+    {
+      "source": "/blog/an-unexpected-benefit-of-tailwind-css",
+      "destination": "/an-unexpected-benefit-of-tailwind-css",
+      "permanent": true
+    },
+    {
+      "source": "/blog/creating-compelling-and-useful-404-pages",
+      "destination": "/creating-compelling-and-useful-404-pages",
+      "permanent": true
+    },
+    {
+      "source": "/blog/custom-decorators-with-storybook-and-vue",
+      "destination": "/custom-decorators-with-storybook-and-vue",
+      "permanent": true
+    },
+    {
+      "source": "/blog/html-elements-with-flex-box-quirks",
+      "destination": "/html-elements-with-flex-box-quirks",
+      "permanent": true
+    },
+    {
+      "source": "/blog/custom-404-pages-on-zeit-now-v2-platform",
+      "destination": "/custom-404-pages-on-zeit-now-v2-platform",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tag",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tag/html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tag/css",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tag/vue",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tag/indie-web",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tag/svelte",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tag/zeit",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

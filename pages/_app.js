@@ -13,7 +13,8 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="author" content="Zane C. Milakovic" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#7c3aed" />
+        <link rel="icon" type="image/ico" href="/favicon.ico"/>
         <link rel="dns-prefetch" href="https://sa.khrome.dev" crossOrigin="true" />
         {isAmp ? null : <script dangerouslySetInnerHTML={{
           __html: `
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }) {
             sa.q ? sa.q.push(a) : (sa.q = [a]);
           };
         `}}></script>}
+        <link rel='manifest' href='/manifest.json'></link>
       </Head>
       <Header />
       <Component {...pageProps} />

@@ -1,9 +1,7 @@
 @tailwind base;
 @tailwind components;
 
-.notion-collection-row {
-  display: none;
-}
+
 
 .notion-hash-link {
   @apply pt-2;
@@ -11,6 +9,27 @@
 
 .prose code {
   @apply text-purple-400 whitespace-nowrap text-sm font-light;
+}
+
+.notion-text,
+.notion-collection-row {
+  @apply my-8 text-xl leading-8 text-gray-600;
+}
+
+.notion-collection-row-body {
+  display: none;
+}
+
+.notion-collection-row {
+  @apply border-none p-0 mx-0 mb-0;
+}
+
+.notion-blank {
+  @apply hidden;
+}
+
+.notion-list > li {
+  @apply text-xl leading-8 text-gray-500 py-0;
 }
 
 .prose pre code {
@@ -24,8 +43,9 @@
 }
 
 .notion-list,
-.prose ul {
-  @apply m-0 py-0;
+.prose ul,
+.prose ol {
+  @apply my-1 py-0;
 }
 
 .prose li {
@@ -34,6 +54,10 @@
 
 .notion-list-disc {
   list-style: none;
+}
+
+.notion-quote {
+  @apply text-2xl leading-10 lg:-mx-16;
 }
 
 .prose a {
@@ -47,7 +71,7 @@
 
 .prose ul > li::before {
   @apply bg-purple-300;
-  top: 1em;
+  top: 0.65em;
 }
 
 .prose ol > li::before {

@@ -1,12 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://khrome.dev/</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2020-12-25T23:29:22.304Z</lastmod></url>
-<url><loc>https://khrome.dev/about</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2020-12-25T23:29:22.304Z</lastmod></url>
-<url><loc>https://khrome.dev/web-development-is-hard</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2020-12-25T23:29:22.304Z</lastmod></url>
-<url><loc>https://khrome.dev/the-rise-of-privacy-focused-analytics</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2020-12-25T23:29:22.304Z</lastmod></url>
-<url><loc>https://khrome.dev/an-unexpected-benefit-of-tailwind-css</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2020-12-25T23:29:22.304Z</lastmod></url>
-<url><loc>https://khrome.dev/creating-compelling-and-useful-404-pages</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2020-12-25T23:29:22.304Z</lastmod></url>
-<url><loc>https://khrome.dev/custom-decorators-with-storybook-and-vue</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2020-12-25T23:29:22.304Z</lastmod></url>
-<url><loc>https://khrome.dev/html-elements-with-flex-box-quirks</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2020-12-25T23:29:22.304Z</lastmod></url>
-<url><loc>https://khrome.dev/custom-404-pages-on-zeit-now-v2-platform</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2020-12-25T23:29:22.304Z</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://khrome.dev/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2020-12-25T23:29:22.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://khrome.dev/about</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2020-12-25T23:29:22.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://khrome.dev/web-development-is-hard</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2020-12-25T23:29:22.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://khrome.dev/the-rise-of-privacy-focused-analytics</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2020-12-25T23:29:22.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://khrome.dev/an-unexpected-benefit-of-tailwind-css</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2020-12-25T23:29:22.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://khrome.dev/creating-compelling-and-useful-404-pages</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2020-12-25T23:29:22.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://khrome.dev/custom-decorators-with-storybook-and-vue</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2020-12-25T23:29:22.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://khrome.dev/html-elements-with-flex-box-quirks</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2020-12-25T23:29:22.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://khrome.dev/custom-404-pages-on-zeit-now-v2-platform</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2020-12-25T23:29:22.304Z</lastmod>
+  </url>
 </urlset>

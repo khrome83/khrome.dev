@@ -3,6 +3,7 @@ import Head from "next/head";
 import { NotionRenderer } from "react-notion-x";
 
 import { getAllPosts, getPost } from "../utils/notion.js";
+import { formatDate } from "../utils/date.js";
 
 // export const config = { amp: 'hybrid' }
 
@@ -41,7 +42,10 @@ const BlogPost = ({ post, blocks }) => {
         <title>{post.title}</title>
       </Head>
       <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl py-4 text-center text-black py-20 mb-12">{post.title}</h1>
+        <h1 className="text-5xl py-4 text-center text-black pt-20 mb-12">{post.title}</h1>
+        <p className="text-sm text-center text-gray-500 mb-20">
+          <time dateTime={post.date}>{formatDate(post.date)}</time>
+        </p>
         <div className="prose mx-auto">
           <NotionRenderer recordMap={blocks} fullPage={false} darkMode={false} />
         </div>

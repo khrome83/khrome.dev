@@ -6,7 +6,7 @@ const AboutPage = () => (
       <meta name='description' content="About Me" />
       <title>Khrome.dev - About Zane Milakovic</title>
     </Head>
-    <h1 className="text-5xl py-4 text-center text-black py-20 mb-12">About Me</h1>
+    <h1 className="text-5xl text-center text-black py-20 mb-12">About Me</h1>
     <div className="prose max-w-4xl mx-auto px-4">
       <p>
         I have spent most of the last 20 years making things, typically with web technologies. I specialize in creating solid experiences that delight. I also enjoy building world-class teams.

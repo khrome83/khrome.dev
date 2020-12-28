@@ -19,7 +19,7 @@ const IndexPage = ({ posts }) => (
       <meta name='description' content="Thoughts about Web Development by Zane Milakovic" />
       <title>Khrome.dev - Thoughts on web development.</title>
     </Head>
-    <h1 className="text-5xl py-4 text-center text-black py-20">My Thoughts</h1>
+    <h1 className="text-5xl text-center text-black py-20">My Thoughts</h1>
     <BlogList posts={posts} />
   </>
 );

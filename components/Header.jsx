@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const Header = () => (
   <nav className="max-w-7xl mx-auto flex items-center justify-around content-around p-4 md:p-8">
@@ -16,7 +15,6 @@ const Header = () => (
           alt="Khrome.dev logo - Bald skeleton with luscious beard in purple."
           width="120"
           height="120"
-          priority={true}
         />
       </a>
     </Link>

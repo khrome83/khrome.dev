@@ -11,7 +11,7 @@ const Header = () => (
     <Link href="/">
       <a>
         <span className="sr-only">Home</span>
-        <Image
+        <img
           src="/logo-transparent.png"
           alt="Khrome.dev logo - Bald skeleton with luscious beard in purple."
           width="120"

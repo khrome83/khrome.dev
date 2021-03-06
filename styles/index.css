@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 
-
-
 .notion-hash-link {
   @apply pt-2;
 }
@@ -69,11 +67,16 @@
   @apply text-purple-600 hover:text-purple-500;
 }
 
+.notion-hr {
+  @apply border-b border-gray-500;
+}
+
 .prose ul > li::before {
   @apply bg-purple-300;
   top: 0.65em;
 }
 
+.notion-viewport,
 .prose ol > li::before {
   @apply hidden;
 }
@@ -91,4 +94,3 @@
 }
 
 @tailwind utilities;
-

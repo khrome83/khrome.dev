@@ -1,4 +1,4 @@
-const logger = require("pino-http")();
+const logger = require("pino")();
 
 export default function handler(req, res) {
   logger.info(req.body);

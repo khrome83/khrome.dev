@@ -1,6 +1,18 @@
 const logger = require("pino")();
+const multiparty = require("multiparty");
 
 export default function handler(req, res) {
-  logger.info(req.body);
-  res.status(200).json({ name: "John Doe" });
+  if (req.method === "POST") {
+    let form = new multiparty.Form();
+    form.parse(req, (err, fields, files) => {
+      res.writeHead(200, { "content-type": "text/plain" });
+      res.write("received upload: \n\n");
+      res.end(util.inspect({ fields: fields, files: files }));
+    });
+    return;
+  } else {
+    logger.info("NOT POST");
+    res.end("Send a POST request.");
+    return;
+  }
 }

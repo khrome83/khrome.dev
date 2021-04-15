@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
+
+# Host
 Host: https://khrome.dev
+
+# Sitemaps
 Sitemap: https://khrome.dev/sitemap.xml

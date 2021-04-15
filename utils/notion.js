@@ -14,6 +14,7 @@ export const getAllPosts = async () => {
     }
   ).then((res) => res.json());
 
+  return posts;
   return process.env.SHOW_DRAFT === "true"
     ? posts
     : posts?.filter((post) => post.published === true);

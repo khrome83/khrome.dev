@@ -1,4 +1,6 @@
+const logger = require("pino-http")();
+
 export default function handler(req, res) {
-  console.log(req.body);
+  logger.info(req.body);
   res.status(200).json({ name: "John Doe" });
 }

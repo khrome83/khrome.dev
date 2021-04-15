@@ -1,26 +1,16 @@
 import Head from "next/head";
-import BlogList from "../components/BlogList.jsx";
-import { getAllPosts } from "../utils/notion.js";
-
-export const getStaticProps = async () => {
-  const posts = await getAllPosts();
-
-  return {
-    props: {
-      posts,
-    },
-    revalidate: 10,
-  };
-};
 
 const IndexPage = ({ posts }) => (
   <>
     <Head>
-      <meta name='description' content="Thoughts about Web Development by Zane Milakovic" />
+      <meta
+        name="description"
+        content="Thoughts about Web Development by Zane Milakovic"
+      />
       <title>Khrome.dev - Thoughts on web development.</title>
     </Head>
-    <h1 className="text-5xl text-center text-black py-20">My Thoughts</h1>
-    <BlogList posts={posts} />
+    <h1 className="text-5xl text-center text-black py-20">Upgrading...</h1>
+    <span>Stay tuned...</span>
   </>
 );
 

@@ -1,20 +1,35 @@
 const logger = require("pino")();
-const multiparty = require("multiparty");
-let util = require("util");
+const Busboy = require("busboy");
 
 export default function handler(req, res) {
-  if (req.method === "POST") {
-    let form = new multiparty.Form();
-    form.parse(req, (err, fields, files) => {
-      res.writeHead(200, { "content-type": "text/plain" });
-      res.write("received upload: \n\n");
-      logger.info(util.inspect({ fields: fields, files: files }));
-      res.end(util.inspect({ fields: fields, files: files }));
+  const busboy = new Busboy({ headers: req.headers });
+  const obj = {};
+
+  busboy.on("file", function (fieldname, file, filename, encoding, mimetype) {
+    logger.info("File [" + fieldname + "]: filename: " + filename);
+
+    file.on("data", function (data) {
+      logger.info("File [" + fieldname + "] got " + data.length + " bytes");
     });
-    return;
-  } else {
-    logger.info("NOT POST");
-    res.end("Send a POST request.");
-    return;
-  }
+
+    file.on("end", function () {
+      logger.info("File [" + fieldname + "] Finished");
+    });
+  });
+
+  busboy.on(
+    "field",
+    function (fieldname, val, fieldnameTruncated, valTruncated) {
+      logger.info("Field [" + fieldname + "]: value: " + val);
+      obj[fieldname] = val;
+    }
+  );
+
+  busboy.on("finish", function () {
+    logger.info("Done parsing form!");
+    logger.info(obj);
+    res.json(obj);
+  });
+
+  req.pipe(busboy);
 }

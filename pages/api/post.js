@@ -31,5 +31,6 @@ export default function handler(req, res) {
     res.json(obj);
   });
 
-  req.pipe(busboy);
+  logger.info("Starting Parsing");
+  return req.pipe(busboy);
 }

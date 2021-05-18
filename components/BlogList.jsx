@@ -6,7 +6,7 @@ const BlogList = ({ posts }) => (
       <div className="relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-7xl">
         <div className="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
           {posts.map((post) => (
-            <BlogTile key={`${post.slug}`} post={post} />
+            <BlogTile key={`${post.id}`} post={post} />
           ))}
         </div>
       </div>

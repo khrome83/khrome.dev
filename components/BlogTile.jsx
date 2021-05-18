@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { formatDate } from "../utils/date.js";
 
-
-const BlogTile = ({ post: { date, title, description, slug } }) => (
-  <div>
+const BlogTile = ({ post: { id, date, title, description, slug } }) => (
+  <div data-id={id}>
     <p className="text-sm text-gray-500">
       <time dateTime={date}>{formatDate(date)}</time>
     </p>

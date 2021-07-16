@@ -1,108 +1,243 @@
 {
   "redirects": [
     {
+      "source": "/about",
+      "destination": "https://www.fiercebyte.com/about/",
+      "permanent": true
+    },
+    {
+      "source": "/the-importance-of-image-cdns",
+      "destination": "https://www.fiercebyte.com/the-importance-of-image-cdns/",
+      "permanent": true
+    },
+    {
+      "source": "/tooling-should-disappear",
+      "destination": "https://www.fiercebyte.com/tooling-should-disappear/",
+      "permanent": true
+    },
+    {
+      "source": "/trade-offs-with-early-development",
+      "destination": "https://www.fiercebyte.com/trade-offs-with-early-development/",
+      "permanent": true
+    },
+    {
+      "source": "/thoughts-about-online-conferences",
+      "destination": "https://www.fiercebyte.com/thoughts-about-online-conferences/",
+      "permanent": true
+    },
+    {
+      "source": "/rehire-and-retrain-vs-new-hire-search",
+      "destination": "https://www.fiercebyte.com/rehire-and-retrain-vs-new-hire-search/",
+      "permanent": true
+    },
+    {
+      "source": "/is-this-a-react-anti-pattern",
+      "destination": "https://www.fiercebyte.com/is-this-a-react-anti-pattern/",
+      "permanent": true
+    },
+    {
+      "source": "/fauna-is-secure-by-default",
+      "destination": "https://www.fiercebyte.com/fauna-is-secure-by-default/",
+      "permanent": true
+    },
+    {
+      "source": "/why-i-use-FQL-in-fauna-db",
+      "destination": "https://www.fiercebyte.com/why-i-use-fql-in-fauna-db/",
+      "permanent": true
+    },
+    {
+      "source": "/closing-a-menu-when-a-user-clicks-outside-of-it-with-react-hooks",
+      "destination": "https://www.fiercebyte.com/closing-a-menu-when-a-user-clicks-outside-of-it-with-react-hooks/",
+      "permanent": true
+    },
+    {
+      "source": "/creating-active-links-with-nextjs",
+      "destination": "https://www.fiercebyte.com/creating-active-links-with-next-js/",
+      "permanent": true
+    },
+    {
+      "source": "/absolute-imports-for-nextjs",
+      "destination": "https://www.fiercebyte.com/absolute-imports-for-next-js/",
+      "permanent": true
+    },
+    {
+      "source": "/complexity-and-concerns-grow-for-web-development",
+      "destination": "https://www.fiercebyte.com/complexity-and-concerns-grow-for-web-development/",
+      "permanent": true
+    },
+    {
+      "source": "/making-queries-acid-in-faunadb",
+      "destination": "https://www.fiercebyte.com/making-queries-acid-in-faunadb/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-do-a-upsert-in-faunadb-fql",
+      "destination": "https://www.fiercebyte.com/how-to-do-a-upsert-in-faunadb-fql/",
+      "permanent": true
+    },
+    {
+      "source": "/faunadb-seems-so-ergonomic-with-react-hooks",
+      "destination": "https://www.fiercebyte.com/faunadb-seems-so-ergonomic-with-react-hooks/",
+      "permanent": true
+    },
+    {
+      "source": "/easy-sitemaps-for-nextjs",
+      "destination": "https://www.fiercebyte.com/easy-sitemaps-for-next-js/",
+      "permanent": true
+    },
+    {
+      "source": "/web-development-is-hard",
+      "destination": "https://www.fiercebyte.com/web-development-is-hard/",
+      "permanent": true
+    },
+    {
       "source": "/blog/the-rise-of-privacy-focused-analytics",
-      "destination": "/the-rise-of-privacy-focused-analytics",
+      "destination": "https://www.fiercebyte.com/the-rise-of-privacy-focused-analytics/",
+      "permanent": true
+    },
+    {
+      "source": "/the-rise-of-privacy-focused-analytics",
+      "destination": "https://www.fiercebyte.com/the-rise-of-privacy-focused-analytics/",
       "permanent": true
     },
     {
       "source": "/blog/an-unexpected-benefit-of-tailwind-css",
-      "destination": "/an-unexpected-benefit-of-tailwind-css",
+      "destination": "https://www.fiercebyte.com/an-unexpected-benefit-of-tailwind-css/",
+      "permanent": true
+    },
+    {
+      "source": "/an-unexpected-benefit-of-tailwind-css",
+      "destination": "https://www.fiercebyte.com/an-unexpected-benefit-of-tailwind-css/",
       "permanent": true
     },
     {
       "source": "/blog/creating-compelling-and-useful-404-pages",
-      "destination": "/creating-compelling-and-useful-404-pages",
+      "destination": "https://www.fiercebyte.com/creating-compelling-and-useful-404-pages/",
+      "permanent": true
+    },
+    {
+      "source": "/creating-compelling-and-useful-404-pages",
+      "destination": "https://www.fiercebyte.com/creating-compelling-and-useful-404-pages/",
       "permanent": true
     },
     {
       "source": "/blog/custom-decorators-with-storybook-and-vue",
-      "destination": "/custom-decorators-with-storybook-and-vue",
+      "destination": "https://www.fiercebyte.com/custom-decorators-with-storybook-vue/",
+      "permanent": true
+    },
+    {
+      "source": "/custom-decorators-with-storybook-and-vue",
+      "destination": "https://www.fiercebyte.com/custom-decorators-with-storybook-vue/",
       "permanent": true
     },
     {
       "source": "/blog/html-elements-with-flex-box-quirks",
-      "destination": "/html-elements-with-flex-box-quirks",
+      "destination": "https://www.fiercebyte.com/html-elements-with-flex-box-quirks/",
+      "permanent": true
+    },
+    {
+      "source": "/html-elements-with-flex-box-quirks",
+      "destination": "https://www.fiercebyte.com/html-elements-with-flex-box-quirks/",
       "permanent": true
     },
     {
       "source": "/blog/custom-404-pages-on-zeit-now-v2-platform",
-      "destination": "/custom-404-pages-on-zeit-now-v2-platform",
+      "destination": "https://www.fiercebyte.com/custom-404-pages-on-zeit-now-v2-platform/",
+      "permanent": true
+    },
+    {
+      "source": "/custom-404-pages-on-zeit-now-v2-platform",
+      "destination": "https://www.fiercebyte.com/custom-404-pages-on-zeit-now-v2-platform/",
+      "permanent": true
+    },
+    {
+      "source": "/supporting-heic-and-heif-images",
+      "destination": "https://www.fiercebyte.com/supporting-heic-and-heif/",
+      "permanent": true
+    },
+    {
+      "source": "/questions-concerns-i-have-about-web-components",
+      "destination": "https://www.fiercebyte.com/questions-concerns-i-have-about-web-components/",
       "permanent": true
     },
     {
       "source": "/blog",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     },
     {
       "source": "/blog/tag",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     },
     {
       "source": "/tag/html",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     },
     {
       "source": "/blog/tag/html",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     },
     {
       "source": "/blog/tag/css",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     },
     {
       "source": "/blog/tag/vue",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     },
     {
       "source": "/blog/tag/indie-web",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     },
     {
       "source": "/blog/tag/svelte",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     },
     {
       "source": "/blog/tag/zeit",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     },
     {
       "source": "/blog/tag/404",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     },
     {
       "source": "/blog/tag/typescript",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     },
     {
       "source": "/blog/tag/frontend",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     },
     {
       "source": "/blog/tag/privacy",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     },
     {
       "source": "/blog/tag/tailwindcss",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     },
     {
       "source": "/blog/tag/analytics",
-      "destination": "/",
+      "destination": "https://www.fiercebyte.com/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "destination": "https://www.fiercebyte.com/",
       "permanent": true
     }
   ]

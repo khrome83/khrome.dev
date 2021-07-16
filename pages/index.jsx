@@ -1,22 +1,6 @@
 import Head from "next/head";
-import Link from "next/link";
-import BlogList from "../components/BlogList.jsx";
-import Pagination from "../components/Pagination.jsx";
-import { getAllPosts } from "../utils/notion.js";
 
-export const getStaticProps = async () => {
-  const response = await getAllPosts();
-
-  return {
-    props: {
-      posts: response.posts,
-      next: response.next ? "/page/2" : false,
-    },
-    revalidate: 10,
-  };
-};
-
-const IndexPage = ({ posts, next }) => (
+const IndexPage = () => (
   <>
     <Head>
       <meta
@@ -25,10 +9,10 @@ const IndexPage = ({ posts, next }) => (
       />
       <title>Khrome.dev - Thoughts on web development.</title>
     </Head>
-    <h1 className="text-5xl text-center text-black py-20">My Thoughts</h1>
-    <BlogList posts={posts} />
+    <h1 className="text-5xl text-center text-black py-20">Moved</h1>
 
-    <Pagination next={next} />
+    <p>All articles have been moved to <a href="https://www.fiercebyte.com">Fierce Byte</a>.</p>
+
   </>
 );
 
